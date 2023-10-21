@@ -1,0 +1,44 @@
+[10/9/2023 16:9:51] Application is starting..
+[10/9/2023 16:9:51] Console Key: BackQuote
+[10/9/2023 16:9:51] AllowCheats: True
+[10/9/2023 16:9:51] GameManager ready!
+[10/9/2023 16:9:51] LevelManager ready!
+[10/9/2023 16:9:51] BasketController ready!
+[10/9/2023 16:9:52] Level load request recived for level id: 0
+[10/9/2023 16:9:52] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/9/2023 16:9:59] Console Info: > level style set idle
+[10/9/2023 16:9:59] Operation completed successfully.
+[10/9/2023 16:9:59] Level load request recived for level id: 0
+[10/9/2023 16:9:59] Set level attributes
+Style: IDLE
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/9/2023 16:10:10] Console Info: > level style set bingus
+[10/9/2023 16:10:10] Unknown style
+[10/9/2023 16:10:10] Operation completed successfully.
+[10/9/2023 16:10:10] Level load request recived for level id: 0
+[10/9/2023 16:10:10] Set level attributes
+Style: IDLE
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/9/2023 16:23:18] Console Info: > exit
+[10/9/2023 16:23:19] Application close requested by user!
+[10/9/2023 16:23:19] BasketController stopped!
+[10/9/2023 16:23:19] GameManager stopped!
+[10/9/2023 16:23:19] Application is closing..
+[10/9/2023 16:23:19] LevelManager stopped!

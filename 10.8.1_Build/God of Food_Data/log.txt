@@ -1,0 +1,16 @@
+[10/8/2023 16:51:25] Application is starting..
+[10/8/2023 16:51:25] GameManager ready!
+[10/8/2023 16:51:25] LevelManager ready!
+[10/8/2023 16:51:25] BasketController ready!
+[10/8/2023 16:51:26] Level load request recived for level id: 0
+[10/8/2023 16:51:26] Set level attributes
+Style: NORMAL
+SetPoints: 0
+RequiredPoints: 50
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/8/2023 16:51:26] GameManager stopped!
+[10/8/2023 16:51:26] Application is closing..
+[10/8/2023 16:51:26] LevelManager stopped!
+[10/8/2023 16:51:26] BasketController stopped!
