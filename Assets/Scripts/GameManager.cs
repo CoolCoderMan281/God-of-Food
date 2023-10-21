@@ -6,6 +6,7 @@ using System.IO.Enumeration;
 using System.Linq;
 using JetBrains.Annotations;
 using TMPro;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -110,7 +111,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Console Info: > " + command);
         if (command.StartsWith("level"))
         {
-            string[] args = command.Replace("level","").Split(" ");
+            string[] args = command.Replace("level", "").Split(" ");
             // Example: level name set X
             // Example: level name get
             if (args.Length == 4) // Set
@@ -209,7 +210,7 @@ public class GameManager : MonoBehaviour
                 {
                     if (args[2] == "get")
                     {
-                        Debug.Log("Name: "+Level.Name);
+                        Debug.Log("Name: " + Level.Name);
                     }
                 }
                 if (args[1] == "desc")
@@ -225,19 +226,19 @@ public class GameManager : MonoBehaviour
                 }
                 if (args[1] == "style" && args[2] == "get")
                 {
-                    Debug.Log("Style: "+Level.Style.ToString());
+                    Debug.Log("Style: " + Level.Style.ToString());
                 }
                 if (args[1] == "behavior" && args[2] == "get")
                 {
-                    Debug.Log("Behavior: "+Level.Behavior.ToString());
+                    Debug.Log("Behavior: " + Level.Behavior.ToString());
                 }
                 if (args[1] == "back" && args[2] == "get")
                 {
-                    Debug.Log("Back: "+Level.Back.Name.ToString());
+                    Debug.Log("Back: " + Level.Back.Name.ToString());
                 }
                 if (args[1] == "next" && args[2] == "get")
                 {
-                    Debug.Log("Next: "+Level.Next.Name.ToString());
+                    Debug.Log("Next: " + Level.Next.Name.ToString());
                 }
                 if (args[1] == "setpoints" && args[2] == "get")
                 {
@@ -245,21 +246,30 @@ public class GameManager : MonoBehaviour
                 }
                 if (args[1] == "requiredpoints" && args[2] == "get")
                 {
-                    Debug.Log("RequiredPoints: "+Level.RequiredPoints.ToString());
+                    Debug.Log("RequiredPoints: " + Level.RequiredPoints.ToString());
                 }
                 if (args[1] == "duration" && args[2] == "get")
                 {
-                    Debug.Log("Duration: "+Level.Duration.ToString());
+                    Debug.Log("Duration: " + Level.Duration.ToString());
                 }
                 if (args[1] == "buffer" && args[2] == "get")
                 {
-                    Debug.Log("Buffer: "+Level.SpawnBuffer.ToString());
+                    Debug.Log("Buffer: " + Level.SpawnBuffer.ToString());
                 }
-            } else
+            }
+            else if (args.Length == 2)
+            {
+                if (args[1] == "reload")
+                {
+                    Levels_Start(Level);
+                }
+            }
+            else
             {
                 Debug.Log("Console Info: Insufficient arguments");
             }
-        } else if (command == "splash")
+        } 
+        else if (command == "splash")
         {
             try
             {
@@ -269,7 +279,15 @@ public class GameManager : MonoBehaviour
             {
                 Debug.LogError("Failed to force splash screen");
             }
-        } else if (command == "clear")
+        }
+        else if (command.StartsWith("setpoints"))
+        {
+            string[] args = command.Replace("setpoints", "").Split(" "); ;
+            Points = int.Parse(args[1]);
+            score_text.text = Points.ToString();
+            Debug.Log("Set points to "+Points);
+        }
+        else if (command == "clear")
         {
             int cleared = 0;
             for (var i = 0; i < spawned.Count(); i++)
@@ -278,7 +296,7 @@ public class GameManager : MonoBehaviour
                 cleared++;
             }
             spawned = new List<GameObject>();
-            Debug.Log("Cleared " + cleared +" active objects");
+            Debug.Log("Cleared " + cleared + " active objects");
         } else if (command == "quit")
         {
             Application.Quit();
@@ -306,6 +324,9 @@ public class GameManager : MonoBehaviour
         {
             paused = false;
             ExitConsole();
+        } else
+        {
+            Debug.Log("Unknown command: " + command);
         }
     }
     public void ExitConsole()
@@ -348,7 +369,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        // Everything else
+        // Spawn Handler
         if (GameInProgress && !paused) // Don't waste resources, don't process if no game
         {
             if (CanSpawn && AllowSpawns) // Don't waste resources, don't process if spawn unavaliable
@@ -621,6 +642,7 @@ public class GameManager : MonoBehaviour
         {
             Duration = Level.Duration;
         }
+        score_text.text = Points.ToString();
         Debug.Log("Set level attributes\nStyle: "+Level.Style+"\nSBehavior: "+Level.Behavior+"\nSetPoints: "+Level.SetPoints+"\nRequiredPoints: "+
                     Level.RequiredPoints+"\nDuration: "+Level.Duration.ToString()+"\nLevel ID: "+Level.ID.ToString()+"\nLevel Name: "+Level.Name);
         SectionUpdate(lvl.ID);

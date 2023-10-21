@@ -11,12 +11,17 @@ public class FallingObject : MonoBehaviour
     public bool SpawnBuffered = false;
     public Vector3 PrePausedVelo = Vector3.zero;
     public int Worth = 1;
+    public int Punishment = -127;
     public Material material;
     public GameManager manager;
     private Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
+        if (Punishment == -127)
+        {
+            Punishment = Worth;
+        }
         //gameObject.GetComponent<Renderer>().material = material;
         rb = gameObject.GetComponent<Rigidbody>();
         if (isExample)
@@ -70,7 +75,7 @@ public class FallingObject : MonoBehaviour
                 }
                 if (transform.position.y <= -4) // Don't waste resources! Cull!
                 {
-                    manager.UpdateScore(-Worth);
+                    manager.UpdateScore(-Punishment);
                     Destroy(gameObject);
                 }
             }

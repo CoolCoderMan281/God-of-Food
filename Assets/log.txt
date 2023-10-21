@@ -40828,3 +40828,669 @@ Level Name: NormalMode
 [10/21/2023 9:12:37] Application is closing..
 [10/21/2023 9:12:37] LevelManager stopped!
 [10/21/2023 9:12:37] Splash handler stopped
+[10/21/2023 15:53:55] Application is starting..
+[10/21/2023 15:53:55] Console Key: BackQuote
+[10/21/2023 15:53:55] AllowCheats: True
+[10/21/2023 15:53:55] GameManager ready!
+[10/21/2023 15:53:55] LevelManager ready!
+[10/21/2023 15:53:55] Splash handler ready
+[10/21/2023 15:53:55] Showing splash screen..
+[10/21/2023 15:53:55] BasketController ready!
+[10/21/2023 15:53:58] Splash complete
+[10/21/2023 15:53:58] Level load request recived for level id: 0
+[10/21/2023 15:53:58] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 15:54:9] BasketController stopped!
+[10/21/2023 15:54:9] GameManager stopped!
+[10/21/2023 15:54:9] Application is closing..
+[10/21/2023 15:54:9] LevelManager stopped!
+[10/21/2023 15:54:9] Splash handler stopped
+[10/21/2023 15:54:18] Application is starting..
+[10/21/2023 15:54:18] Console Key: BackQuote
+[10/21/2023 15:54:18] AllowCheats: True
+[10/21/2023 15:54:18] GameManager ready!
+[10/21/2023 15:54:18] LevelManager ready!
+[10/21/2023 15:54:18] Splash handler ready
+[10/21/2023 15:54:18] Showing splash screen..
+[10/21/2023 15:54:18] BasketController ready!
+[10/21/2023 15:54:21] Splash complete
+[10/21/2023 15:54:22] Level load request recived for level id: 0
+[10/21/2023 15:54:22] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 15:54:23] Spawn failed
+[10/21/2023 15:54:25] Console Info: > pause
+[10/21/2023 15:54:27] Console Info: > resume
+[10/21/2023 15:54:28] Console Info: > pause
+[10/21/2023 15:54:28] Console Info: > resume
+[10/21/2023 15:54:36] Console Info: > pause
+[10/21/2023 15:54:37] Console Info: > resume
+[10/21/2023 15:54:43] Console Info: > level style normal
+[10/21/2023 15:54:43] Console Info: > resume
+[10/21/2023 15:54:46] Console Info: > pause
+[10/21/2023 15:54:51] Console Info: > level style set normal
+[10/21/2023 15:54:51] Operation completed successfully.
+[10/21/2023 15:54:51] Level load request recived for level id: 0
+[10/21/2023 15:54:51] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 15:54:53] Console Info: > resume
+[10/21/2023 15:54:56] BasketController stopped!
+[10/21/2023 15:54:56] GameManager stopped!
+[10/21/2023 15:54:56] Application is closing..
+[10/21/2023 15:54:56] LevelManager stopped!
+[10/21/2023 15:54:56] Splash handler stopped
+[10/21/2023 15:54:58] Application is starting..
+[10/21/2023 15:54:58] Console Key: BackQuote
+[10/21/2023 15:54:58] AllowCheats: True
+[10/21/2023 15:54:58] GameManager ready!
+[10/21/2023 15:54:58] LevelManager ready!
+[10/21/2023 15:54:58] Splash handler ready
+[10/21/2023 15:54:58] Showing splash screen..
+[10/21/2023 15:54:58] BasketController ready!
+[10/21/2023 15:55:1] Splash complete
+[10/21/2023 15:55:1] Level load request recived for level id: 0
+[10/21/2023 15:55:1] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 15:55:2] Spawn failed
+[10/21/2023 15:55:7] BasketController stopped!
+[10/21/2023 15:55:7] GameManager stopped!
+[10/21/2023 15:55:7] Application is closing..
+[10/21/2023 15:55:7] LevelManager stopped!
+[10/21/2023 15:55:7] Splash handler stopped
+[10/21/2023 15:55:20] Application is starting..
+[10/21/2023 15:55:20] Console Key: BackQuote
+[10/21/2023 15:55:20] AllowCheats: True
+[10/21/2023 15:55:20] GameManager ready!
+[10/21/2023 15:55:20] LevelManager ready!
+[10/21/2023 15:55:20] Splash handler ready
+[10/21/2023 15:55:20] Showing splash screen..
+[10/21/2023 15:55:20] BasketController ready!
+[10/21/2023 15:55:42] Splash complete
+[10/21/2023 15:55:43] Level load request recived for level id: 0
+[10/21/2023 15:55:43] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 15:55:43] BasketController stopped!
+[10/21/2023 15:55:43] GameManager stopped!
+[10/21/2023 15:55:43] Application is closing..
+[10/21/2023 15:55:43] LevelManager stopped!
+[10/21/2023 15:55:43] Splash handler stopped
+[10/21/2023 15:59:27] Application is starting..
+[10/21/2023 15:59:27] Console Key: BackQuote
+[10/21/2023 15:59:27] AllowCheats: True
+[10/21/2023 15:59:27] GameManager ready!
+[10/21/2023 15:59:27] LevelManager ready!
+[10/21/2023 15:59:27] Splash handler ready
+[10/21/2023 15:59:27] Showing splash screen..
+[10/21/2023 15:59:27] BasketController ready!
+[10/21/2023 15:59:30] Splash complete
+[10/21/2023 15:59:30] Level load request recived for level id: 0
+[10/21/2023 15:59:30] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:0:2] BasketController stopped!
+[10/21/2023 16:0:2] GameManager stopped!
+[10/21/2023 16:0:2] Application is closing..
+[10/21/2023 16:0:2] LevelManager stopped!
+[10/21/2023 16:0:2] Splash handler stopped
+[10/21/2023 16:3:31] Application is starting..
+[10/21/2023 16:3:31] Console Key: BackQuote
+[10/21/2023 16:3:31] AllowCheats: True
+[10/21/2023 16:3:31] GameManager ready!
+[10/21/2023 16:3:31] LevelManager ready!
+[10/21/2023 16:3:31] Splash handler ready
+[10/21/2023 16:3:31] Showing splash screen..
+[10/21/2023 16:3:31] BasketController ready!
+[10/21/2023 16:3:34] Splash complete
+[10/21/2023 16:3:34] Console Info: > pause
+[10/21/2023 16:3:34] Level load request recived for level id: 0
+[10/21/2023 16:3:34] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:3:37] Console Info: > level reload
+[10/21/2023 16:3:37] Level load request recived for level id: 0
+[10/21/2023 16:3:37] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:3:41] Console Info: > resume
+[10/21/2023 16:3:42] Console Info: > pause
+[10/21/2023 16:3:43] Console Info: > level reload
+[10/21/2023 16:3:43] Level load request recived for level id: 0
+[10/21/2023 16:3:43] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:3:44] Console Info: > resume
+[10/21/2023 16:3:47] Console Info: > pause
+[10/21/2023 16:3:49] Console Info: > help
+[10/21/2023 16:3:53] Console Info: > resume
+[10/21/2023 16:3:54] BasketController stopped!
+[10/21/2023 16:3:54] GameManager stopped!
+[10/21/2023 16:3:54] Application is closing..
+[10/21/2023 16:3:54] LevelManager stopped!
+[10/21/2023 16:3:54] Splash handler stopped
+[10/21/2023 16:5:53] Application is starting..
+[10/21/2023 16:5:53] Console Key: BackQuote
+[10/21/2023 16:5:53] AllowCheats: True
+[10/21/2023 16:5:53] GameManager ready!
+[10/21/2023 16:5:53] LevelManager ready!
+[10/21/2023 16:5:53] Splash handler ready
+[10/21/2023 16:5:53] Showing splash screen..
+[10/21/2023 16:5:53] BasketController ready!
+[10/21/2023 16:5:54] Console Info: > pause
+[10/21/2023 16:5:56] Splash complete
+[10/21/2023 16:5:57] Level load request recived for level id: 0
+[10/21/2023 16:5:57] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:5:57] Console Info: > level reload
+[10/21/2023 16:5:57] Level load request recived for level id: 0
+[10/21/2023 16:5:57] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:5:58] Console Info: > resume
+[10/21/2023 16:6:1] Console Info: > pause
+[10/21/2023 16:6:3] Console Info: > level reload
+[10/21/2023 16:6:3] Level load request recived for level id: 0
+[10/21/2023 16:6:3] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:6:4] Console Info: > resume
+[10/21/2023 16:6:9] Console Info: > pause
+[10/21/2023 16:6:11] Console Info: > level reload
+[10/21/2023 16:6:11] Level load request recived for level id: 0
+[10/21/2023 16:6:11] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:6:11] Console Info: > resume
+[10/21/2023 16:6:14] BasketController stopped!
+[10/21/2023 16:6:14] GameManager stopped!
+[10/21/2023 16:6:14] Application is closing..
+[10/21/2023 16:6:14] LevelManager stopped!
+[10/21/2023 16:6:14] Splash handler stopped
+[10/21/2023 16:6:45] Application is starting..
+[10/21/2023 16:6:45] Console Key: BackQuote
+[10/21/2023 16:6:45] AllowCheats: True
+[10/21/2023 16:6:45] GameManager ready!
+[10/21/2023 16:6:45] LevelManager ready!
+[10/21/2023 16:6:45] Splash handler ready
+[10/21/2023 16:6:45] Showing splash screen..
+[10/21/2023 16:6:45] BasketController ready!
+[10/21/2023 16:6:48] Splash complete
+[10/21/2023 16:6:48] Level load request recived for level id: 0
+[10/21/2023 16:6:48] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:6:52] Console Info: > pause
+[10/21/2023 16:6:54] Console Info: > level reload
+[10/21/2023 16:6:54] Level load request recived for level id: 0
+[10/21/2023 16:6:54] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:7:8] Console Info: > setpoints 500
+[10/21/2023 16:7:12] Console Info: > setpoint 500
+[10/21/2023 16:7:32] Console Info: > setpoints 200
+[10/21/2023 16:8:44] BasketController stopped!
+[10/21/2023 16:8:44] GameManager stopped!
+[10/21/2023 16:8:44] Application is closing..
+[10/21/2023 16:8:44] LevelManager stopped!
+[10/21/2023 16:8:44] Splash handler stopped
+[10/21/2023 16:8:47] Application is starting..
+[10/21/2023 16:8:47] Console Key: BackQuote
+[10/21/2023 16:8:47] AllowCheats: True
+[10/21/2023 16:8:47] GameManager ready!
+[10/21/2023 16:8:47] LevelManager ready!
+[10/21/2023 16:8:47] Splash handler ready
+[10/21/2023 16:8:47] Showing splash screen..
+[10/21/2023 16:8:47] BasketController ready!
+[10/21/2023 16:8:50] Splash complete
+[10/21/2023 16:8:50] Level load request recived for level id: 0
+[10/21/2023 16:8:50] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:8:51] Console Info: > pause
+[10/21/2023 16:8:54] Console Info: > setpoints 500
+[10/21/2023 16:9:0] Console Info: > resume
+[10/21/2023 16:9:4] Console Info: > pause
+[10/21/2023 16:9:6] Console Info: > setpoints 500
+[10/21/2023 16:9:24] Assets\Scripts\GameManager.cs(92,9): warning CS0618: 'Input.eatKeyPressOnTextFieldFocus' is obsolete: 'eatKeyPressOnTextFieldFocus property is deprecated, and only provided to support legacy behavior.'
+[10/21/2023 16:9:24] BasketController stopped!
+[10/21/2023 16:9:24] Splash handler stopped
+[10/21/2023 16:9:24] LevelManager stopped!
+[10/21/2023 16:9:24] GameManager stopped!
+[10/21/2023 16:9:24] Application is closing..
+[10/21/2023 16:9:31] Application is starting..
+[10/21/2023 16:9:31] Console Key: BackQuote
+[10/21/2023 16:9:31] AllowCheats: True
+[10/21/2023 16:9:31] GameManager ready!
+[10/21/2023 16:9:31] LevelManager ready!
+[10/21/2023 16:9:31] Splash handler ready
+[10/21/2023 16:9:31] Showing splash screen..
+[10/21/2023 16:9:31] BasketController ready!
+[10/21/2023 16:9:34] Splash complete
+[10/21/2023 16:9:35] Level load request recived for level id: 0
+[10/21/2023 16:9:35] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:9:38] Console Info: > pause
+[10/21/2023 16:9:41] Console Info: > setpoints 500
+[10/21/2023 16:10:22] BasketController stopped!
+[10/21/2023 16:10:22] GameManager stopped!
+[10/21/2023 16:10:22] Application is closing..
+[10/21/2023 16:10:22] LevelManager stopped!
+[10/21/2023 16:10:22] Splash handler stopped
+[10/21/2023 16:10:26] Application is starting..
+[10/21/2023 16:10:26] Console Key: BackQuote
+[10/21/2023 16:10:26] AllowCheats: True
+[10/21/2023 16:10:26] GameManager ready!
+[10/21/2023 16:10:26] LevelManager ready!
+[10/21/2023 16:10:26] Splash handler ready
+[10/21/2023 16:10:26] Showing splash screen..
+[10/21/2023 16:10:26] BasketController ready!
+[10/21/2023 16:10:27] Console Info: > pause
+[10/21/2023 16:10:29] Splash complete
+[10/21/2023 16:10:30] Level load request recived for level id: 0
+[10/21/2023 16:10:30] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:10:31] Console Info: > setpoints 500
+[10/21/2023 16:10:31] No command setpoints 500
+[10/21/2023 16:11:4] Assets\Scripts\GameManager.cs(92,9): warning CS0618: 'Input.eatKeyPressOnTextFieldFocus' is obsolete: 'eatKeyPressOnTextFieldFocus property is deprecated, and only provided to support legacy behavior.'
+[10/21/2023 16:11:4] BasketController stopped!
+[10/21/2023 16:11:4] Splash handler stopped
+[10/21/2023 16:11:4] LevelManager stopped!
+[10/21/2023 16:11:4] GameManager stopped!
+[10/21/2023 16:11:4] Application is closing..
+[10/21/2023 16:11:10] Application is starting..
+[10/21/2023 16:11:10] Console Key: BackQuote
+[10/21/2023 16:11:10] AllowCheats: True
+[10/21/2023 16:11:10] GameManager ready!
+[10/21/2023 16:11:10] LevelManager ready!
+[10/21/2023 16:11:10] Splash handler ready
+[10/21/2023 16:11:10] Showing splash screen..
+[10/21/2023 16:11:10] BasketController ready!
+[10/21/2023 16:11:13] Splash complete
+[10/21/2023 16:11:13] Level load request recived for level id: 0
+[10/21/2023 16:11:13] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:11:14] Console Info: > pause
+[10/21/2023 16:11:17] Console Info: > setpoints 500
+[10/21/2023 16:11:17] Unknown command: setpoints 500
+[10/21/2023 16:11:21] Console Info: > set points 500
+[10/21/2023 16:11:21] Unknown command: set points 500
+[10/21/2023 16:12:3] Assets\Scripts\GameManager.cs(92,9): warning CS0618: 'Input.eatKeyPressOnTextFieldFocus' is obsolete: 'eatKeyPressOnTextFieldFocus property is deprecated, and only provided to support legacy behavior.'
+[10/21/2023 16:12:3] BasketController stopped!
+[10/21/2023 16:12:3] Splash handler stopped
+[10/21/2023 16:12:3] LevelManager stopped!
+[10/21/2023 16:12:3] GameManager stopped!
+[10/21/2023 16:12:3] Application is closing..
+[10/21/2023 16:12:9] Application is starting..
+[10/21/2023 16:12:9] Console Key: BackQuote
+[10/21/2023 16:12:9] AllowCheats: True
+[10/21/2023 16:12:9] GameManager ready!
+[10/21/2023 16:12:9] LevelManager ready!
+[10/21/2023 16:12:9] Splash handler ready
+[10/21/2023 16:12:9] Showing splash screen..
+[10/21/2023 16:12:9] BasketController ready!
+[10/21/2023 16:12:12] Splash complete
+[10/21/2023 16:12:13] Level load request recived for level id: 0
+[10/21/2023 16:12:13] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:12:13] Console Info: > pause
+[10/21/2023 16:12:16] Console Info: > setpoints 500
+[10/21/2023 16:12:16] Unknown command: setpoints 500
+[10/21/2023 16:12:30] Assets\Scripts\GameManager.cs(92,9): warning CS0618: 'Input.eatKeyPressOnTextFieldFocus' is obsolete: 'eatKeyPressOnTextFieldFocus property is deprecated, and only provided to support legacy behavior.'
+[10/21/2023 16:12:30] LevelManager stopped!
+[10/21/2023 16:12:30] BasketController stopped!
+[10/21/2023 16:12:30] Splash handler stopped
+[10/21/2023 16:12:30] GameManager stopped!
+[10/21/2023 16:12:30] Application is closing..
+[10/21/2023 16:12:40] Application is starting..
+[10/21/2023 16:12:40] Console Key: BackQuote
+[10/21/2023 16:12:40] AllowCheats: True
+[10/21/2023 16:12:40] GameManager ready!
+[10/21/2023 16:12:40] LevelManager ready!
+[10/21/2023 16:12:40] Splash handler ready
+[10/21/2023 16:12:40] Showing splash screen..
+[10/21/2023 16:12:40] BasketController ready!
+[10/21/2023 16:12:43] Splash complete
+[10/21/2023 16:12:43] Console Info: > pause
+[10/21/2023 16:12:43] Level load request recived for level id: 0
+[10/21/2023 16:12:43] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:12:45] Console Info: > points 500
+[10/21/2023 16:12:45] Unknown command: points 500
+[10/21/2023 16:13:15] Assets\Scripts\GameManager.cs(92,9): warning CS0618: 'Input.eatKeyPressOnTextFieldFocus' is obsolete: 'eatKeyPressOnTextFieldFocus property is deprecated, and only provided to support legacy behavior.'
+[10/21/2023 16:13:15] GameManager stopped!
+[10/21/2023 16:13:15] Application is closing..
+[10/21/2023 16:13:15] LevelManager stopped!
+[10/21/2023 16:13:15] BasketController stopped!
+[10/21/2023 16:13:15] Splash handler stopped
+[10/21/2023 16:13:30] Application is starting..
+[10/21/2023 16:13:30] Console Key: BackQuote
+[10/21/2023 16:13:30] AllowCheats: True
+[10/21/2023 16:13:30] GameManager ready!
+[10/21/2023 16:13:30] LevelManager ready!
+[10/21/2023 16:13:30] Splash handler ready
+[10/21/2023 16:13:30] Showing splash screen..
+[10/21/2023 16:13:30] BasketController ready!
+[10/21/2023 16:13:31] Console Info: > pause
+[10/21/2023 16:13:33] Splash complete
+[10/21/2023 16:13:33] Level load request recived for level id: 0
+[10/21/2023 16:13:33] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:13:33] Console Info: > points 500
+[10/21/2023 16:13:33] Unknown command: points 500
+[10/21/2023 16:13:36] Console Info: > level
+[10/21/2023 16:13:36] Console Info: Insufficient arguments
+[10/21/2023 16:13:45] Console Info: > clear
+[10/21/2023 16:13:45] Cleared 0 active objects
+[10/21/2023 16:13:48] BasketController stopped!
+[10/21/2023 16:13:48] GameManager stopped!
+[10/21/2023 16:13:48] Application is closing..
+[10/21/2023 16:13:48] LevelManager stopped!
+[10/21/2023 16:13:48] Splash handler stopped
+[10/21/2023 16:15:9] Application is starting..
+[10/21/2023 16:15:9] Console Key: BackQuote
+[10/21/2023 16:15:9] AllowCheats: True
+[10/21/2023 16:15:9] GameManager ready!
+[10/21/2023 16:15:9] LevelManager ready!
+[10/21/2023 16:15:9] Splash handler ready
+[10/21/2023 16:15:9] Showing splash screen..
+[10/21/2023 16:15:9] BasketController ready!
+[10/21/2023 16:15:10] Console Info: > pause
+[10/21/2023 16:15:12] Splash complete
+[10/21/2023 16:15:13] Level load request recived for level id: 0
+[10/21/2023 16:15:13] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:15:13] Console Info: > setpoints 50
+[10/21/2023 16:15:13] Unknown command: setpoints 50
+[10/21/2023 16:15:15] BasketController stopped!
+[10/21/2023 16:15:15] GameManager stopped!
+[10/21/2023 16:15:15] Application is closing..
+[10/21/2023 16:15:15] LevelManager stopped!
+[10/21/2023 16:15:15] Splash handler stopped
+[10/21/2023 16:16:26] Application is starting..
+[10/21/2023 16:16:26] Console Key: BackQuote
+[10/21/2023 16:16:26] AllowCheats: True
+[10/21/2023 16:16:26] GameManager ready!
+[10/21/2023 16:16:26] LevelManager ready!
+[10/21/2023 16:16:26] Splash handler ready
+[10/21/2023 16:16:26] Showing splash screen..
+[10/21/2023 16:16:26] BasketController ready!
+[10/21/2023 16:16:27] Console Info: > pause
+[10/21/2023 16:16:29] Splash complete
+[10/21/2023 16:16:29] Level load request recived for level id: 0
+[10/21/2023 16:16:29] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:16:29] Console Info: > setpoints 50
+[10/21/2023 16:16:29] Unknown command: setpoints 50
+[10/21/2023 16:16:31] Console Info: > exit
+[10/21/2023 16:16:33] Console Info: > pause
+[10/21/2023 16:16:34] Console Info: > quit
+[10/21/2023 16:16:35] Console Info: > resume
+[10/21/2023 16:16:35] BasketController stopped!
+[10/21/2023 16:16:35] GameManager stopped!
+[10/21/2023 16:16:35] Application is closing..
+[10/21/2023 16:16:35] LevelManager stopped!
+[10/21/2023 16:16:35] Splash handler stopped
+[10/21/2023 16:17:41] Application is starting..
+[10/21/2023 16:17:41] Console Key: BackQuote
+[10/21/2023 16:17:41] AllowCheats: True
+[10/21/2023 16:17:41] GameManager ready!
+[10/21/2023 16:17:41] LevelManager ready!
+[10/21/2023 16:17:41] Splash handler ready
+[10/21/2023 16:17:41] Showing splash screen..
+[10/21/2023 16:17:41] BasketController ready!
+[10/21/2023 16:17:44] Splash complete
+[10/21/2023 16:17:45] Level load request recived for level id: 0
+[10/21/2023 16:17:45] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:17:45] Console Info: > pause
+[10/21/2023 16:17:49] Console Info: > setpoints 500
+[10/21/2023 16:17:49] !!!
+[10/21/2023 16:17:49] Set points to 500
+[10/21/2023 16:17:56] Assets\Scripts\GameManager.cs(92,9): warning CS0618: 'Input.eatKeyPressOnTextFieldFocus' is obsolete: 'eatKeyPressOnTextFieldFocus property is deprecated, and only provided to support legacy behavior.'
+[10/21/2023 16:17:56] GameManager stopped!
+[10/21/2023 16:17:56] Application is closing..
+[10/21/2023 16:17:56] LevelManager stopped!
+[10/21/2023 16:17:56] BasketController stopped!
+[10/21/2023 16:17:56] Splash handler stopped
+[10/21/2023 16:18:4] Application is starting..
+[10/21/2023 16:18:4] Console Key: BackQuote
+[10/21/2023 16:18:4] AllowCheats: True
+[10/21/2023 16:18:4] GameManager ready!
+[10/21/2023 16:18:4] LevelManager ready!
+[10/21/2023 16:18:4] Splash handler ready
+[10/21/2023 16:18:4] Showing splash screen..
+[10/21/2023 16:18:4] BasketController ready!
+[10/21/2023 16:18:7] Splash complete
+[10/21/2023 16:18:7] Level load request recived for level id: 0
+[10/21/2023 16:18:7] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:18:7] Console Info: > pause
+[10/21/2023 16:18:9] Console Info: > setpoints 500
+[10/21/2023 16:18:9] Set points to 500
+[10/21/2023 16:18:12] Console Info: > level reload
+[10/21/2023 16:18:12] Level load request recived for level id: 0
+[10/21/2023 16:18:12] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:18:15] Console Info: > setpoints 99999
+[10/21/2023 16:18:15] Set points to 99999
+[10/21/2023 16:18:16] Console Info: > resume
+[10/21/2023 16:18:18] Won level #0
+[10/21/2023 16:18:18] Ending level #0
+[10/21/2023 16:18:18] Level load request recived for level id: 1
+[10/21/2023 16:18:18] Set level attributes
+Style: SURVIVE
+SBehavior: STANDARD
+SetPoints: 50
+RequiredPoints: 50
+Duration: 64
+Level ID: 1
+Level Name: SurvivalMode
+[10/21/2023 16:18:18] Timer started
+[10/21/2023 16:18:20] Failed level #1
+[10/21/2023 16:18:20] Ending level #1
+[10/21/2023 16:18:20] Level load request recived for level id: 0
+[10/21/2023 16:18:20] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:18:20] BasketController stopped!
+[10/21/2023 16:18:20] GameManager stopped!
+[10/21/2023 16:18:20] Application is closing..
+[10/21/2023 16:18:20] LevelManager stopped!
+[10/21/2023 16:18:20] Splash handler stopped
+[10/21/2023 16:18:25] Application is starting..
+[10/21/2023 16:18:25] Console Key: BackQuote
+[10/21/2023 16:18:25] AllowCheats: True
+[10/21/2023 16:18:25] GameManager ready!
+[10/21/2023 16:18:25] LevelManager ready!
+[10/21/2023 16:18:25] Splash handler ready
+[10/21/2023 16:18:25] Showing splash screen..
+[10/21/2023 16:18:25] BasketController ready!
+[10/21/2023 16:18:28] Splash complete
+[10/21/2023 16:18:29] Level load request recived for level id: 0
+[10/21/2023 16:18:29] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 9999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:18:29] Console Info: > pause
+[10/21/2023 16:18:34] Console Info: > level requiredpoints 999999999
+[10/21/2023 16:18:39] Console Info: > level requiredpoints 99
+[10/21/2023 16:18:50] Console Info: > level requiredpoints set 99999999999999
+[10/21/2023 16:18:50] Failed to execute command level requiredpoints set 99999999999999
+[10/21/2023 16:19:1] Console Info: > level requiredpoints set 999999999
+[10/21/2023 16:19:1] Operation completed successfully.
+[10/21/2023 16:19:1] Level load request recived for level id: 0
+[10/21/2023 16:19:1] Set level attributes
+Style: NORMAL
+SBehavior: STANDARD
+SetPoints: 0
+RequiredPoints: 999999999
+Duration: -127
+Level ID: 0
+Level Name: NormalMode
+[10/21/2023 16:19:10] Console Info: > setpoints 888888888
+[10/21/2023 16:19:10] Set points to 888888888
+[10/21/2023 16:19:11] Console Info: > resume
+[10/21/2023 16:19:27] BasketController stopped!
+[10/21/2023 16:19:27] GameManager stopped!
+[10/21/2023 16:19:27] Application is closing..
+[10/21/2023 16:19:27] LevelManager stopped!
+[10/21/2023 16:19:27] Splash handler stopped
