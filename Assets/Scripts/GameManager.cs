@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     private TMP_Text phase_text;
     private TMP_Text score_text;
     private TMP_Text timer_text;
+    private GameObject MainMenu_canvas;
     public int Points = 0;
     public int RequiredPoints;
     public Level Level;
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour
     private LevelManager levelManager;
     public SplashHandler SplashHandler;
     public bool paused = false;
+    public bool MainMenu = false;
     [Header("Keybinds")]
     public KeyCode pauseKey = KeyCode.Escape;
     [Header("Developer")]
@@ -50,6 +52,7 @@ public class GameManager : MonoBehaviour
         phase_text = GameObject.Find("Phase").GetComponent<TMP_Text>();
         score_text = GameObject.Find("Score").GetComponent<TMP_Text>();
         timer_text = GameObject.Find("Timer").GetComponent<TMP_Text>();
+        MainMenu_canvas = GameObject.Find("MainMenu_Content");
         levelManager = gameObject.GetComponent<LevelManager>();
         phase_text.text = "";
         timer_text.text = "";
@@ -65,6 +68,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Console Key: " + ConsoleKey.ToString());
             Debug.Log("AllowCheats: " + AllowCheats.ToString());
         }
+        MainMenu = true;
         Debug.Log("GameManager ready!");
     }
 
@@ -279,6 +283,12 @@ public class GameManager : MonoBehaviour
                 Debug.LogError("Failed to force splash screen");
             }
         }
+        else if (command == "mainmenu")
+        {
+            MainMenu = true;
+            paused = true;
+            ExitConsole(true);
+        }
         else if (command.StartsWith("setpoints"))
         {
             string[] args = command.Replace("setpoints", "").Split(" "); ;
@@ -328,17 +338,25 @@ public class GameManager : MonoBehaviour
             Debug.Log("Unknown command: " + command);
         }
     }
-    public void ExitConsole()
+    public void ExitConsole(bool StayPaused=false)
     {
         ConsoleOpen = false;
         Logs.SetActive(false);
         ConsoleInput = "";
-        paused = false;
+        paused = StayPaused;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (MainMenu)
+        {
+            paused = true;
+            MainMenu_canvas.SetActive(true);
+        } else
+        {
+            MainMenu_canvas.SetActive(false);
+        }
         if (Input.GetKeyDown(pauseKey))
         {
             paused = !paused;
@@ -679,6 +697,18 @@ public class GameManager : MonoBehaviour
     public void UpdateConsole(string log)
     {
         Logs_Text.text = Logs_Text.text + "\n" + log;
+    }
+
+    public void StartEndless()
+    {
+        Debug.Log("Starting endless mode..");
+        levelManager.RequestLevelSwitch(101);
+    }
+    
+    public void StartStory()
+    {
+        Debug.Log("Starting story mode...");
+        levelManager.RequestLevelSwitch(0);
     }
 
     public void HandleLog(string logString, string stacktrace, LogType type)

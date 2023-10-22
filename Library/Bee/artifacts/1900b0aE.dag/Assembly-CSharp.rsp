@@ -365,6 +365,7 @@
 "Assets/Scripts/FallingObject.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/LevelManager.cs"
+"Assets/Scripts/MenuHandler.cs"
 "Assets/Scripts/SplashHandler.cs"
 -langversion:9.0
 

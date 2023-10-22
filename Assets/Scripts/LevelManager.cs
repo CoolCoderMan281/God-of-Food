@@ -15,12 +15,14 @@ public class LevelManager : MonoBehaviour
     {
         // Define game manager
         manager = gameObject.GetComponent<GameManager>();
-        // Create survival level
+        // [TEST] Create survival level
         Level SurvivalMode = new Level("SurvivalMode", "Survival mode style", 1, GameManager.SectionStyle.SURVIVE,
                                         GameManager.SpawningBehavior.STANDARD,requiredPoints: 50, setPoints: 50, duration: 64,spawnbuffer:1f);
-        // Create NormalMode level
+        // [TEST] Create NormalMode level
         Level NormalMode = new Level("NormalMode", "Normal style example", 0, GameManager.SectionStyle.NORMAL,
                                         GameManager.SpawningBehavior.STANDARD,requiredPoints:9999,setPoints:0,spawnbuffer:1f);
+        // [ENDLESS] Create the endless mode
+        Level EndlessMode = new Level("Endless", "Endless mode", 101, GameManager.SectionStyle.ENDLESS, GameManager.SpawningBehavior.STANDARD, 0.5f);
         // Change next and back
         SurvivalMode.Next = NormalMode;
         SurvivalMode.Back = NormalMode;
@@ -28,7 +30,7 @@ public class LevelManager : MonoBehaviour
         // Add levels to levels list
         levels.Add(NormalMode);
         levels.Add(SurvivalMode);
-
+        levels.Add(EndlessMode);
         // End of start
         if (levels.Count() >= 1)
         {
@@ -69,6 +71,20 @@ public class LevelManager : MonoBehaviour
     {
         Debug.Log("Switching to level #" + lvl.ID);
         EndLevel(lvl);
+    }
+
+    public void RequestLevelSwitch(int ID)
+    {
+        foreach(Level _lvl in levels)
+        {
+            if (_lvl.ID == ID)
+            {
+                Debug.Log("Switching to level #" + ID);
+                EndLevel(_lvl);
+                return;
+            }
+        }
+        Debug.Log("Didn't find a level with the id of " + ID);
     }
 
     public void OnDisable()

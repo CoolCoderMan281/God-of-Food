@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\FallingObject.cs" />
+    <Compile Include="Assets\Scripts\MenuHandler.cs" />
     <Compile Include="Assets\Scripts\BasketController.cs" />
     <Compile Include="Assets\Scripts\SplashHandler.cs" />
   </ItemGroup>
