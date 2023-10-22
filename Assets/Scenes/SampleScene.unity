@@ -731,8 +731,8 @@ MonoBehaviour:
   SpawnBuffer: 0
   SpawnBuffered: 0
   PrePausedVelo: {x: 0, y: 0, z: 0}
-  Worth: 0
-  Punishment: 50
+  Worth: -50
+  Punishment: 0
   material: {fileID: 2100000, guid: b6167d95f5000414a85a2779b6e2a576, type: 2}
   manager: {fileID: 330585548}
 --- !u!4 &265243883 stripped
@@ -3877,6 +3877,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 37e6d9e0f2bbdc94a9f9c215f8d9be39, type: 2}
+    - target: {fileID: 1893194068992980029, guid: c1a687872e4e37e4b8ebb33aeac30ecf,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 081ef1d576d3e704aafb824a5c0bcb9f, type: 2}
     - target: {fileID: 6317578925029434746, guid: c1a687872e4e37e4b8ebb33aeac30ecf,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
