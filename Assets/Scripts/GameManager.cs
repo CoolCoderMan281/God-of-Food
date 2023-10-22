@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
     public SplashHandler SplashHandler;
     public bool paused = false;
     public bool MainMenu = false;
+    public bool Intro = false;
     [Header("Keybinds")]
     public KeyCode pauseKey = KeyCode.Escape;
     [Header("Developer")]
@@ -507,11 +508,7 @@ public class GameManager : MonoBehaviour
         // Get objects that may require changes
         Section = theSection;
         // Apply changes
-        if (Style != SectionStyle.IDLE)
-        {
-            GameInProgress = true;
-            AllowSpawns = true;
-        } else
+        if (Level.Style == SectionStyle.IDLE)
         {
             GameInProgress=false;
             AllowSpawns=false;
@@ -661,6 +658,15 @@ public class GameManager : MonoBehaviour
         {
             Duration = Level.Duration;
         }
+        if (Level.Intro != null)
+        {
+            Intro = true;
+            GameInProgress = false;
+            levelManager.ShowIntro();
+        } else
+        {
+            GameInProgress = true;
+        }
         score_text.text = Points.ToString();
         Debug.Log("Set level attributes\nStyle: "+Level.Style+"\nSBehavior: "+Level.Behavior+"\nSetPoints: "+Level.SetPoints+"\nRequiredPoints: "+
                     Level.RequiredPoints+"\nDuration: "+Level.Duration.ToString()+"\nLevel ID: "+Level.ID.ToString()+"\nLevel Name: "+Level.Name);
@@ -687,6 +693,17 @@ public class GameManager : MonoBehaviour
         {
             levelManager.EndLevel();
         }
+    }
+
+    public void Levels_IntroOver()
+    {
+        Debug.Log("Exiting intro");
+        Intro = false;
+        levelManager.EndIntro();
+        GameInProgress = true;
+        paused = false;
+        AllowSpawns = true;
+        CanSpawn = true;
     }
 
     public void OnDisable()

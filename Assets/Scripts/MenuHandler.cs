@@ -18,6 +18,10 @@ public class MenuHandler : MonoBehaviour
             manager.StartStory();
             manager.MainMenu = false;
             manager.paused = false;
+        } else if (Name == "ExitIntro")
+        {
+            manager.Intro = false;
+            manager.Levels_IntroOver();
         } else if (Name == "Credits")
         {
             Debug.Log("Not implemented!");

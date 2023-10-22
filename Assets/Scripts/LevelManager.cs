@@ -10,17 +10,23 @@ public class LevelManager : MonoBehaviour
     public Level SelectedLevel;
     private Level defaultLevel;
     private GameManager manager;
+
+    public GameObject ExitIntro;
+    public GameObject LevelIntro_Placeholder;
     // Start is called before the first frame update
     void Start()
     {
         // Define game manager
         manager = gameObject.GetComponent<GameManager>();
+        LevelIntro_Placeholder.SetActive(false);
+        ExitIntro.SetActive(false);
         // [TEST] Create survival level
+        Level MainMenu = new Level("MainMenu", "Its the main menu", -1, GameManager.SectionStyle.IDLE, GameManager.SpawningBehavior.STANDARD,0f);
         Level SurvivalMode = new Level("SurvivalMode", "Survival mode style", 1, GameManager.SectionStyle.SURVIVE,
                                         GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, duration: 64,spawnbuffer:1f);
         // [TEST] Create NormalMode level
         Level NormalMode = new Level("NormalMode", "Normal style example", 0, GameManager.SectionStyle.NORMAL,
-                                        GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, setPoints:0,spawnbuffer:1f);
+                                        GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, setPoints:0,spawnbuffer:1f,intro:LevelIntro_Placeholder);
         // [ENDLESS] Create the endless mode
         Level EndlessMode = new Level("Endless", "Endless mode", 101, GameManager.SectionStyle.ENDLESS, GameManager.SpawningBehavior.STANDARD, 0.5f);
         // Change next and back
@@ -28,6 +34,7 @@ public class LevelManager : MonoBehaviour
         SurvivalMode.Back = NormalMode;
         NormalMode.Next = SurvivalMode;
         // Add levels to levels list
+        levels.Add(MainMenu);
         levels.Add(NormalMode);
         levels.Add(SurvivalMode);
         levels.Add(EndlessMode);
@@ -94,6 +101,20 @@ public class LevelManager : MonoBehaviour
     {
         Debug.Log("LevelManager stopped!");
     }
+
+    public void EndIntro()
+    {
+        SelectedLevel.Intro.SetActive(false);
+        ExitIntro.SetActive(false);
+    }
+    public void ShowIntro()
+    {
+        if (SelectedLevel.Intro != null)
+        {
+            SelectedLevel.Intro.SetActive(true);
+            ExitIntro.SetActive(true);
+        }
+    }
 }
 
 public class Level
@@ -109,8 +130,10 @@ public class Level
     public int SetPoints;
     public int RequiredPoints;
     public int Duration;
+    public GameObject Intro;
     public Level(string name, string desc, int id, GameManager.SectionStyle style, GameManager.SpawningBehavior behavior,
-        float spawnbuffer, Level back=null, Level next=null, int setPoints=-127, int requiredPoints=-127,int duration=-127)
+        float spawnbuffer, Level back=null, Level next=null, int setPoints=-127, int requiredPoints=-127,int duration=-127,
+        GameObject intro=null)
     {
         Name = name;
         Description = desc;
@@ -123,5 +146,6 @@ public class Level
         SetPoints = setPoints;
         RequiredPoints = requiredPoints;
         Duration = duration;
+        Intro = intro;
     }
 }
