@@ -17,10 +17,10 @@ public class LevelManager : MonoBehaviour
         manager = gameObject.GetComponent<GameManager>();
         // [TEST] Create survival level
         Level SurvivalMode = new Level("SurvivalMode", "Survival mode style", 1, GameManager.SectionStyle.SURVIVE,
-                                        GameManager.SpawningBehavior.STANDARD,requiredPoints: 50, setPoints: 50, duration: 64,spawnbuffer:1f);
+                                        GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, duration: 64,spawnbuffer:1f);
         // [TEST] Create NormalMode level
         Level NormalMode = new Level("NormalMode", "Normal style example", 0, GameManager.SectionStyle.NORMAL,
-                                        GameManager.SpawningBehavior.STANDARD,requiredPoints:9999,setPoints:0,spawnbuffer:1f);
+                                        GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, setPoints:0,spawnbuffer:1f);
         // [ENDLESS] Create the endless mode
         Level EndlessMode = new Level("Endless", "Endless mode", 101, GameManager.SectionStyle.ENDLESS, GameManager.SpawningBehavior.STANDARD, 0.5f);
         // Change next and back
@@ -58,7 +58,10 @@ public class LevelManager : MonoBehaviour
     }
     public void EndLevel(Level next=null) // Called by GameManager
     {
-        Debug.Log("Ending level #" + SelectedLevel.ID);
+        if (SelectedLevel != null)
+        {
+            Debug.Log("Ending level #" + SelectedLevel.ID);
+        }
         if (next != null)
         {
             StartLevel(next);

@@ -248,7 +248,7 @@ MonoBehaviour:
   SpawnBuffer: 0
   SpawnBuffered: 0
   PrePausedVelo: {x: 0, y: 0, z: 0}
-  Worth: 1
+  Worth: 3
   Punishment: -127
   material: {fileID: 2100000, guid: 37e6d9e0f2bbdc94a9f9c215f8d9be39, type: 2}
   manager: {fileID: 330585548}
@@ -415,7 +415,7 @@ MonoBehaviour:
   SpawnBuffer: 0
   SpawnBuffered: 0
   PrePausedVelo: {x: 0, y: 0, z: 0}
-  Worth: 1
+  Worth: 3
   Punishment: -127
   material: {fileID: 2100000, guid: 081ef1d576d3e704aafb824a5c0bcb9f, type: 2}
   manager: {fileID: 330585548}
@@ -2805,7 +2805,7 @@ MonoBehaviour:
   SpawnBuffer: 0
   SpawnBuffered: 0
   PrePausedVelo: {x: 0, y: 0, z: 0}
-  Worth: 1
+  Worth: 3
   Punishment: -127
   material: {fileID: 2100000, guid: 987b83ecd7352c04d95471254e223420, type: 2}
   manager: {fileID: 330585548}
@@ -3360,7 +3360,7 @@ MonoBehaviour:
   SpawnBuffer: 0
   SpawnBuffered: 0
   PrePausedVelo: {x: 0, y: 0, z: 0}
-  Worth: 1
+  Worth: 3
   Punishment: -127
   material: {fileID: 2100000, guid: bb8b957e621966c4581822f43b781153, type: 2}
   manager: {fileID: 330585548}
@@ -3929,7 +3929,7 @@ MonoBehaviour:
   SpawnBuffer: 0
   SpawnBuffered: 0
   PrePausedVelo: {x: 0, y: 0, z: 0}
-  Worth: 1
+  Worth: 3
   Punishment: -127
   material: {fileID: 2100000, guid: 4843dfc18b978ca458abe995c74a8001, type: 2}
   manager: {fileID: 330585548}

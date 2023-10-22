@@ -499,10 +499,11 @@ public class GameManager : MonoBehaviour
     }
     public void SectionChangeApply(int theSection)
     {
-        for(var i = 0; i < spawned.Count(); i++)
-        {
-            Destroy(spawned[i].gameObject);
-        }
+        Debug.Log("Ignored destroying falling objects (Designer request) :/");
+        //for(var i = 0; i < spawned.Count(); i++)
+        //{
+        //    Destroy(spawned[i].gameObject);
+        //}
         // Get objects that may require changes
         Section = theSection;
         // Apply changes
@@ -639,6 +640,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Level load request recived for level id: " + lvl.ID);
         CancelInvoke(nameof(AllowSpawning));
+        timer_text.text = "";
         Level = lvl;
         SBehavior = Level.Behavior;
         Style = Level.Style;
