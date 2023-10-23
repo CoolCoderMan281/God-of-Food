@@ -12,6 +12,8 @@ public class LevelManager : MonoBehaviour
     private GameManager manager;
 
     public GameObject ExitIntro;
+    public GameObject NoBackground;
+    public GameObject BasicBackground;
     public GameObject LevelIntro_Placeholder;
     // Start is called before the first frame update
     void Start()
@@ -19,6 +21,8 @@ public class LevelManager : MonoBehaviour
         // Define game manager
         manager = gameObject.GetComponent<GameManager>();
         LevelIntro_Placeholder.SetActive(false);
+        NoBackground.SetActive(true);
+        BasicBackground.SetActive(false);
         ExitIntro.SetActive(false);
         // [TEST] Create survival level
         Level MainMenu = new Level("MainMenu", "Its the main menu", -1, GameManager.SectionStyle.IDLE, GameManager.SpawningBehavior.STANDARD,0f);
@@ -26,7 +30,8 @@ public class LevelManager : MonoBehaviour
                                         GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, duration: 64,spawnbuffer:1f);
         // [TEST] Create NormalMode level
         Level NormalMode = new Level("NormalMode", "Normal style example", 0, GameManager.SectionStyle.NORMAL,
-                                        GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, setPoints:0,spawnbuffer:1f,intro:LevelIntro_Placeholder);
+                                        GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, setPoints:0,spawnbuffer:1f,intro:LevelIntro_Placeholder,
+                                        background:BasicBackground);
         // [ENDLESS] Create the endless mode
         Level EndlessMode = new Level("Endless", "Endless mode", 101, GameManager.SectionStyle.ENDLESS, GameManager.SpawningBehavior.STANDARD, 0.5f);
         // Change next and back
@@ -61,12 +66,21 @@ public class LevelManager : MonoBehaviour
     public void StartLevel(Level lvl)
     {
         SelectedLevel = lvl;
+        if (SelectedLevel.Background != null)
+        {
+            SelectedLevel.Background.SetActive(true);
+        } else
+        {
+            SelectedLevel.Background = NoBackground;
+            SelectedLevel.Background.SetActive(true);
+        }
         manager.Levels_Start(SelectedLevel);
     }
     public void EndLevel(Level next=null) // Called by GameManager
     {
         if (SelectedLevel != null)
         {
+            SelectedLevel.Background.SetActive(false);
             Debug.Log("Ending level #" + SelectedLevel.ID);
         }
         if (next != null)
@@ -131,9 +145,10 @@ public class Level
     public int RequiredPoints;
     public int Duration;
     public GameObject Intro;
+    public GameObject Background;
     public Level(string name, string desc, int id, GameManager.SectionStyle style, GameManager.SpawningBehavior behavior,
         float spawnbuffer, Level back=null, Level next=null, int setPoints=-127, int requiredPoints=-127,int duration=-127,
-        GameObject intro=null)
+        GameObject intro=null, GameObject background=null)
     {
         Name = name;
         Description = desc;
@@ -147,5 +162,6 @@ public class Level
         RequiredPoints = requiredPoints;
         Duration = duration;
         Intro = intro;
+        Background = background;
     }
 }
