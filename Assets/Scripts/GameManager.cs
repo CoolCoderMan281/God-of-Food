@@ -272,7 +272,7 @@ public class GameManager : MonoBehaviour
             {
                 Debug.Log("Console Info: Insufficient arguments");
             }
-        } 
+        }
         else if (command == "splash")
         {
             try
