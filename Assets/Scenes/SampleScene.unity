@@ -209,7 +209,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cf52ac8b22eb1314f8a3a78cbeda2a40,
         type: 3}
       propertyPath: m_Name
-      value: Watermelon for game
+      value: OBJECT_watermelon
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -794,7 +794,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4b4f8f5f732572d45855bd7aeb30f20a,
         type: 3}
       propertyPath: m_Name
-      value: BOMB
+      value: OBJECT_bomb
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3000,7 +3000,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7a4775b08d695f4419f0eb6143086be8,
         type: 3}
       propertyPath: m_Name
-      value: Cherry
+      value: OBJECT_cherry
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3393,10 +3393,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 365751715}
-  - {fileID: 1378063684}
   - {fileID: 534969054}
   - {fileID: 1464774174}
   - {fileID: 2081179640}
+  - {fileID: 1378063684}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -1.643, y: 2.87, z: -20.429}
   m_AnchorMin: {x: 0, y: 0}
@@ -3637,7 +3637,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 64f6a8f0ee3b0ad47a452551c8f03de4,
         type: 3}
       propertyPath: m_Name
-      value: Banana for game
+      value: OBJECT_banana
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3889,7 +3889,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f27e0df716809ef40a2b6136dfc761f2,
         type: 3}
       propertyPath: m_Name
-      value: Apple
+      value: OBJECT_apple
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4186,7 +4186,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c1a687872e4e37e4b8ebb33aeac30ecf,
         type: 3}
       propertyPath: m_Name
-      value: Orange
+      value: OBJECT_orange
       objectReference: {fileID: 0}
     - target: {fileID: 1893194068992980029, guid: c1a687872e4e37e4b8ebb33aeac30ecf,
         type: 3}

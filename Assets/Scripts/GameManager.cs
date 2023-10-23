@@ -273,6 +273,59 @@ public class GameManager : MonoBehaviour
                 Debug.Log("Console Info: Insufficient arguments");
             }
         }
+        else if (command.StartsWith("object"))
+        {
+            CallCommand("clear");
+            Debug.Log("Objects cleared to only be referencing the examples..");
+            string[] args = command.Replace("object", "").Split(" ");
+            GameObject TheObj;
+            TheObj = GameObject.Find("OBJECT_"+args[1]);
+            if (TheObj == null)
+            {
+                Debug.Log("Unknown object OBJECT_" + args[1]);
+                return;
+            }
+            Debug.Log("Found object!");
+            if (args[2] == "fallspeed" && args[3] == "set")
+            {
+                TheObj.GetComponent<FallingObject>().FallSpeedMultiplyer = float.Parse(args[4]);
+                Debug.Log("Operation completed successfuly");
+            }
+            else if (args[2] == "fallspeed" && args[3] == "get")
+            {
+                Debug.Log("Fallspeed set to: " + TheObj.GetComponent<FallingObject>().FallSpeedMultiplyer);
+            }
+            else if (args[2] == "maxspeed" && args[3] == "set")
+            {
+                TheObj.GetComponent<FallingObject>().MaxSpeed = float.Parse(args[4]);
+                Debug.Log("Operation completed successfuly");
+            }
+            else if (args[2] == "maxspeed" && args[3] == "get")
+            {
+                Debug.Log("Maxspeed set to: " + TheObj.GetComponent<FallingObject>().MaxSpeed);
+            }
+            else if (args[2] == "worth" && args[3] == "set")
+            {
+                TheObj.GetComponent<FallingObject>().Worth = int.Parse(args[4]);
+                Debug.Log("Operation completed successfuly");
+            }
+            else if (args[2] == "worth" && args[3] == "get")
+            {
+                Debug.Log("Worth set to: " + TheObj.GetComponent<FallingObject>().Worth);
+            }
+            else if (args[2] == "punishment" && args[3] == "set")
+            {
+                TheObj.GetComponent<FallingObject>().Punishment = int.Parse(args[4]);
+                Debug.Log("Operation completed successfuly");
+            }
+            else if (args[2] == "punishment" && args[3] == "get")
+            {
+                Debug.Log("Punishment set to: " + TheObj.GetComponent<FallingObject>().Punishment);
+            } else
+            {
+                Debug.Log("Unknown argument");
+            }
+        }
         else if (command == "splash")
         {
             try
