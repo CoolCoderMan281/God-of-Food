@@ -617,7 +617,10 @@ public class GameManager : MonoBehaviour
     private void Countdown()
     {
         timer_text.text = Duration.ToString();
-        Duration--;
+        if (!paused)
+        {
+            Duration--;
+        }
         if (Duration > 0)
         {
             Invoke(nameof(Countdown), 1);
