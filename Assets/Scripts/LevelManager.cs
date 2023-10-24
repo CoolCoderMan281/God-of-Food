@@ -14,6 +14,8 @@ public class LevelManager : MonoBehaviour
     public GameObject ExitIntro;
     public GameObject NoBackground;
     public GameObject BasicBackground;
+    public GameObject Background1;
+    public GameObject Background2;
     public GameObject LevelIntro_Placeholder;
     // Start is called before the first frame update
     void Start()
@@ -23,17 +25,19 @@ public class LevelManager : MonoBehaviour
         LevelIntro_Placeholder.SetActive(false);
         NoBackground.SetActive(true);
         BasicBackground.SetActive(false);
+        Background1.SetActive(false);
+        Background2.SetActive(false);
         ExitIntro.SetActive(false);
         // [TEST] Create survival level
         Level MainMenu = new Level("MainMenu", "Its the main menu", -1, GameManager.SectionStyle.IDLE, GameManager.SpawningBehavior.STANDARD,0f);
         Level SurvivalMode = new Level("SurvivalMode", "Survival mode style", 1, GameManager.SectionStyle.SURVIVE,
-                                        GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, duration: 64,spawnbuffer:1f);
+                                        GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, duration: 64,spawnbuffer:1f,background:Background1);
         // [TEST] Create NormalMode level
         Level NormalMode = new Level("NormalMode", "Normal style example", 0, GameManager.SectionStyle.NORMAL,
                                         GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, setPoints:0,spawnbuffer:1f,intro:LevelIntro_Placeholder,
-                                        background:BasicBackground);
+                                        background:Background2);
         // [ENDLESS] Create the endless mode
-        Level EndlessMode = new Level("Endless", "Endless mode", 101, GameManager.SectionStyle.ENDLESS, GameManager.SpawningBehavior.STANDARD, 0.5f);
+        Level EndlessMode = new Level("Endless", "Endless mode", 101, GameManager.SectionStyle.ENDLESS, GameManager.SpawningBehavior.STANDARD, 0.5f,background:NoBackground);
         // Change next and back
         SurvivalMode.Next = NormalMode;
         SurvivalMode.Back = NormalMode;
