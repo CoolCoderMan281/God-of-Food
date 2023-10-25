@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting.Dependencies.NCalc;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.Scripting;
 
@@ -63,7 +65,8 @@ public class LevelManager : MonoBehaviour
 
     public void FirstLevel()
     {
-        StartLevel(defaultLevel);
+        //StartLevel(defaultLevel);
+        Debug.LogWarning("ignored default level. This is bug tracking");
     }
     public void StartLevel(Level lvl)
     {
@@ -120,13 +123,11 @@ public class LevelManager : MonoBehaviour
 
     public void EndIntro()
     {
-        try
+        if (SelectedLevel.Intro != null)
         {
             SelectedLevel.Intro.SetActive(false);
-        } catch
-        {
-            Debug.Log("No intro was displayed.. Why clear it");
         }
+        Debug.Log("No intro was displayed.. Why clear it");
         ExitIntro.SetActive(false);
     }
     public void ShowIntro()

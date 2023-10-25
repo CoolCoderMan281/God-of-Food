@@ -68,14 +68,14 @@ public class FallingObject : MonoBehaviour
                     {
                         if (hit.distance <= 0.5f)
                         {
-                            manager.UpdateScore(Worth);
+                            manager.UpdateScore(Worth,gameObject);
                             Destroy(gameObject);
                         }
                     }
                 }
                 if (transform.position.y <= -4) // Don't waste resources! Cull!
                 {
-                    manager.UpdateScore(-Punishment);
+                    manager.UpdateScore(-Punishment,gameObject);
                     Destroy(gameObject);
                 }
             }

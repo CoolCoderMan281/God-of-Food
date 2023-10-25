@@ -6,6 +6,7 @@ using System.IO.Enumeration;
 using System.Linq;
 using JetBrains.Annotations;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -15,6 +16,7 @@ public class GameManager : MonoBehaviour
     private bool AllowSpawns = false;
     public List<GameObject> falling_options;
     public List<GameObject> spawned;
+    public List<GameObject> Indicators;
     private TMP_Text phase_text;
     private TMP_Text score_text;
     private TMP_Text timer_text;
@@ -35,6 +37,7 @@ public class GameManager : MonoBehaviour
     public bool paused = false;
     public bool MainMenu = false;
     public bool Intro = false;
+    public GameObject Indicator;
     [Header("Keybinds")]
     public KeyCode pauseKey = KeyCode.Escape;
     [Header("Developer")]
@@ -635,7 +638,7 @@ public class GameManager : MonoBehaviour
     public void SetScoreColorRed() { Color red = Color.red; red.a = 0.5f; score_text.color = red; }
     public void SetScoreColorGreen() { Color green = Color.green; green.a = 0.5f; score_text.color = green; }
     public void ResetScoreColor() { Color white = Color.white; white.a = 0.5f; score_text.color = white; }
-    public void UpdateScore(int worth)
+    public void UpdateScore(int worth, GameObject cause=null)
     {
         // Add the points
         Points += worth;
@@ -685,10 +688,38 @@ public class GameManager : MonoBehaviour
                 SetScoreColorGreen();
             }
         }
-
+        if (cause != null)
+        {
+            GameObject tmpIndicator = Instantiate(Indicator);
+            Indicators.Add(tmpIndicator);
+            Vector3 newPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
+            newPosition.x = cause.transform.position.x+4f;
+            newPosition.y = -2;
+            newPosition.z = 0;
+            tmpIndicator.transform.position = newPosition;
+            if (worth >= 0)
+            {
+                tmpIndicator.GetComponent<TMP_Text>().text = "+" + worth;
+                tmpIndicator.GetComponent<TMP_Text>().color = Color.green;
+            }
+            else
+            {
+                tmpIndicator.GetComponent<TMP_Text>().text = ""+worth;
+                tmpIndicator.GetComponent<TMP_Text>().color = Color.red;
+            }
+            tmpIndicator.SetActive(true);
+            Invoke(nameof(KillIndicator), .5f);
+        }
         // Update the points display
         score_text.text = Points.ToString();
     }
+
+    public void KillIndicator()
+    {
+        Destroy(Indicators[0]);
+        Indicators.RemoveAt(0);
+    }
+
     public void Levels_Start(Level lvl) // Called by LevelManager
     {
         Debug.Log("Level load request recived for level id: " + lvl.ID);
@@ -722,6 +753,8 @@ public class GameManager : MonoBehaviour
         } else
         {
             GameInProgress = true;
+            CanSpawn = true;
+            AllowSpawns = true;
         }
         score_text.text = Points.ToString();
         Debug.Log("Set level attributes\nStyle: "+Level.Style+"\nSBehavior: "+Level.Behavior+"\nSetPoints: "+Level.SetPoints+"\nRequiredPoints: "+
