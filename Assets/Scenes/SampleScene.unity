@@ -1096,6 +1096,7 @@ MonoBehaviour:
   - {fileID: 1004843413}
   - {fileID: 1490788275}
   spawned: []
+  Indicators: []
   Points: 0
   RequiredPoints: 0
   Section: 0

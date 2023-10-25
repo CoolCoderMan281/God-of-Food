@@ -1,10 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting.Dependencies.NCalc;
-using UnityEditor.PackageManager;
 using UnityEngine;
-using UnityEngine.Scripting;
 
 public class LevelManager : MonoBehaviour
 {
