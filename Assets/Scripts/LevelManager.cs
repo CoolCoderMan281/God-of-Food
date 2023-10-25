@@ -13,7 +13,6 @@ public class LevelManager : MonoBehaviour
 
     public GameObject ExitIntro;
     public GameObject NoBackground;
-    public GameObject BasicBackground;
     public GameObject Background1;
     public GameObject Background2;
     public GameObject LevelIntro_Placeholder;
@@ -24,12 +23,11 @@ public class LevelManager : MonoBehaviour
         manager = gameObject.GetComponent<GameManager>();
         LevelIntro_Placeholder.SetActive(false);
         NoBackground.SetActive(true);
-        BasicBackground.SetActive(false);
         Background1.SetActive(false);
         Background2.SetActive(false);
         ExitIntro.SetActive(false);
         // [TEST] Create survival level
-        Level MainMenu = new Level("MainMenu", "Its the main menu", -1, GameManager.SectionStyle.IDLE, GameManager.SpawningBehavior.STANDARD,0f);
+        Level MainMenu = new Level("MainMenu", "Its the main menu", -1, GameManager.SectionStyle.IDLE, GameManager.SpawningBehavior.STANDARD,0f,background:NoBackground);
         Level SurvivalMode = new Level("SurvivalMode", "Survival mode style", 1, GameManager.SectionStyle.SURVIVE,
                                         GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, duration: 64,spawnbuffer:1f,background:Background1);
         // [TEST] Create NormalMode level
@@ -122,7 +120,13 @@ public class LevelManager : MonoBehaviour
 
     public void EndIntro()
     {
-        SelectedLevel.Intro.SetActive(false);
+        try
+        {
+            SelectedLevel.Intro.SetActive(false);
+        } catch
+        {
+            Debug.Log("No intro was displayed.. Why clear it");
+        }
         ExitIntro.SetActive(false);
     }
     public void ShowIntro()
