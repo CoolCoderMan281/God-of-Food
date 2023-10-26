@@ -5,6 +5,7 @@ using UnityEngine;
 public class BasketController : MonoBehaviour
 {
     public GameManager manager;
+    public bool isDisplay;
     public void Start()
     {
         Debug.Log("BasketController ready!");
@@ -18,6 +19,10 @@ public class BasketController : MonoBehaviour
     {
         if (!manager.paused)
         {
+            if (!isDisplay)
+            {
+                gameObject.GetComponent<Renderer>().enabled = Input.GetKey(KeyCode.R);
+            }
             // Get cursor position
             Vector3 newPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
             // Fix position to y=-3 and z=0
@@ -32,7 +37,13 @@ public class BasketController : MonoBehaviour
             //    newPosition.x = 8.8f;
             //}
             // Set the basket position to the modified cursor position
-            transform.position = newPosition;
+            if (isDisplay)
+            {
+                transform.position = Vector3.Lerp(transform.position, newPosition, 0.025f);
+            } else
+            {
+                transform.position = newPosition;
+            }
         }
     }
 }
