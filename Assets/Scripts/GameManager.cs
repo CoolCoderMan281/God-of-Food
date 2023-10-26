@@ -452,6 +452,9 @@ public class GameManager : MonoBehaviour
         // Spawn Handler
         if (GameInProgress && !paused) // Don't waste resources, don't process if no game
         {
+            Vector3 newPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
+            newPosition.y = -2; newPosition.z = 0; newPosition.x += 5;
+            Indicator.transform.position = newPosition;
             if (CanSpawn && AllowSpawns) // Don't waste resources, don't process if spawn unavaliable
             {
                 try 
@@ -696,25 +699,24 @@ public class GameManager : MonoBehaviour
         }
         if (cause != null)
         {
-            GameObject tmpIndicator = Instantiate(Indicator);
-            Indicators.Add(tmpIndicator);
-            Vector3 newPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
-            newPosition.x = cause.transform.position.x+4f;
-            newPosition.y = -2;
-            newPosition.z = 0;
-            tmpIndicator.transform.position = newPosition;
-            if (worth >= 0)
+            CancelInvoke(nameof(KillIndicator));
+            TMP_Text indicator_text = Indicator.GetComponent<TMP_Text>();
+            if (indicator_text.text == "")
             {
-                tmpIndicator.GetComponent<TMP_Text>().text = "+" + worth;
-                tmpIndicator.GetComponent<TMP_Text>().color = Color.green;
+                indicator_text.text = "0";
             }
-            else
+            int new_score = int.Parse(indicator_text.text);
+            new_score += worth;
+            if (new_score >= 0)
             {
-                tmpIndicator.GetComponent<TMP_Text>().text = ""+worth;
-                tmpIndicator.GetComponent<TMP_Text>().color = Color.red;
+                indicator_text.color = Color.green;
+                indicator_text.text = "+" + new_score;
+            } else
+            {
+                indicator_text.color = Color.red;
+                indicator_text.text = ""+new_score;
             }
-            tmpIndicator.SetActive(true);
-            Invoke(nameof(KillIndicator), .5f);
+            Invoke(nameof(KillIndicator), 1f);
         }
         // Update the points display
         score_text.text = Points.ToString();
@@ -722,8 +724,8 @@ public class GameManager : MonoBehaviour
 
     public void KillIndicator()
     {
-        Destroy(Indicators[0]);
-        Indicators.RemoveAt(0);
+        TMP_Text indicator_text = Indicator.GetComponent<TMP_Text>();
+        indicator_text.text = "";
     }
 
     public void Levels_Start(Level lvl) // Called by LevelManager
