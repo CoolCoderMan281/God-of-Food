@@ -1112,6 +1112,7 @@ MonoBehaviour:
   MainMenu: 0
   Intro: 0
   Indicator: {fileID: 666972286}
+  camController: {fileID: 330585551}
   pauseKey: 27
   AllowCheats: 1
   ConsoleKey: 96
@@ -1169,6 +1170,7 @@ MonoBehaviour:
   Target: {fileID: 909580426}
   ZoomedOutPosition: {x: 80, y: 98, z: -180}
   ZoomedOut: 0
+  Zooming: 0
 --- !u!1 &361762760
 GameObject:
   m_ObjectHideFlags: 0

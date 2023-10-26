@@ -27,11 +27,11 @@ public class LevelManager : MonoBehaviour
         // [TEST] Create survival level
         Level MainMenu = new Level("MainMenu", "Its the main menu", -1, GameManager.SectionStyle.IDLE, GameManager.SpawningBehavior.STANDARD,0f,background:NoBackground);
         Level SurvivalMode = new Level("SurvivalMode", "Survival mode style", 1, GameManager.SectionStyle.SURVIVE,
-                                        GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, duration: 64,spawnbuffer:1f,background:Background1);
+                                        GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, duration: 64,spawnbuffer:1f,background:Background1,zoom:true);
         // [TEST] Create NormalMode level
         Level NormalMode = new Level("NormalMode", "Normal style example", 0, GameManager.SectionStyle.NORMAL,
                                         GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, setPoints:0,spawnbuffer:1f,intro:LevelIntro_Placeholder,
-                                        background:Background2);
+                                        background:Background2,zoom:false);
         // [ENDLESS] Create the endless mode
         Level EndlessMode = new Level("Endless", "Endless mode", 101, GameManager.SectionStyle.ENDLESS, GameManager.SpawningBehavior.STANDARD, 0.5f,background:NoBackground);
         // Change next and back
@@ -76,6 +76,7 @@ public class LevelManager : MonoBehaviour
             SelectedLevel.Background.SetActive(true);
         }
         manager.Levels_Start(SelectedLevel);
+        PerspectiveUpdate();
     }
     public void EndLevel(Level next=null) // Called by GameManager
     {
@@ -134,6 +135,20 @@ public class LevelManager : MonoBehaviour
             ExitIntro.SetActive(true);
         }
     }
+
+    public void PerspectiveUpdate()
+    {
+        Debug.Log("Perspective update");
+        if (SelectedLevel.Zoom)
+        {
+            Debug.Log("Zoom out");
+            manager.camController.ZoomOut();
+        } else if (!SelectedLevel.Zoom)
+        {
+            Debug.Log("Zoom in");
+            manager.camController.ZoomIn();
+        }
+    }
 }
 
 public class Level
@@ -151,9 +166,10 @@ public class Level
     public int Duration;
     public GameObject Intro;
     public GameObject Background;
+    public bool Zoom;
     public Level(string name, string desc, int id, GameManager.SectionStyle style, GameManager.SpawningBehavior behavior,
         float spawnbuffer, Level back=null, Level next=null, int setPoints=-127, int requiredPoints=-127,int duration=-127,
-        GameObject intro=null, GameObject background=null)
+        GameObject intro=null, GameObject background=null, bool zoom=false)
     {
         Name = name;
         Description = desc;
@@ -168,5 +184,6 @@ public class Level
         Duration = duration;
         Intro = intro;
         Background = background;
+        Zoom = zoom;
     }
 }

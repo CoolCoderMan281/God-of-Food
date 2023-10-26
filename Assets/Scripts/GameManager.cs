@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
     public bool MainMenu = false;
     public bool Intro = false;
     public GameObject Indicator;
+    public CameraController camController;
     [Header("Keybinds")]
     public KeyCode pauseKey = KeyCode.Escape;
     [Header("Developer")]
@@ -65,6 +66,7 @@ public class GameManager : MonoBehaviour
         AllowSpawns = false;
         SpawningIncrement = 0;
         ConsoleOpen = false;
+        camController = gameObject.GetComponent<CameraController>();
         if (AllowCheats)
         {
             Logs.SetActive(false);
