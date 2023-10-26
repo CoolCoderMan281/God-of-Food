@@ -23,14 +23,14 @@ public class BasketController : MonoBehaviour
             // Fix position to y=-3 and z=0
             newPosition.y = -3; newPosition.z = 0;
             // Limit position to on screen
-            if (newPosition.x < -8.8)
-            {
-                newPosition.x = -8.8f;
-            }
-            else if (newPosition.x > 8.8)
-            {
-                newPosition.x = 8.8f;
-            }
+            //if (newPosition.x < -8.8)
+            //{
+            //    newPosition.x = -8.8f;
+            //}
+            //else if (newPosition.x > 8.8)
+            //{
+            //    newPosition.x = 8.8f;
+            //}
             // Set the basket position to the modified cursor position
             transform.position = newPosition;
         }
