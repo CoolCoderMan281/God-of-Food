@@ -386,7 +386,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &150153086
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1113,6 +1113,8 @@ MonoBehaviour:
   Intro: 0
   Indicator: {fileID: 666972286}
   camController: {fileID: 330585551}
+  spawnHight: 0
+  spawnXRange: 0
   pauseKey: 27
   AllowCheats: 1
   ConsoleKey: 96
@@ -1131,6 +1133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25b3d835c97eff8439bf572db6fc9d3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraController: {fileID: 330585551}
   ExitIntro: {fileID: 1843633174}
   NoBackground: {fileID: 150153085}
   Background1: {fileID: 729510003}

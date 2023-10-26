@@ -8,6 +8,7 @@ public class LevelManager : MonoBehaviour
     public Level SelectedLevel;
     private Level defaultLevel;
     private GameManager manager;
+    public CameraController cameraController;
 
     public GameObject ExitIntro;
     public GameObject NoBackground;
@@ -30,7 +31,7 @@ public class LevelManager : MonoBehaviour
                                         GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, duration: 64,spawnbuffer:1f,background:Background1,zoom:true);
         // [TEST] Create NormalMode level
         Level NormalMode = new Level("NormalMode", "Normal style example", 0, GameManager.SectionStyle.NORMAL,
-                                        GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, setPoints:0,spawnbuffer:1f,intro:LevelIntro_Placeholder,
+                                        GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, spawnbuffer:1f,
                                         background:Background2,zoom:false);
         // [ENDLESS] Create the endless mode
         Level EndlessMode = new Level("Endless", "Endless mode", 101, GameManager.SectionStyle.ENDLESS, GameManager.SpawningBehavior.STANDARD, 0.5f,background:NoBackground);
@@ -67,6 +68,7 @@ public class LevelManager : MonoBehaviour
     public void StartLevel(Level lvl)
     {
         SelectedLevel = lvl;
+        NoBackground.SetActive(false);
         if (SelectedLevel.Background != null)
         {
             SelectedLevel.Background.SetActive(true);
@@ -76,7 +78,6 @@ public class LevelManager : MonoBehaviour
             SelectedLevel.Background.SetActive(true);
         }
         manager.Levels_Start(SelectedLevel);
-        PerspectiveUpdate();
     }
     public void EndLevel(Level next=null) // Called by GameManager
     {
@@ -133,20 +134,6 @@ public class LevelManager : MonoBehaviour
         {
             SelectedLevel.Intro.SetActive(true);
             ExitIntro.SetActive(true);
-        }
-    }
-
-    public void PerspectiveUpdate()
-    {
-        Debug.Log("Perspective update");
-        if (SelectedLevel.Zoom)
-        {
-            Debug.Log("Zoom out");
-            manager.camController.ZoomOut();
-        } else if (!SelectedLevel.Zoom)
-        {
-            Debug.Log("Zoom in");
-            manager.camController.ZoomIn();
         }
     }
 }

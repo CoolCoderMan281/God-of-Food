@@ -39,6 +39,8 @@ public class GameManager : MonoBehaviour
     public bool Intro = false;
     public GameObject Indicator;
     public CameraController camController;
+    public float spawnHight;
+    public float spawnXRange;
     [Header("Keybinds")]
     public KeyCode pauseKey = KeyCode.Escape;
     [Header("Developer")]
@@ -61,6 +63,8 @@ public class GameManager : MonoBehaviour
         levelManager = gameObject.GetComponent<LevelManager>();
         phase_text.text = "";
         timer_text.text = "";
+        spawnHight = 7;
+        spawnXRange = 8;
         GameInProgress = false;
         CanSpawn = false;
         AllowSpawns = false;
@@ -466,7 +470,7 @@ public class GameManager : MonoBehaviour
                             int randomObj = UnityEngine.Random.Range(0, falling_options.Count());
                             GameObject newObj = Instantiate(falling_options[UnityEngine.Random.Range(0, falling_options.Count())]);
                             spawned.Add(newObj);
-                            Vector3 targetPos = new Vector3(UnityEngine.Random.Range(-8,8), 7, 0);
+                            Vector3 targetPos = new Vector3(UnityEngine.Random.Range(-spawnXRange, spawnXRange), spawnHight, 0);
                             newObj.transform.position = targetPos;
                             newObj.GetComponent<FallingObject>().isExample = false;
                             newObj.GetComponent<FallingObject>().SpawnBuffer = Level.SpawnBuffer;
@@ -489,11 +493,11 @@ public class GameManager : MonoBehaviour
                         {
                             if (SpawningRangeEnd <= 0)
                             {
-                                SpawningRangeStart = UnityEngine.Random.Range(1, 6);
+                                SpawningRangeStart = UnityEngine.Random.Range((int)-spawnXRange, (int)spawnXRange);
                                 SpawningRangeEnd = SpawningRangeStart + 2;
                             } else
                             {
-                                SpawningRangeStart = UnityEngine.Random.Range(-6, -1);
+                                SpawningRangeStart = UnityEngine.Random.Range((int)-spawnXRange, (int)spawnXRange);
                                 SpawningRangeEnd = SpawningRangeStart - 2;
                             }
                             CancelInvoke(nameof(AllowSpawning));
@@ -510,7 +514,7 @@ public class GameManager : MonoBehaviour
                             int randomObj = UnityEngine.Random.Range(0, falling_options.Count());
                             GameObject newObj = Instantiate(falling_options[UnityEngine.Random.Range(0, falling_options.Count())]);
                             spawned.Add(newObj);
-                            Vector3 targetPos = new Vector3(UnityEngine.Random.Range(SpawningRangeStart, SpawningRangeEnd), 7, 0);
+                            Vector3 targetPos = new Vector3(UnityEngine.Random.Range(SpawningRangeStart, SpawningRangeEnd), spawnHight, 0);
                             newObj.transform.position = targetPos;
                             newObj.GetComponent<FallingObject>().isExample = false;
                             Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(0.025f, 0.05f));
@@ -526,7 +530,7 @@ public class GameManager : MonoBehaviour
                             int randomObj = UnityEngine.Random.Range(0, falling_options.Count());
                             GameObject newObj = Instantiate(falling_options[UnityEngine.Random.Range(0, falling_options.Count())]);
                             spawned.Add(newObj);
-                            Vector3 targetPos = new Vector3(UnityEngine.Random.Range(-8, 8), 7, 0);
+                            Vector3 targetPos = new Vector3(UnityEngine.Random.Range(-spawnXRange, spawnXRange), spawnHight, 0);
                             newObj.transform.position = targetPos;
                             newObj.GetComponent<FallingObject>().isExample = false;
                         }
@@ -752,12 +756,25 @@ public class GameManager : MonoBehaviour
             Intro = true;
             GameInProgress = false;
             levelManager.ShowIntro();
-        } else
+        }
+        else
         {
             GameInProgress = true;
             CanSpawn = true;
             AllowSpawns = true;
         }
+        if (Level.Zoom)
+        {
+            camController.ZoomOut();
+            spawnHight = 18;
+            spawnXRange = 16;
+        } else
+        {
+            camController.ZoomIn();
+            spawnHight = 7;
+            spawnXRange = 8;
+        }
+        
         score_text.text = Points.ToString();
         Debug.Log("Set level attributes\nStyle: "+Level.Style+"\nSBehavior: "+Level.Behavior+"\nSetPoints: "+Level.SetPoints+"\nRequiredPoints: "+
                     Level.RequiredPoints+"\nDuration: "+Level.Duration.ToString()+"\nLevel ID: "+Level.ID.ToString()+"\nLevel Name: "+Level.Name);
