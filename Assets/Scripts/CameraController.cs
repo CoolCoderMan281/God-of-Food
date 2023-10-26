@@ -14,43 +14,41 @@ public class CameraController : MonoBehaviour
     {
         OriginalPosition = transform.position;
         ZoomedOutPosition = Target.transform.position;
-        //Invoke(nameof(ZoomOut), 5f);
-        //Invoke(nameof(ZoomOut), 8f);
-        //Invoke(nameof(ZoomIn), 11f);
-        //Invoke(nameof(ZoomOut), 14f);
     }
 
     public IEnumerator SmoothZoomOut()
     {
         ZoomedOut = true;
         Debug.Log("Zooming out");
+        Vector3 startingPosition = transform.position;
         for (float i = 0; i <= 1; i -= Time.deltaTime)
         {
             Debug.Log(i);
-            transform.position = Vector3.Lerp(OriginalPosition, ZoomedOutPosition, System.Math.Abs(i));
+            transform.position = Vector3.Lerp(startingPosition, ZoomedOutPosition, System.Math.Abs(i));
             yield return null;
         }
         Debug.Log("Done zooming out");
-        yield break;
+        transform.position = ZoomedOutPosition;
     }
 
     public IEnumerator SmoothZoomIn()
     {
         ZoomedOut = false;
         Debug.Log("Zooming in");
+        Vector3 startingPosition = transform.position;
         for (float i = 0; i <= 1; i -= Time.deltaTime)
         {
             Debug.Log(i);
-            transform.position = Vector3.Lerp(ZoomedOutPosition, OriginalPosition, System.Math.Abs(i));
+            transform.position = Vector3.Lerp(startingPosition, OriginalPosition, System.Math.Abs(i));
             yield return null;
         }
         Debug.Log("Done zooming in");
-        yield break;
+        transform.position = OriginalPosition;
     }
 
     public void TerminateZooms()
     {
-        StopCoroutine(Coroutine);
+        StopAllCoroutines();
     }
 
     public void Zoom()

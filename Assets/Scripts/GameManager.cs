@@ -734,6 +734,7 @@ public class GameManager : MonoBehaviour
         Level = lvl;
         SBehavior = Level.Behavior;
         Style = Level.Style;
+        camController.TerminateZooms();
         if (Style != SectionStyle.IDLE)
         {
             CanSpawn = true;
