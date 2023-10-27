@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class BasketController : MonoBehaviour
@@ -45,5 +46,10 @@ public class BasketController : MonoBehaviour
                 transform.position = newPosition;
             }
         }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        other.gameObject.GetComponent<FallingObject>().Caught();
     }
 }

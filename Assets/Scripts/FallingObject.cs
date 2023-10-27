@@ -41,6 +41,8 @@ public class FallingObject : MonoBehaviour
         SpawnBuffered = true;
     }
 
+    
+
     // Update is called once per frame
     void Update()
     {
@@ -68,8 +70,7 @@ public class FallingObject : MonoBehaviour
                     {
                         if (hit.distance <= 0.5f)
                         {
-                            manager.UpdateScore(Worth,gameObject);
-                            Destroy(gameObject);
+                            Caught();
                         }
                     }
                 }
@@ -80,5 +81,19 @@ public class FallingObject : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Basket")
+        {
+            Caught();
+        }
+    }
+
+    public void Caught()
+    {
+        manager.UpdateScore(Worth, gameObject);
+        Destroy(gameObject);
     }
 }
