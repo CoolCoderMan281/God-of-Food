@@ -5,6 +5,7 @@ using UnityEngine;
 public class BasketController : MonoBehaviour
 {
     public GameManager manager;
+    public GameObject Indicator;
     public bool isDisplay;
     public void Start()
     {
@@ -46,6 +47,8 @@ public class BasketController : MonoBehaviour
             if (isDisplay)
             {
                 transform.position = Vector3.Lerp(transform.position, newPosition, 0.075f);
+                newPosition.x += 5.5f;
+                Indicator.transform.position = newPosition;
             } else
             {
                 transform.position = newPosition;

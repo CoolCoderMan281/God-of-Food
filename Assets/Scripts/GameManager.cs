@@ -458,9 +458,6 @@ public class GameManager : MonoBehaviour
         if (GameInProgress && !paused) // Don't waste resources, don't process if no game
         {
             ZoomHandler();
-            Vector3 newPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
-            newPosition.y = -2; newPosition.z = 0; newPosition.x += 5;
-            Indicator.transform.position = newPosition;
             if (CanSpawn && AllowSpawns) // Don't waste resources, don't process if spawn unavaliable
             {
                 try 
