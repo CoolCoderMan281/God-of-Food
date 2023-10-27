@@ -23,7 +23,6 @@ public class CameraController : MonoBehaviour
         Vector3 startingPosition = transform.position;
         for (float i = 0; i <= 1; i -= Time.deltaTime)
         {
-            Debug.Log(i);
             transform.position = Vector3.Lerp(startingPosition, ZoomedOutPosition, System.Math.Abs(i));
             yield return null;
         }
@@ -38,7 +37,6 @@ public class CameraController : MonoBehaviour
         Vector3 startingPosition = transform.position;
         for (float i = 0; i <= 1; i -= Time.deltaTime)
         {
-            Debug.Log(i);
             transform.position = Vector3.Lerp(startingPosition, OriginalPosition, System.Math.Abs(i));
             yield return null;
         }

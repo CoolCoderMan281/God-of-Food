@@ -90,7 +90,7 @@ public class GameManager : MonoBehaviour
 
     public enum SpawningBehavior
     {
-        STANDARD, CLUSTER, BLANKET
+        STANDARD, CLUSTER, BLANKET, HARSH_STANDARD
     }
 
     private void OnGUI()
@@ -460,6 +460,29 @@ public class GameManager : MonoBehaviour
             {
                 try 
                 {
+                    // Harsh Standard behavior
+                    if (SBehavior == SpawningBehavior.HARSH_STANDARD)
+                    {
+                        CanSpawn = false;
+                        if (SpawningIncrement == 10)
+                        {
+                            SpawningIncrement = 0;
+                            CancelInvoke(nameof(AllowSpawning));
+                            Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(1.3f, 1.5f));
+                        }
+                        else
+                        {
+                            int randomObj = UnityEngine.Random.Range(0, falling_options.Count());
+                            GameObject newObj = Instantiate(falling_options[UnityEngine.Random.Range(0, falling_options.Count())]);
+                            spawned.Add(newObj);
+                            Vector3 targetPos = new Vector3(UnityEngine.Random.Range(-spawnXRange, spawnXRange), spawnHight, 0);
+                            newObj.transform.position = targetPos;
+                            newObj.GetComponent<FallingObject>().isExample = false;
+                            newObj.GetComponent<FallingObject>().SpawnBuffer = Level.SpawnBuffer;
+                            Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(0.1f, 0.4f));
+                            SpawningIncrement++;
+                        }
+                    }
                     // Standard behavior
                     if (SBehavior == SpawningBehavior.STANDARD)
                     {

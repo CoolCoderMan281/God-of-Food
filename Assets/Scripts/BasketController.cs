@@ -45,7 +45,7 @@ public class BasketController : MonoBehaviour
             // Set the basket position to the modified cursor position
             if (isDisplay)
             {
-                transform.position = Vector3.Lerp(transform.position, newPosition, 0.05f);
+                transform.position = Vector3.Lerp(transform.position, newPosition, 0.075f);
             } else
             {
                 transform.position = newPosition;

@@ -28,7 +28,7 @@ public class LevelManager : MonoBehaviour
         // [TEST] Create survival level
         Level MainMenu = new Level("MainMenu", "Its the main menu", -1, GameManager.SectionStyle.IDLE, GameManager.SpawningBehavior.STANDARD,0f,background:NoBackground);
         Level SurvivalMode = new Level("SurvivalMode", "Survival mode style", 1, GameManager.SectionStyle.SURVIVE,
-                                        GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, duration: 64,spawnbuffer:1f,background:Background1,zoom:true);
+                                        GameManager.SpawningBehavior.HARSH_STANDARD,requiredPoints: 20, duration: 64,spawnbuffer:1f,background:Background1,zoom:true);
         // [TEST] Create NormalMode level
         Level NormalMode = new Level("NormalMode", "Normal style example", 0, GameManager.SectionStyle.NORMAL,
                                         GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, spawnbuffer:1f,
