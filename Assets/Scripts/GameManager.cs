@@ -699,24 +699,44 @@ public class GameManager : MonoBehaviour
         }
         if (cause != null)
         {
-            CancelInvoke(nameof(KillIndicator));
-            TMP_Text indicator_text = Indicator.GetComponent<TMP_Text>();
-            if (indicator_text.text == "")
+            if (worth >= 0)
             {
-                indicator_text.text = "0";
-            }
-            int new_score = int.Parse(indicator_text.text);
-            new_score += worth;
-            if (new_score >= 0)
-            {
-                indicator_text.color = Color.green;
-                indicator_text.text = "+" + new_score;
+                CancelInvoke(nameof(KillIndicator));
+                StartCoroutine(FadeIn_Text(Indicator, 0.1f));
+                TMP_Text indicator_text = Indicator.GetComponent<TMP_Text>();
+                if (indicator_text.text == "")
+                {
+                    indicator_text.text = "0";
+                }
+                int new_score = int.Parse(indicator_text.text);
+                new_score += worth;
+                if (new_score >= 0)
+                {
+                    indicator_text.color = Color.green;
+                    indicator_text.text = "+" + new_score;
+                }
+                else
+                {
+                    indicator_text.color = Color.red;
+                    indicator_text.text = "" + new_score;
+                }
+                StartCoroutine(FadeOut_Text(Indicator, 0.75f,false));
+                Invoke(nameof(KillIndicator), 1f);
             } else
             {
-                indicator_text.color = Color.red;
-                indicator_text.text = ""+new_score;
+                GameObject tmpIndicator = Instantiate(Indicator);
+                Indicators.Add(tmpIndicator);
+                Vector3 newPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
+                newPosition.x = cause.transform.position.x + 5f;
+                newPosition.y = -2;
+                newPosition.z = 0;
+                tmpIndicator.transform.position = newPosition;
+                tmpIndicator.GetComponent<TMP_Text>().text = "" + worth;
+                tmpIndicator.GetComponent<TMP_Text>().color = Color.red;
+                tmpIndicator.SetActive(true);
+                StartCoroutine(FadeIn_Text(tmpIndicator, 0.25f));
+                Invoke(nameof(DestroyIndicator), .5f);
             }
-            Invoke(nameof(KillIndicator), 1f);
         }
         // Update the points display
         score_text.text = Points.ToString();
@@ -726,6 +746,37 @@ public class GameManager : MonoBehaviour
     {
         TMP_Text indicator_text = Indicator.GetComponent<TMP_Text>();
         indicator_text.text = "";
+    }
+    public void DestroyIndicator()
+    {
+        StartCoroutine(FadeOut_Text(Indicators[0],0.25f));
+        Indicators.RemoveAt(0);
+    }
+
+    public IEnumerator FadeIn_Text(GameObject target, float time)
+    {
+        TMP_Text i = target.GetComponent<TMP_Text>();
+        i.color = new Color(i.color.r, i.color.g, i.color.b, 0);
+        while (i.color.a < 1.0f)
+        {
+            i.color = new Color(i.color.r, i.color.g, i.color.b, i.color.a + (Time.deltaTime / time));
+            yield return null;
+        }
+    }
+
+    public IEnumerator FadeOut_Text(GameObject target, float time, bool destroy=true)
+    {
+        TMP_Text i = target.GetComponent<TMP_Text>();
+        i.color = new Color(i.color.r, i.color.g, i.color.b, 1);
+        while (i.color.a > 0.0f)
+        {
+            i.color = new Color(i.color.r, i.color.g, i.color.b, i.color.a - (Time.deltaTime / time));
+            yield return null;
+        }
+        if (destroy)
+        {
+            Destroy(target);
+        }
     }
 
     public void Levels_Start(Level lvl) // Called by LevelManager
