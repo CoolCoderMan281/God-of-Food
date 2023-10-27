@@ -9,7 +9,9 @@ public class LevelManager : MonoBehaviour
     private Level defaultLevel;
     private GameManager manager;
     public CameraController cameraController;
-
+    [Header("Audio")]
+    public AudioHandler audioHandler;
+    [Header("Intro & Background")]
     public GameObject ExitIntro;
     public GameObject NoBackground;
     public GameObject Background1;
@@ -75,6 +77,14 @@ public class LevelManager : MonoBehaviour
     public void StartLevel(Level lvl)
     {
         SelectedLevel = lvl;
+        if (SelectedLevel.ID == 102)
+        {
+            audioHandler.PlayAudio(audioHandler.winSound);
+        }
+        else if (SelectedLevel.ID != -1)
+        {
+            audioHandler.PlayAudio(audioHandler.next);
+        }
         NoBackground.SetActive(false);
         if (SelectedLevel.Background != null)
         {
@@ -144,8 +154,13 @@ public class LevelManager : MonoBehaviour
         if (SelectedLevel.Intro != null)
         {
             SelectedLevel.Intro.SetActive(true);
-            ExitIntro.SetActive(true);
+            Invoke(nameof(EnableExitIntro), 5f);
         }
+    }
+
+    public void EnableExitIntro()
+    {
+        ExitIntro.SetActive(true);
     }
 }
 

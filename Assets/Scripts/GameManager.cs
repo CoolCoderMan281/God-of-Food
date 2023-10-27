@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
     public float spawnXRange;
     public Coroutine IndicatorFadeOut;
     public GameObject PauseMenu;
+    public GameObject SettingsMenu;
     [Header("Keybinds")]
     public KeyCode pauseKey = KeyCode.Escape;
     [Header("Developer")]
@@ -62,6 +63,7 @@ public class GameManager : MonoBehaviour
         score_text = GameObject.Find("Score").GetComponent<TMP_Text>();
         timer_text = GameObject.Find("Timer").GetComponent<TMP_Text>();
         MainMenu_canvas = GameObject.Find("MainMenu_Content");
+        SettingsMenu.SetActive(false);
         levelManager = gameObject.GetComponent<LevelManager>();
         phase_text.text = "";
         timer_text.text = "";
@@ -455,7 +457,7 @@ public class GameManager : MonoBehaviour
         }
 
         // Spawn Handler
-        if (GameInProgress && !paused) // Don't waste resources, don't process if no game
+        if (GameInProgress && !paused && !SettingsMenu.active) // Don't waste resources, don't process if no game
         {
             ZoomHandler();
             if (CanSpawn && AllowSpawns) // Don't waste resources, don't process if spawn unavaliable
@@ -859,7 +861,6 @@ public class GameManager : MonoBehaviour
         Level = lvl;
         SBehavior = Level.Behavior;
         Style = Level.Style;
-        camController.TerminateZooms();
         if (Style != SectionStyle.IDLE)
         {
             CanSpawn = true;
@@ -936,13 +937,6 @@ public class GameManager : MonoBehaviour
     public void Levels_Ensure_Zoom()
     {
         ZoomHandler();
-        if (Level.Zoom)
-        {
-            camController.ForceLocation(camController.ZoomedOutPosition);
-        } else
-        {
-            camController.ForceLocation(camController.OriginalPosition);
-        }
     }
 
     public void Levels_FailedLevel()

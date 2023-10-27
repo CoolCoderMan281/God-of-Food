@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class MenuHandler : MonoBehaviour
 {
     public GameManager manager;
+    public AudioHandler audioHandler;
     public void Click(string Name)
     {
         Debug.Log("Main Menu " + Name + " selected");
@@ -31,7 +34,13 @@ public class MenuHandler : MonoBehaviour
         }
         else if (Name == "Settings")
         {
-            Debug.Log("Not implemented!");
+            manager.SettingsMenu.SetActive(true);
+            manager.paused = true;
+        }
+        else if (Name == "Back")
+        {
+            manager.SettingsMenu.SetActive(false);
+            manager.paused = false;
         }
         else if (Name == "Quit")
         {
@@ -50,6 +59,14 @@ public class MenuHandler : MonoBehaviour
         else
         {
             Debug.Log(Name + " is not even acknowledged.. :|");
+        }
+    }
+
+    public void Slider(string Name)
+    {
+        if (Name == "Volume")
+        {
+            audioHandler.SetVolume(gameObject.GetComponent<UnityEngine.UI.Slider>().value);
         }
     }
 }

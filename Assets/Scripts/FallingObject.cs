@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 
 public class FallingObject : MonoBehaviour
@@ -15,6 +16,8 @@ public class FallingObject : MonoBehaviour
     public Material material;
     public GameManager manager;
     private Rigidbody rb;
+
+    public AudioHandler audioHandler;
     // Start is called before the first frame update
     void Start()
     {
@@ -76,6 +79,10 @@ public class FallingObject : MonoBehaviour
                 }
                 if (transform.position.y <= -4) // Don't waste resources! Cull!
                 {
+                    if (Worth > 0)
+                    {
+                        audioHandler.PlayAudio(audioHandler.foodMiss);
+                    }
                     manager.UpdateScore(-Punishment,gameObject,caught:false);
                     Destroy(gameObject);
                 }

@@ -7,6 +7,8 @@ public class BasketController : MonoBehaviour
     public GameManager manager;
     public GameObject Indicator;
     public bool isDisplay;
+
+    public AudioHandler audioHandler;
     public void Start()
     {
         Debug.Log("BasketController ready!");
@@ -59,5 +61,6 @@ public class BasketController : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         other.gameObject.GetComponent<FallingObject>().Caught();
+        audioHandler.PlayAudio(audioHandler.foodCatch);
     }
 }

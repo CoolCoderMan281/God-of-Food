@@ -62,7 +62,6 @@ public class CameraController : MonoBehaviour
                 Debug.Log(startingPosition + " | " + TargetPosition);
                 for (float i = 0; i >= -1; i -= Time.deltaTime)
                 {
-                    Debug.Log(i);
                     transform.position = Vector3.Lerp(startingPosition, TargetPosition, System.Math.Abs(i));
                     yield return null;
                 }
@@ -82,57 +81,5 @@ public class CameraController : MonoBehaviour
                 yield return new WaitForSeconds(.5f);
             }
         }
-        Debug.LogWarning("This coroutine shouldn't have ended!");
-    }
-
-    public void TerminateZooms()
-    {
-        Debug.LogWarning("Disabled method!");
-        return;
-        StopAllCoroutines();
-    }
-
-    public void Zoom()
-    {
-        Debug.LogWarning("Disabled method!");
-        return;
-        if (!ZoomedOut)
-        {
-            ZoomOut();
-        } else
-        {
-            ZoomIn();
-        }
-    }
-
-    public void ZoomOut()
-    {
-        Debug.LogWarning("Disabled method!");
-        return;
-        if (!ZoomedOut)
-        {
-            startingPosition = transform.position;
-            Coroutine = StartCoroutine(SmoothZoomOut());
-            Invoke(nameof(TerminateZooms), 1f);
-        }
-    }
-    
-    public void ZoomIn()
-    {
-        Debug.LogWarning("Disabled method!");
-        return;
-        if (ZoomedOut)
-        {
-            startingPosition = transform.position;
-            Coroutine = StartCoroutine(SmoothZoomIn());
-            Invoke(nameof(TerminateZooms), 1f);
-        }
-    }
-
-    public void ForceLocation(Vector3 newPosition)
-    {
-        Debug.LogWarning("Disabled method!");
-        return;
-        transform.position = newPosition;
     }
 }
