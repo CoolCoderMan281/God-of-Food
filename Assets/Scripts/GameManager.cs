@@ -749,8 +749,8 @@ public class GameManager : MonoBehaviour
                     indicator_text.color = Color.red;
                     indicator_text.text = "" + new_score;
                 }
-                IndicatorFadeOut = FadeOut_Text_Passthrough(Indicator, time:0.25f, delay:2.75f);
-                Invoke(nameof(KillIndicator), 3f);
+                IndicatorFadeOut = FadeOut_Text_Passthrough(Indicator, time:0.25f, delay:1.25f);
+                Invoke(nameof(KillIndicator), 1.5f);
             } else
             {
                 if (caught)

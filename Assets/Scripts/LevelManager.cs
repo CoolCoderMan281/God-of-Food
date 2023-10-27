@@ -153,6 +153,7 @@ public class Level
     public int Duration;
     public GameObject Intro;
     public GameObject Background;
+    //public GameObject Boss;
     public bool Zoom;
     public Level(string name, string desc, int id, GameManager.SectionStyle style, GameManager.SpawningBehavior behavior,
         float spawnbuffer, Level back=null, Level next=null, int setPoints=-127, int requiredPoints=-127,int duration=-127,
@@ -172,5 +173,6 @@ public class Level
         Intro = intro;
         Background = background;
         Zoom = zoom;
+        //Boss = boss;
     }
 }
