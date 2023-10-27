@@ -647,7 +647,7 @@ public class GameManager : MonoBehaviour
     public void SetScoreColorRed() { Color red = Color.red; red.a = 0.5f; score_text.color = red; }
     public void SetScoreColorGreen() { Color green = Color.green; green.a = 0.5f; score_text.color = green; }
     public void ResetScoreColor() { Color white = Color.white; white.a = 0.5f; score_text.color = white; }
-    public void UpdateScore(int worth, GameObject cause=null)
+    public void UpdateScore(int worth, GameObject cause=null, bool caught=false)
     {
         // Add the points
         Points += worth;
@@ -724,6 +724,11 @@ public class GameManager : MonoBehaviour
                 Invoke(nameof(KillIndicator), 1f);
             } else
             {
+                if (caught)
+                {
+                    TMP_Text indicator_text = Indicator.GetComponent<TMP_Text>();
+                    indicator_text.text = "";
+                }
                 GameObject tmpIndicator = Instantiate(Indicator);
                 Indicators.Add(tmpIndicator);
                 Vector3 newPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));

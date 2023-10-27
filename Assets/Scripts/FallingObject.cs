@@ -76,7 +76,7 @@ public class FallingObject : MonoBehaviour
                 }
                 if (transform.position.y <= -4) // Don't waste resources! Cull!
                 {
-                    manager.UpdateScore(-Punishment,gameObject);
+                    manager.UpdateScore(-Punishment,gameObject,caught:false);
                     Destroy(gameObject);
                 }
             }
@@ -93,7 +93,7 @@ public class FallingObject : MonoBehaviour
 
     public void Caught()
     {
-        manager.UpdateScore(Worth, gameObject);
+        manager.UpdateScore(Worth, gameObject,caught:true);
         Destroy(gameObject);
     }
 }

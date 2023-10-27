@@ -26,7 +26,13 @@ public class BasketController : MonoBehaviour
             // Get cursor position
             Vector3 newPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
             // Fix position to y=-3 and z=0
-            newPosition.y = -3; newPosition.z = 0;
+            if (isDisplay)
+            {
+                newPosition.y = -3; newPosition.z = 0;
+            } else
+            {
+                newPosition.y = -2.5f; newPosition.z = 0;
+            }
             // Limit position to on screen
             //if (newPosition.x < -8.8)
             //{
@@ -39,7 +45,7 @@ public class BasketController : MonoBehaviour
             // Set the basket position to the modified cursor position
             if (isDisplay)
             {
-                transform.position = Vector3.Lerp(transform.position, newPosition, 0.025f);
+                transform.position = Vector3.Lerp(transform.position, newPosition, 0.05f);
             } else
             {
                 transform.position = newPosition;
