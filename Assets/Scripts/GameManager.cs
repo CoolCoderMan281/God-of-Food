@@ -419,6 +419,7 @@ public class GameManager : MonoBehaviour
         {
             paused = true;
             MainMenu_canvas.SetActive(true);
+            PauseMenu.SetActive(false);
         } else
         {
             MainMenu_canvas.SetActive(false);

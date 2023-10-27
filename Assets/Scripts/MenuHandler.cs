@@ -40,7 +40,7 @@ public class MenuHandler : MonoBehaviour
         }
         else if (Name == "MainMenu")
         {
-            manager.CallCommand("resume");
+            manager.paused = false;
             manager.CallCommand("mainmenu");
         }
         else if (Name == "Resume")
