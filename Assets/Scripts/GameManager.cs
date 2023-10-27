@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
     public float spawnHight;
     public float spawnXRange;
     public Coroutine IndicatorFadeOut;
+    public GameObject PauseMenu;
     [Header("Keybinds")]
     public KeyCode pauseKey = KeyCode.Escape;
     [Header("Developer")]
@@ -421,6 +422,7 @@ public class GameManager : MonoBehaviour
         } else
         {
             MainMenu_canvas.SetActive(false);
+            PauseMenu.SetActive(paused);
         }
         if (Input.GetKeyDown(pauseKey))
         {
@@ -773,8 +775,8 @@ public class GameManager : MonoBehaviour
                     indicator_text.color = Color.red;
                     indicator_text.text = "" + new_score;
                 }
-                IndicatorFadeOut = FadeOut_Text_Passthrough(Indicator, time:0.25f, delay:1.25f);
-                Invoke(nameof(KillIndicator), 1.5f);
+                IndicatorFadeOut = FadeOut_Text_Passthrough(Indicator, time:0.2f, delay:1f);
+                Invoke(nameof(KillIndicator), 1.2f);
             } else
             {
                 if (caught)
@@ -782,6 +784,7 @@ public class GameManager : MonoBehaviour
                     TMP_Text indicator_text = Indicator.GetComponent<TMP_Text>();
                     indicator_text.text = "";
                 }
+                
                 GameObject tmpIndicator = Instantiate(Indicator);
                 Indicators.Add(tmpIndicator);
                 Vector3 newPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
@@ -791,6 +794,10 @@ public class GameManager : MonoBehaviour
                 tmpIndicator.transform.position = newPosition;
                 tmpIndicator.GetComponent<TMP_Text>().text = "" + worth;
                 tmpIndicator.GetComponent<TMP_Text>().color = Color.red;
+                if (worth == 0)
+                {
+                    tmpIndicator.GetComponent<TMP_Text>().color = Color.green;
+                }
                 tmpIndicator.SetActive(true);
                 StartCoroutine(FadeIn_Text(tmpIndicator, 0.25f));
                 Invoke(nameof(DestroyIndicator), 1f);
