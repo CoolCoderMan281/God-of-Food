@@ -14,6 +14,7 @@ public class LevelManager : MonoBehaviour
     public GameObject NoBackground;
     public GameObject Background1;
     public GameObject Background2;
+    public GameObject VictoryBackground;
     public GameObject LevelIntro_Placeholder;
     // Start is called before the first frame update
     void Start()
@@ -24,26 +25,32 @@ public class LevelManager : MonoBehaviour
         NoBackground.SetActive(true);
         Background1.SetActive(false);
         Background2.SetActive(false);
+        VictoryBackground.SetActive(false);
         ExitIntro.SetActive(false);
         // [TEST] Create survival level
-        Level MainMenu = new Level("MainMenu", "Its the main menu", -1, GameManager.SectionStyle.IDLE, GameManager.SpawningBehavior.STANDARD,0f,background:NoBackground);
+        Level MainMenu = new Level("MainMenu", "Its the main menu", -1, GameManager.SectionStyle.IDLE, GameManager.SpawningBehavior.STANDARD,0f,background:NoBackground,setPoints:0);
         Level SurvivalMode = new Level("SurvivalMode", "Survival mode style", 1, GameManager.SectionStyle.SURVIVE,
                                         GameManager.SpawningBehavior.HARSH_STANDARD,requiredPoints: 20, duration: 64,spawnbuffer:1f,background:Background1,zoom:true);
         // [TEST] Create NormalMode level
         Level NormalMode = new Level("NormalMode", "Normal style example", 0, GameManager.SectionStyle.NORMAL,
                                         GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, spawnbuffer:1f,
                                         background:Background2,zoom:false);
+        // [VICTORY LIMBO]
+        Level Victory = new Level("Victory", "Victory level, limbo kind of", 102, GameManager.SectionStyle.IDLE, GameManager.SpawningBehavior.BINGUS_DESTROYER_OF_FUN, 0.1f,
+                                    background: NoBackground, intro:VictoryBackground);
         // [ENDLESS] Create the endless mode
         Level EndlessMode = new Level("Endless", "Endless mode", 101, GameManager.SectionStyle.ENDLESS, GameManager.SpawningBehavior.STANDARD, 0.5f,background:NoBackground);
         // Change next and back
-        SurvivalMode.Next = NormalMode;
+        SurvivalMode.Next = Victory;
         SurvivalMode.Back = NormalMode;
         NormalMode.Next = SurvivalMode;
+        Victory.Next = MainMenu;
         // Add levels to levels list
         levels.Add(MainMenu);
         levels.Add(NormalMode);
         levels.Add(SurvivalMode);
         levels.Add(EndlessMode);
+        levels.Add(Victory);
         // End of start
         if (levels.Count() >= 1)
         {
@@ -127,6 +134,10 @@ public class LevelManager : MonoBehaviour
         }
         Debug.Log("No intro was displayed.. Why clear it");
         ExitIntro.SetActive(false);
+        if (SelectedLevel.ID == 102) // Victory screen, Goto main menu
+        {
+            manager.CallCommand("mainmenu");
+        }
     }
     public void ShowIntro()
     {

@@ -90,7 +90,7 @@ public class GameManager : MonoBehaviour
 
     public enum SpawningBehavior
     {
-        STANDARD, CLUSTER, BLANKET, HARSH_STANDARD
+        STANDARD, CLUSTER, BLANKET, HARSH_STANDARD, BINGUS_DESTROYER_OF_FUN
     }
 
     private void OnGUI()
@@ -349,6 +349,7 @@ public class GameManager : MonoBehaviour
         }
         else if (command == "mainmenu")
         {
+            levelManager.RequestLevelSwitch(-1);
             MainMenu = true;
             paused = true;
             ExitConsole(true);
@@ -460,6 +461,29 @@ public class GameManager : MonoBehaviour
             {
                 try 
                 {
+                    // Bingus, destroyer of fun
+                    if (SBehavior == SpawningBehavior.BINGUS_DESTROYER_OF_FUN)
+                    {
+                        CanSpawn = false;
+                        if (SpawningIncrement == 20)
+                        {
+                            SpawningIncrement = 0;
+                            CancelInvoke(nameof(AllowSpawning));
+                            Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(1.3f, 1.5f));
+                        }
+                        else
+                        {
+                            int randomObj = UnityEngine.Random.Range(0, falling_options.Count());
+                            GameObject newObj = Instantiate(falling_options[UnityEngine.Random.Range(0, falling_options.Count())]);
+                            spawned.Add(newObj);
+                            Vector3 targetPos = new Vector3(UnityEngine.Random.Range(-spawnXRange, spawnXRange), spawnHight, 0);
+                            newObj.transform.position = targetPos;
+                            newObj.GetComponent<FallingObject>().isExample = false;
+                            newObj.GetComponent<FallingObject>().SpawnBuffer = Level.SpawnBuffer;
+                            Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(0.1f, 0.15f));
+                            SpawningIncrement++;
+                        }
+                    }
                     // Harsh Standard behavior
                     if (SBehavior == SpawningBehavior.HARSH_STANDARD)
                     {
