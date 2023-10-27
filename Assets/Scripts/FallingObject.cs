@@ -70,7 +70,7 @@ public class FallingObject : MonoBehaviour
                     {
                         if (hit.distance <= 0.5f)
                         {
-                            Caught();
+                            //Caught();
                         }
                     }
                 }
@@ -83,13 +83,13 @@ public class FallingObject : MonoBehaviour
         }
     }
 
-    public void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Basket")
-        {
-            Caught();
-        }
-    }
+    //public void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.gameObject.tag == "Basket")
+    //    {
+    //        Caught();
+    //    }
+    //}
 
     public void Caught()
     {

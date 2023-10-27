@@ -457,6 +457,7 @@ public class GameManager : MonoBehaviour
         // Spawn Handler
         if (GameInProgress && !paused) // Don't waste resources, don't process if no game
         {
+            ZoomHandler();
             Vector3 newPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
             newPosition.y = -2; newPosition.z = 0; newPosition.x += 5;
             Indicator.transform.position = newPosition;
@@ -855,6 +856,8 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Level load request recived for level id: " + lvl.ID);
         CancelInvoke(nameof(AllowSpawning));
+        CancelInvoke(nameof(Levels_Ensure_Zoom));
+        StopCoroutine(ZoomHandler());
         timer_text.text = "";
         Level = lvl;
         SBehavior = Level.Behavior;
@@ -889,23 +892,62 @@ public class GameManager : MonoBehaviour
             CanSpawn = true;
             AllowSpawns = true;
         }
-        if (Level.Zoom)
-        {
-            camController.ZoomOut();
-            spawnHight = 18;
-            spawnXRange = 16;
-        } else
-        {
-            camController.ZoomIn();
-            spawnHight = 7;
-            spawnXRange = 8;
-        }
-        
+        StartCoroutine(ZoomHandler());
         score_text.text = Points.ToString();
         Debug.Log("Set level attributes\nStyle: "+Level.Style+"\nSBehavior: "+Level.Behavior+"\nSetPoints: "+Level.SetPoints+"\nRequiredPoints: "+
                     Level.RequiredPoints+"\nDuration: "+Level.Duration.ToString()+"\nLevel ID: "+Level.ID.ToString()+"\nLevel Name: "+Level.Name);
         SectionUpdate(lvl.ID);
     }
+
+    public IEnumerator ZoomHandler()
+    {
+        if (Level.Zoom)
+        {
+            //camController.ZoomOut();
+            camController.TargetPosition = camController.ZoomedOutPosition;
+            spawnHight = 18;
+            spawnXRange = 16;
+        }
+        else
+        {
+            //camController.ZoomIn();
+            camController.TargetPosition = camController.OriginalPosition;
+            spawnHight = 7;
+            spawnXRange = 8;
+        }
+        yield return new WaitForSeconds(1);
+        Levels_Ensure_Zoom();
+    }
+
+    public void Zoom_Complete()
+    {
+        int i = 0;
+        foreach (GameObject obj in spawned)
+        {
+            if (obj != null)
+            {
+                if ((Math.Abs(obj.transform.position.x) > Math.Abs(spawnXRange) )|| obj.transform.position.y > spawnHight)
+                {
+                    Destroy(obj.gameObject);
+                    i++;
+                }
+            }
+        }
+        Debug.Log("Culled " + i + " off screen spawns");
+    }
+
+    public void Levels_Ensure_Zoom()
+    {
+        ZoomHandler();
+        if (Level.Zoom)
+        {
+            camController.ForceLocation(camController.ZoomedOutPosition);
+        } else
+        {
+            camController.ForceLocation(camController.OriginalPosition);
+        }
+    }
+
     public void Levels_FailedLevel()
     {
         Debug.Log("Failed level #" + Level.ID);
