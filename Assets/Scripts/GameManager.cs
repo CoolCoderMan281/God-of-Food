@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
     public CameraController camController;
     public float spawnHight;
     public float spawnXRange;
+    public Coroutine IndicatorFadeOut;
     [Header("Keybinds")]
     public KeyCode pauseKey = KeyCode.Escape;
     [Header("Developer")]
@@ -699,10 +700,15 @@ public class GameManager : MonoBehaviour
         }
         if (cause != null)
         {
-            if (worth >= 0)
+            if (worth > 0)
             {
                 CancelInvoke(nameof(KillIndicator));
-                StartCoroutine(FadeIn_Text(Indicator, 0.1f));
+                try
+                {
+                    StopCoroutine(IndicatorFadeOut);
+                }
+                catch { }
+                StartCoroutine(FadeIn_Text(Indicator, 0.5f));
                 TMP_Text indicator_text = Indicator.GetComponent<TMP_Text>();
                 if (indicator_text.text == "")
                 {
@@ -710,7 +716,7 @@ public class GameManager : MonoBehaviour
                 }
                 int new_score = int.Parse(indicator_text.text);
                 new_score += worth;
-                if (new_score >= 0)
+                if (new_score > 0)
                 {
                     indicator_text.color = Color.green;
                     indicator_text.text = "+" + new_score;
@@ -720,8 +726,8 @@ public class GameManager : MonoBehaviour
                     indicator_text.color = Color.red;
                     indicator_text.text = "" + new_score;
                 }
-                StartCoroutine(FadeOut_Text(Indicator, 0.75f,false));
-                Invoke(nameof(KillIndicator), 1f);
+                IndicatorFadeOut = FadeOut_Text_Passthrough(Indicator, time:0.25f, delay:2.75f);
+                Invoke(nameof(KillIndicator), 3f);
             } else
             {
                 if (caught)
@@ -740,11 +746,16 @@ public class GameManager : MonoBehaviour
                 tmpIndicator.GetComponent<TMP_Text>().color = Color.red;
                 tmpIndicator.SetActive(true);
                 StartCoroutine(FadeIn_Text(tmpIndicator, 0.25f));
-                Invoke(nameof(DestroyIndicator), .5f);
+                Invoke(nameof(DestroyIndicator), 1f);
             }
         }
         // Update the points display
         score_text.text = Points.ToString();
+    }
+
+    public Coroutine FadeOut_Text_Passthrough(GameObject target, float time, float delay)
+    {
+        return StartCoroutine(FadeOut_Text(target, time, delay:delay, destroy:false));
     }
 
     public void KillIndicator()
@@ -769,9 +780,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public IEnumerator FadeOut_Text(GameObject target, float time, bool destroy=true)
+    public IEnumerator FadeOut_Text(GameObject target, float time, bool destroy=true, float delay=0)
     {
         TMP_Text i = target.GetComponent<TMP_Text>();
+        yield return new WaitForSeconds(delay);
         i.color = new Color(i.color.r, i.color.g, i.color.b, 1);
         while (i.color.a > 0.0f)
         {
