@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class FallingObject : MonoBehaviour
 {
+    public enum FoodType
+    {
+        NORMAL, MOLDY
+    }
+
     public bool isExample = false;
     public float FallSpeedMultiplyer = 1.0f;
     public float MaxSpeed = 2.0f;
@@ -16,6 +21,7 @@ public class FallingObject : MonoBehaviour
     public Material material;
     public GameManager manager;
     private Rigidbody rb;
+    public FoodType foodtype = FoodType.NORMAL;
 
     public AudioHandler audioHandler;
     // Start is called before the first frame update
@@ -81,7 +87,13 @@ public class FallingObject : MonoBehaviour
                 {
                     if (Worth > 0)
                     {
-                        audioHandler.PlayAudio(audioHandler.foodMiss);
+                        if (foodtype != FoodType.MOLDY)
+                        {
+                            audioHandler.PlayAudio(audioHandler.foodMiss);
+                        } else
+                        {
+                            audioHandler.PlayAudio(audioHandler.moldyMiss);
+                        }
                     }
                     manager.UpdateScore(-Punishment,gameObject,caught:false);
                     Destroy(gameObject);

@@ -44,6 +44,8 @@ public class GameManager : MonoBehaviour
     public Coroutine IndicatorFadeOut;
     public GameObject PauseMenu;
     public GameObject SettingsMenu;
+    public GameObject LevelSelectMenu;
+    public AudioHandler audioHandler;
     [Header("Keybinds")]
     public KeyCode pauseKey = KeyCode.Escape;
     [Header("Developer")]
@@ -64,6 +66,7 @@ public class GameManager : MonoBehaviour
         timer_text = GameObject.Find("Timer").GetComponent<TMP_Text>();
         MainMenu_canvas = GameObject.Find("MainMenu_Content");
         SettingsMenu.SetActive(false);
+        LevelSelectMenu.SetActive(false);
         levelManager = gameObject.GetComponent<LevelManager>();
         phase_text.text = "";
         timer_text.text = "";
@@ -683,6 +686,7 @@ public class GameManager : MonoBehaviour
         if (!paused)
         {
             Duration--;
+            audioHandler.PlayAudio(audioHandler.tick);
         }
         if (Duration > 0)
         {
@@ -732,7 +736,6 @@ public class GameManager : MonoBehaviour
         {
             if (worth < 0) { SetScoreColorRed(); Invoke(nameof(ResetScoreColor), 0.25f); } // Flash red when reducing points
             if (Points < 0) { Points = 0; } // Prevent negative score since we are nice :)
-            Debug.LogWarning("Endless currently has no way to escape to menu!");
         }
         // ACHIEVE Style
         if (Style == SectionStyle.ACHIEVE)

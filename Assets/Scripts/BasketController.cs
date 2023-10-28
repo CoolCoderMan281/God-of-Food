@@ -7,11 +7,19 @@ public class BasketController : MonoBehaviour
     public GameManager manager;
     public GameObject Indicator;
     public bool isDisplay;
+    public bool Slow;
 
     public AudioHandler audioHandler;
     public void Start()
     {
         Debug.Log("BasketController ready!");
+        if (isDisplay )
+        {
+            Slow = true;
+        } else
+        {
+            Slow = false;
+        }
     }
     public void OnDisable()
     {
@@ -46,7 +54,7 @@ public class BasketController : MonoBehaviour
             //    newPosition.x = 8.8f;
             //}
             // Set the basket position to the modified cursor position
-            if (isDisplay)
+            if (isDisplay && Slow)
             {
                 transform.position = Vector3.Lerp(transform.position, newPosition, 0.075f);
                 newPosition.x += 5.5f;
@@ -61,6 +69,12 @@ public class BasketController : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         other.gameObject.GetComponent<FallingObject>().Caught();
-        audioHandler.PlayAudio(audioHandler.foodCatch);
+        if (other.gameObject.GetComponent<FallingObject>().foodtype != FallingObject.FoodType.MOLDY)
+        {
+            audioHandler.PlayAudio(audioHandler.foodCatch);
+        } else
+        {
+            audioHandler.PlayAudio(audioHandler.moldyCatch);
+        }
     }
 }
