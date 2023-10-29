@@ -57,8 +57,10 @@ public class BasketController : MonoBehaviour
             if (isDisplay && Slow)
             {
                 transform.position = Vector3.Lerp(transform.position, newPosition, 0.075f);
-                newPosition.x += 5.5f;
-                Indicator.transform.position = newPosition;
+                Vector3 Indicator_Pos = transform.position;
+                Indicator_Pos.y += 1; Indicator_Pos.x += 5.5f;
+                Indicator.transform.position = Indicator_Pos;
+                //Indicator.transform.position = Vector3.Lerp(Indicator.transform.position, Indicator_Pos, 0.1f);
             } else
             {
                 transform.position = newPosition;

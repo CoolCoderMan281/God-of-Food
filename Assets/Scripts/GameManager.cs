@@ -997,6 +997,9 @@ public class GameManager : MonoBehaviour
     
     public void StartStory()
     {
+        Points = 0;
+        // Update the points display
+        score_text.text = Points.ToString();
         Debug.Log("Starting story mode...");
         levelManager.RequestLevelSwitch(0);
     }

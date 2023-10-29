@@ -79,6 +79,7 @@ public class LevelManager : MonoBehaviour
         SelectedLevel = lvl;
         if (SelectedLevel.ID == 102)
         {
+            audioHandler.StopMusic();
             audioHandler.PlayAudio(audioHandler.winSound);
         }
         NoBackground.SetActive(false);

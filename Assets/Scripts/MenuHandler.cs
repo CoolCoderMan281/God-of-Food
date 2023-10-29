@@ -9,6 +9,7 @@ public class MenuHandler : MonoBehaviour
     public GameManager manager;
     public AudioHandler audioHandler;
     public BasketController basketController;
+    public string LastSelectedLevel = "BRUH";
     public void Start()
     {
         audioHandler = GameObject.Find("AudioOwner").GetComponent<AudioHandler>();
@@ -18,6 +19,11 @@ public class MenuHandler : MonoBehaviour
     public void Click(string Name)
     {
         Debug.Log("Main Menu " + Name + " selected");
+        if (Name.StartsWith("Level") && !Name.EndsWith("Select"))
+        {
+            LastSelectedLevel = Name;
+            Debug.Log("LastSelectedLevel = " + LastSelectedLevel);
+        }
         if (Name == "Endless")
         {
             manager.StartEndless();
@@ -111,6 +117,18 @@ public class MenuHandler : MonoBehaviour
         {
             basketController.Slow = !basketController.Slow;
             Debug.Log("BasketSmoothing: "+basketController.Slow);
+        }
+        else if (Name == "Restart")
+        {
+            Debug.Log("Restart! "+LastSelectedLevel);
+            Click("Level1");
+            if (LastSelectedLevel.StartsWith("Level"))
+            {
+                Click(LastSelectedLevel);
+            } else
+            {
+                Debug.Log("Nothing to restart ?? :/");
+            }
         }
         else
         {

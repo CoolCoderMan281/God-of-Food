@@ -12158,6 +12158,7 @@ MonoBehaviour:
   moldyCatch: {fileID: 2090990421}
   moldyMiss: {fileID: 2090990420}
   starvingHarvest: {fileID: 2090990422}
+  currentMusic: {fileID: 0}
   Volume: 1
   VolumeSlider: {fileID: 352910863}
   VolumeLabel: {fileID: 212739323}

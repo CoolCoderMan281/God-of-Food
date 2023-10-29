@@ -90,15 +90,12 @@ public class FallingObject : MonoBehaviour
                 }
                 if (transform.position.y <= -4) // Don't waste resources! Cull!
                 {
-                    if (Worth > 0)
+                    if (foodtype == FoodType.NORMAL)
                     {
-                        if (foodtype != FoodType.MOLDY)
-                        {
-                            audioHandler.PlayAudio(audioHandler.foodMiss);
-                        } else
-                        {
-                            audioHandler.PlayAudio(audioHandler.moldyMiss);
-                        }
+                        audioHandler.PlayAudio(audioHandler.foodMiss);
+                    } else
+                    {
+                        audioHandler.PlayAudio(audioHandler.moldyMiss);
                     }
                     manager.UpdateScore(-Punishment,gameObject,caught:false);
                     Destroy(gameObject);
