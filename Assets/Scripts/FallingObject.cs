@@ -10,6 +10,11 @@ public class FallingObject : MonoBehaviour
         NORMAL, MOLDY
     }
 
+    public enum FoodCategory
+    {
+        Veggies, Fruit, Moldy_Veggies, Moldy_Fruit
+    }
+
     public bool isExample = false;
     public float FallSpeedMultiplyer = 1.0f;
     public float MaxSpeed = 2.0f;

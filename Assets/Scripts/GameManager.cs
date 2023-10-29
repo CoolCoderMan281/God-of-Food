@@ -422,6 +422,7 @@ public class GameManager : MonoBehaviour
     {
         if (MainMenu)
         {
+            audioHandler.StopMusic();
             paused = true;
             MainMenu_canvas.SetActive(true);
             PauseMenu.SetActive(false);
