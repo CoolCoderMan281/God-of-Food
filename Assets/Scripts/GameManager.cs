@@ -687,6 +687,14 @@ public class GameManager : MonoBehaviour
         if (!paused)
         {
             Duration--;
+            if (Duration > 11)
+            {
+                audioHandler.tick.pitch = 1;
+            } else if (Duration > 6) {
+                audioHandler.tick.pitch = 2;
+            } else {
+                audioHandler.tick.pitch = 3;
+            }
             audioHandler.PlayAudio(audioHandler.tick);
         }
         if (Duration > 0)
