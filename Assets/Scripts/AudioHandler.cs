@@ -19,6 +19,7 @@ public class AudioHandler : MonoBehaviour
     [Header("Music")]
     public AudioSource starvingHarvest;
     public AudioSource beatsNJams;
+    public AudioSource sugarDrunk;
     public AudioSource currentMusic;
     private List<AudioSource> SFX = new List<AudioSource>();
     private List<AudioSource> MUSIC = new List<AudioSource>();
@@ -90,6 +91,7 @@ public class AudioHandler : MonoBehaviour
         // Define music
         MUSIC.Add(starvingHarvest);
         MUSIC.Add(beatsNJams);
+        MUSIC.Add(sugarDrunk);
         // Do volume
         SetVolume(1);
         VolumeSlider.value = Volume;

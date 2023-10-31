@@ -20,6 +20,7 @@ public class LevelManager : MonoBehaviour
     public GameObject LevelIntro_Placeholder;
     public GameObject Level1_Intro;
     public GameObject Level2_Intro;
+    public GameObject Tutorial_Intro;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,7 @@ public class LevelManager : MonoBehaviour
         ExitIntro.SetActive(false);
         Level1_Intro.SetActive(false);
         Level2_Intro.SetActive(false);
+        Tutorial_Intro.SetActive(false);
         Level MainMenu = new Level("MainMenu", "Its the main menu", -1, GameManager.SectionStyle.IDLE, GameManager.SpawningBehavior.STANDARD,0f,background:NoBackground,setPoints:0);
         // Campaign 1
         Level SurvivalMode = new Level("SurvivalMode", "Survival mode style", 1, GameManager.SectionStyle.SURVIVE,
@@ -46,6 +48,12 @@ public class LevelManager : MonoBehaviour
         Level NormalMode2 = new Level("NormalMode2", "Normal style example2", 2, GameManager.SectionStyle.NORMAL,
                                         GameManager.SpawningBehavior.STANDARD, requiredPoints: 20, spawnbuffer: 0.3f,
                                         background: Background1, zoom: false, levelrelation: 2, intro: Level2_Intro);
+        // Tutorial
+        Level TutorialNormal = new Level("TutorialNormal", "Normal style example3", 4, GameManager.SectionStyle.NORMAL,
+                                        GameManager.SpawningBehavior.STANDARD, requiredPoints: 20, spawnbuffer: 0.3f,
+                                        background: Background1, zoom: false, intro: Tutorial_Intro);
+        Level TutorialSurvive = new Level("TutorialSurvive", "Survival mode style3", 5, GameManager.SectionStyle.SURVIVE,
+                                        GameManager.SpawningBehavior.HARSH_STANDARD, requiredPoints: 20, duration: 15, spawnbuffer: 0.1f, background: Background1, zoom: true);
         // [VICTORY LIMBO]
         Level Victory = new Level("Victory", "Victory level, limbo kind of", 102, GameManager.SectionStyle.IDLE, GameManager.SpawningBehavior.BINGUS_DESTROYER_OF_FUN, 0.1f,
                                     background: NoBackground, intro:VictoryBackground);
@@ -59,6 +67,9 @@ public class LevelManager : MonoBehaviour
         NormalMode2.Next = SurvivalMode2;
         SurvivalMode2.Next = Victory;
         SurvivalMode2.Back = NormalMode2;
+        TutorialNormal.Next = TutorialSurvive;
+        TutorialSurvive.Next = Victory;
+        TutorialSurvive.Back = TutorialNormal;
         // Add levels to levels list
         levels.Add(MainMenu);
         levels.Add(NormalMode);
@@ -67,6 +78,8 @@ public class LevelManager : MonoBehaviour
         levels.Add(Victory);
         levels.Add(SurvivalMode2);
         levels.Add(NormalMode2);
+        levels.Add(TutorialNormal);
+        levels.Add(TutorialSurvive);
         // End of start
         if (levels.Count() >= 1)
         {

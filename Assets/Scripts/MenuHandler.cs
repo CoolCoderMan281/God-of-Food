@@ -78,7 +78,11 @@ public class MenuHandler : MonoBehaviour
         }
         else if (Name == "Tutorial")
         {
-            Debug.LogWarning("No tutorial yet hehe!");
+            manager.LevelSelectMenu.SetActive(false);
+            manager.StartTutorial();
+            manager.MainMenu = false;
+            manager.paused = false;
+            audioHandler.PlayAudio(audioHandler.sugarDrunk);
         }
         else if (Name == "Level1")
         {

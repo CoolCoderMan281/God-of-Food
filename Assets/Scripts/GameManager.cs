@@ -54,6 +54,8 @@ public class GameManager : MonoBehaviour
     public GameObject SettingsMenu;
     public GameObject LevelSelectMenu;
     public AudioHandler audioHandler;
+    public GameObject player_idle;
+    public GameObject player_catch;
     [Header("Keybinds")]
     public KeyCode pauseKey = KeyCode.Escape;
     [Header("Developer")]
@@ -596,6 +598,20 @@ public class GameManager : MonoBehaviour
                             Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(0.1f, 0.3f));
                             SpawningIncrement++;
                         }
+                        else
+                        {
+                            int randomObj = UnityEngine.Random.Range(0, falling_options.Count());
+                            GameObject newObj;
+                            randomObj = UnityEngine.Random.Range(0, veggies.Count());
+                            newObj = Instantiate(falling_options[UnityEngine.Random.Range(0, falling_options.Count())]);
+                            spawned.Add(newObj);
+                            Vector3 targetPos = new Vector3(UnityEngine.Random.Range(-spawnXRange, spawnXRange), spawnHight, 0);
+                            newObj.transform.position = targetPos;
+                            newObj.GetComponent<FallingObject>().isExample = false;
+                            newObj.GetComponent<FallingObject>().SpawnBuffer = Level.SpawnBuffer;
+                            Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(0.1f, 0.3f));
+                            SpawningIncrement++;
+                        }
                     }
                     // Standard behavior
                     if (SBehavior == SpawningBehavior.STANDARD)
@@ -682,6 +698,19 @@ public class GameManager : MonoBehaviour
                                 randomObj = UnityEngine.Random.Range(0, veggies.Count());
                                 newObj = Instantiate(veggies[UnityEngine.Random.Range(0, veggies.Count())]);
                             }
+                            spawned.Add(newObj);
+                            Vector3 targetPos = new Vector3(UnityEngine.Random.Range(-spawnXRange, spawnXRange), spawnHight, 0);
+                            newObj.transform.position = targetPos;
+                            newObj.GetComponent<FallingObject>().isExample = false;
+                            newObj.GetComponent<FallingObject>().SpawnBuffer = Level.SpawnBuffer;
+                            Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(0.1f, 0.3f));
+                            SpawningIncrement++;
+                        } else
+                        {
+                            int randomObj = UnityEngine.Random.Range(0, falling_options.Count());
+                            GameObject newObj;
+                            randomObj = UnityEngine.Random.Range(0, veggies.Count());
+                            newObj = Instantiate(falling_options[UnityEngine.Random.Range(0, falling_options.Count())]);
                             spawned.Add(newObj);
                             Vector3 targetPos = new Vector3(UnityEngine.Random.Range(-spawnXRange, spawnXRange), spawnHight, 0);
                             newObj.transform.position = targetPos;
@@ -984,6 +1013,7 @@ public class GameManager : MonoBehaviour
                 }
                 IndicatorFadeOut = FadeOut_Text_Passthrough(Indicator, time:0.2f, delay:1f);
                 Invoke(nameof(KillIndicator), 1.2f);
+                Catch();
             } else
             {
                 if (caught)
@@ -1213,6 +1243,29 @@ public class GameManager : MonoBehaviour
         score_text.text = Points.ToString();
         Debug.Log("Starting story2 mode...");
         levelManager.RequestLevelSwitch(2);
+    }
+
+    public void StartTutorial()
+    {
+        Points = 0;
+        // Update the points display
+        score_text.text = Points.ToString();
+        Debug.Log("Starting tutorial mode...");
+        levelManager.RequestLevelSwitch(4);
+    }
+
+    public void ResetPlayerSprite()
+    {
+        player_catch.SetActive(false);
+        player_idle.SetActive(true);
+    }
+
+    public void Catch()
+    {
+        CancelInvoke(nameof(ResetPlayerSprite));
+        player_catch.SetActive(true);
+        player_idle.SetActive(false);
+        Invoke(nameof(ResetPlayerSprite), 0.15f);
     }
 
     public void HandleLog(string logString, string stacktrace, LogType type)
