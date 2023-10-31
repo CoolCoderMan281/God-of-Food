@@ -15,8 +15,10 @@ public class AudioHandler : MonoBehaviour
     public AudioSource tick;
     public AudioSource moldyCatch;
     public AudioSource moldyMiss;
+    public AudioSource meatMiss;
     [Header("Music")]
     public AudioSource starvingHarvest;
+    public AudioSource beatsNJams;
     public AudioSource currentMusic;
     private List<AudioSource> SFX = new List<AudioSource>();
     private List<AudioSource> MUSIC = new List<AudioSource>();
@@ -87,6 +89,7 @@ public class AudioHandler : MonoBehaviour
         SFX.Add(moldyMiss);
         // Define music
         MUSIC.Add(starvingHarvest);
+        MUSIC.Add(beatsNJams);
         // Do volume
         SetVolume(1);
         VolumeSlider.value = Volume;

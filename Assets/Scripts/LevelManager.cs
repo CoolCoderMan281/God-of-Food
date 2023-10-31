@@ -18,6 +18,8 @@ public class LevelManager : MonoBehaviour
     public GameObject Background2;
     public GameObject VictoryBackground;
     public GameObject LevelIntro_Placeholder;
+    public GameObject Level1_Intro;
+    public GameObject Level2_Intro;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,14 +31,21 @@ public class LevelManager : MonoBehaviour
         Background2.SetActive(false);
         VictoryBackground.SetActive(false);
         ExitIntro.SetActive(false);
-        // [TEST] Create survival level
+        Level1_Intro.SetActive(false);
+        Level2_Intro.SetActive(false);
         Level MainMenu = new Level("MainMenu", "Its the main menu", -1, GameManager.SectionStyle.IDLE, GameManager.SpawningBehavior.STANDARD,0f,background:NoBackground,setPoints:0);
+        // Campaign 1
         Level SurvivalMode = new Level("SurvivalMode", "Survival mode style", 1, GameManager.SectionStyle.SURVIVE,
-                                        GameManager.SpawningBehavior.HARSH_STANDARD,requiredPoints: 20, duration: 15,spawnbuffer:1f,background:Background1,zoom:true);
-        // [TEST] Create NormalMode level
+                                        GameManager.SpawningBehavior.HARSH_STANDARD,requiredPoints: 20, duration: 15,spawnbuffer:0.1f,background:Background2,zoom:true, levelrelation: 1);
         Level NormalMode = new Level("NormalMode", "Normal style example", 0, GameManager.SectionStyle.NORMAL,
-                                        GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, spawnbuffer:1f,
-                                        background:Background2,zoom:false);
+                                        GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, spawnbuffer:0.3f,
+                                        background:Background2,zoom:false,levelrelation:1,intro:Level1_Intro);
+        // Campaign 2
+        Level SurvivalMode2 = new Level("SurvivalMode2", "Survival mode style2", 3, GameManager.SectionStyle.SURVIVE,
+                                        GameManager.SpawningBehavior.HARSH_STANDARD, requiredPoints: 20, duration: 15, spawnbuffer: 0.1f, background: Background1, zoom: true, levelrelation: 2);
+        Level NormalMode2 = new Level("NormalMode2", "Normal style example2", 2, GameManager.SectionStyle.NORMAL,
+                                        GameManager.SpawningBehavior.STANDARD, requiredPoints: 20, spawnbuffer: 0.3f,
+                                        background: Background1, zoom: false, levelrelation: 2, intro: Level2_Intro);
         // [VICTORY LIMBO]
         Level Victory = new Level("Victory", "Victory level, limbo kind of", 102, GameManager.SectionStyle.IDLE, GameManager.SpawningBehavior.BINGUS_DESTROYER_OF_FUN, 0.1f,
                                     background: NoBackground, intro:VictoryBackground);
@@ -47,12 +56,17 @@ public class LevelManager : MonoBehaviour
         SurvivalMode.Back = NormalMode;
         NormalMode.Next = SurvivalMode;
         Victory.Next = MainMenu;
+        NormalMode2.Next = SurvivalMode2;
+        SurvivalMode2.Next = Victory;
+        SurvivalMode2.Back = NormalMode2;
         // Add levels to levels list
         levels.Add(MainMenu);
         levels.Add(NormalMode);
         levels.Add(SurvivalMode);
         levels.Add(EndlessMode);
         levels.Add(Victory);
+        levels.Add(SurvivalMode2);
+        levels.Add(NormalMode2);
         // End of start
         if (levels.Count() >= 1)
         {
@@ -138,6 +152,10 @@ public class LevelManager : MonoBehaviour
         if (SelectedLevel.Intro != null)
         {
             SelectedLevel.Intro.SetActive(false);
+            if (SelectedLevel.Intro != VictoryBackground)
+            {
+                SelectedLevel.Intro = null;
+            }
         }
         Debug.Log("No intro was displayed.. Why clear it");
         ExitIntro.SetActive(false);
@@ -176,11 +194,12 @@ public class Level
     public int Duration;
     public GameObject Intro;
     public GameObject Background;
+    public int LevelRelation;
     //public GameObject Boss;
     public bool Zoom;
     public Level(string name, string desc, int id, GameManager.SectionStyle style, GameManager.SpawningBehavior behavior,
         float spawnbuffer, Level back=null, Level next=null, int setPoints=-127, int requiredPoints=-127,int duration=-127,
-        GameObject intro=null, GameObject background=null, bool zoom=false)
+        GameObject intro=null, GameObject background=null, bool zoom=false, int levelrelation = -127)
     {
         Name = name;
         Description = desc;
@@ -197,5 +216,6 @@ public class Level
         Background = background;
         Zoom = zoom;
         //Boss = boss;
+        LevelRelation = levelrelation;
     }
 }

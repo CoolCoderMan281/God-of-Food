@@ -8,6 +8,7 @@ using JetBrains.Annotations;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.XR;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,6 +16,13 @@ public class GameManager : MonoBehaviour
     public bool CanSpawn = false;
     private bool AllowSpawns = false;
     public List<GameObject> falling_options;
+    public List<GameObject> veggies;
+    public List<GameObject> fruit;
+    public List<GameObject> moldy_veggies;
+    public List<GameObject> moldy_fruit;
+    public List<GameObject> dairy;
+    public List<GameObject> protein;
+    public List<GameObject> moldy_dairy;
     public List<GameObject> spawned;
     public List<GameObject> Indicators;
     private TMP_Text phase_text;
@@ -466,8 +474,8 @@ public class GameManager : MonoBehaviour
             ZoomHandler();
             if (CanSpawn && AllowSpawns) // Don't waste resources, don't process if spawn unavaliable
             {
-                try 
-                {
+                //try 
+                //{
                     // Bingus, destroyer of fun
                     if (SBehavior == SpawningBehavior.BINGUS_DESTROYER_OF_FUN)
                     {
@@ -495,22 +503,59 @@ public class GameManager : MonoBehaviour
                     if (SBehavior == SpawningBehavior.HARSH_STANDARD)
                     {
                         CanSpawn = false;
-                        if (SpawningIncrement == 10)
+                        if (SpawningIncrement == 12)
                         {
                             SpawningIncrement = 0;
                             CancelInvoke(nameof(AllowSpawning));
-                            Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(1.3f, 1.5f));
+                            Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(0.6f, 1f));
                         }
-                        else
+                        if (Level.LevelRelation == 1)
                         {
+                        Debug.LogError("my bad i screwed it up");
+                        }
+                        else if (Level.LevelRelation == 2)
+                        {
+                            int rand = UnityEngine.Random.Range(0, 90);
                             int randomObj = UnityEngine.Random.Range(0, falling_options.Count());
-                            GameObject newObj = Instantiate(falling_options[UnityEngine.Random.Range(0, falling_options.Count())]);
+                            GameObject newObj;
+                            if (Level.LevelRelation == 1 && Level.Style == SectionStyle.SURVIVE)
+                            {
+                                if (rand <= 25)
+                                {
+                                    randomObj = UnityEngine.Random.Range(0, veggies.Count());
+                                    newObj = Instantiate(veggies[UnityEngine.Random.Range(0, veggies.Count())]);
+                                }
+                                else if (rand <= 55)
+                                {
+                                    randomObj = UnityEngine.Random.Range(0, dairy.Count());
+                                    newObj = Instantiate(dairy[UnityEngine.Random.Range(0, dairy.Count())]);
+                                }
+                                else if (rand <= 80)
+                                {
+                                    randomObj = UnityEngine.Random.Range(0, moldy_veggies.Count());
+                                    newObj = Instantiate(moldy_veggies[UnityEngine.Random.Range(0, moldy_veggies.Count())]);
+                                }
+                                else if (rand <= 90)
+                                {
+                                    randomObj = UnityEngine.Random.Range(0, moldy_fruit.Count());
+                                    newObj = Instantiate(moldy_fruit[UnityEngine.Random.Range(0, moldy_fruit.Count())]);
+                                } else
+                                {
+                                    randomObj = UnityEngine.Random.Range(0, protein.Count());
+                                    newObj = Instantiate(protein[UnityEngine.Random.Range(0, protein.Count())]);
+                                }
+                            }
+                            else
+                            {
+                                randomObj = UnityEngine.Random.Range(0, veggies.Count());
+                                newObj = Instantiate(veggies[UnityEngine.Random.Range(0, veggies.Count())]);
+                            }
                             spawned.Add(newObj);
                             Vector3 targetPos = new Vector3(UnityEngine.Random.Range(-spawnXRange, spawnXRange), spawnHight, 0);
                             newObj.transform.position = targetPos;
                             newObj.GetComponent<FallingObject>().isExample = false;
                             newObj.GetComponent<FallingObject>().SpawnBuffer = Level.SpawnBuffer;
-                            Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(0.1f, 0.4f));
+                            Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(0.1f, 0.3f));
                             SpawningIncrement++;
                         }
                     }
@@ -523,16 +568,85 @@ public class GameManager : MonoBehaviour
                             SpawningIncrement = 0;
                             CancelInvoke(nameof(AllowSpawning));
                             Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(0.5f, 2.5f));
-                        } else
+                        } 
+                        if (Level.LevelRelation == 1)
                         {
+                            int rand = UnityEngine.Random.Range(0, 90);
                             int randomObj = UnityEngine.Random.Range(0, falling_options.Count());
-                            GameObject newObj = Instantiate(falling_options[UnityEngine.Random.Range(0, falling_options.Count())]);
+                            GameObject newObj;
+                            if (Level.LevelRelation == 1 && Level.Style == SectionStyle.NORMAL)
+                            {
+                                if (rand <= 5)
+                                {
+                                    randomObj = UnityEngine.Random.Range(0, veggies.Count());
+                                    newObj = Instantiate(veggies[UnityEngine.Random.Range(0, veggies.Count())]);
+                                }
+                                else if (rand <= 55)
+                                {
+                                    randomObj = UnityEngine.Random.Range(0, fruit.Count());
+                                    newObj = Instantiate(fruit[UnityEngine.Random.Range(0, fruit.Count())]);
+                                }
+                                else if (rand <= 70)
+                                {
+                                    randomObj = UnityEngine.Random.Range(0, moldy_veggies.Count());
+                                    newObj = Instantiate(moldy_veggies[UnityEngine.Random.Range(0, moldy_veggies.Count())]);
+                                }
+                                else
+                                {
+                                    randomObj = UnityEngine.Random.Range(0, moldy_fruit.Count());
+                                    newObj = Instantiate(moldy_fruit[UnityEngine.Random.Range(0, moldy_fruit.Count())]);
+                                }
+                            }
+                            else
+                            {
+                                randomObj = UnityEngine.Random.Range(0, veggies.Count());
+                                newObj = Instantiate(veggies[UnityEngine.Random.Range(0, veggies.Count())]);
+                            }
                             spawned.Add(newObj);
                             Vector3 targetPos = new Vector3(UnityEngine.Random.Range(-spawnXRange, spawnXRange), spawnHight, 0);
                             newObj.transform.position = targetPos;
                             newObj.GetComponent<FallingObject>().isExample = false;
                             newObj.GetComponent<FallingObject>().SpawnBuffer = Level.SpawnBuffer;
                             Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(0.25f, 0.50f));
+                            SpawningIncrement++;
+                        }
+                        else if (Level.LevelRelation == 2)
+                        {
+                            int rand = UnityEngine.Random.Range(0, 100);
+                            int randomObj = UnityEngine.Random.Range(0, falling_options.Count());
+                            GameObject newObj;
+                            if (Level.LevelRelation == 1 && Level.Style == SectionStyle.SURVIVE)
+                            {
+                                if (rand <= 35)
+                                {
+                                    // Veggies
+                                    randomObj = UnityEngine.Random.Range(0, veggies.Count());
+                                    newObj = Instantiate(veggies[UnityEngine.Random.Range(0, veggies.Count())]);
+                                }
+                                else if (rand <= 50)
+                                {
+                                    // Diary
+                                    randomObj = UnityEngine.Random.Range(0, dairy.Count());
+                                    newObj = Instantiate(dairy[UnityEngine.Random.Range(0, dairy.Count())]);
+                                }
+                                else
+                                {
+                                    // Moldy Veggies
+                                    randomObj = UnityEngine.Random.Range(0, moldy_veggies.Count());
+                                    newObj = Instantiate(moldy_veggies[UnityEngine.Random.Range(0, moldy_veggies.Count())]);
+                                }
+                            }
+                            else
+                            {
+                                randomObj = UnityEngine.Random.Range(0, veggies.Count());
+                                newObj = Instantiate(veggies[UnityEngine.Random.Range(0, veggies.Count())]);
+                            }
+                            spawned.Add(newObj);
+                            Vector3 targetPos = new Vector3(UnityEngine.Random.Range(-spawnXRange, spawnXRange), spawnHight, 0);
+                            newObj.transform.position = targetPos;
+                            newObj.GetComponent<FallingObject>().isExample = false;
+                            newObj.GetComponent<FallingObject>().SpawnBuffer = Level.SpawnBuffer;
+                            Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(0.1f, 0.3f));
                             SpawningIncrement++;
                         }
                     }
@@ -569,8 +683,55 @@ public class GameManager : MonoBehaviour
                         }
                         if (SpawningIncrement <= 5)
                         {
+                            int rand = UnityEngine.Random.Range(0, 100);
                             int randomObj = UnityEngine.Random.Range(0, falling_options.Count());
-                            GameObject newObj = Instantiate(falling_options[UnityEngine.Random.Range(0, falling_options.Count())]);
+                            GameObject newObj;
+                            if (Level.LevelRelation == 1 && Level.Style == SectionStyle.NORMAL)
+                            {
+                                if (rand <= 5)
+                                {
+                                    randomObj = UnityEngine.Random.Range(0, veggies.Count());
+                                    newObj = Instantiate(veggies[UnityEngine.Random.Range(0, veggies.Count())]);
+                                } else if (rand <= 55)
+                                {
+                                    randomObj = UnityEngine.Random.Range(0, fruit.Count());
+                                    newObj = Instantiate(fruit[UnityEngine.Random.Range(0, fruit.Count())]);
+                                } else if (rand <= 70)
+                                {
+                                    randomObj = UnityEngine.Random.Range(0, moldy_veggies.Count());
+                                    newObj = Instantiate(moldy_veggies[UnityEngine.Random.Range(0, moldy_veggies.Count())]);
+                                } else
+                                {
+                                    randomObj = UnityEngine.Random.Range(0, moldy_fruit.Count());
+                                    newObj = Instantiate(moldy_fruit[UnityEngine.Random.Range(0, moldy_fruit.Count())]);
+                                }
+                            } else if (Level.LevelRelation == 1 && Level.Style == SectionStyle.SURVIVE)
+                            {
+                                if (rand <= 10)
+                                {
+                                    randomObj = UnityEngine.Random.Range(0, veggies.Count());
+                                    newObj = Instantiate(veggies[UnityEngine.Random.Range(0, veggies.Count())]);
+                                }
+                                else if (rand <= 45)
+                                {
+                                    randomObj = UnityEngine.Random.Range(0, fruit.Count());
+                                    newObj = Instantiate(fruit[UnityEngine.Random.Range(0, fruit.Count())]);
+                                }
+                                else if (rand <= 75)
+                                {
+                                    randomObj = UnityEngine.Random.Range(0, moldy_veggies.Count());
+                                    newObj = Instantiate(moldy_veggies[UnityEngine.Random.Range(0, moldy_veggies.Count())]);
+                                }
+                                else
+                                {
+                                    randomObj = UnityEngine.Random.Range(0, moldy_fruit.Count());
+                                    newObj = Instantiate(moldy_fruit[UnityEngine.Random.Range(0, moldy_fruit.Count())]);
+                                }
+                            } else
+                            {
+                                randomObj = UnityEngine.Random.Range(0, veggies.Count());
+                                newObj = Instantiate(veggies[UnityEngine.Random.Range(0, veggies.Count())]);
+                            }
                             spawned.Add(newObj);
                             Vector3 targetPos = new Vector3(UnityEngine.Random.Range(SpawningRangeStart, SpawningRangeEnd), spawnHight, 0);
                             newObj.transform.position = targetPos;
@@ -594,11 +755,11 @@ public class GameManager : MonoBehaviour
                         }
                         Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(1.25f, 2.50f));
                     }
-                }
-                catch
-                {
-                    Debug.Log("Spawn failed");
-                }
+                //}
+                //catch
+                //{
+                //    Debug.Log("Spawn failed");
+                //}
             }
         }
     }
@@ -698,7 +859,7 @@ public class GameManager : MonoBehaviour
             TimerEnd();
         }
     }
-    public void AllowSpawning() { if (AllowSpawns) { CanSpawn = true; } }
+    public void AllowSpawning() { if (AllowSpawns) { CanSpawn = true;} }
     public void ResetPhaseText() { phase_text.text = ""; }
     public void SetScoreColorRed() { Color red = Color.red; red.a = 0.5f; score_text.color = red; }
     public void SetScoreColorGreen() { Color green = Color.green; green.a = 0.5f; score_text.color = green; }
@@ -1002,6 +1163,15 @@ public class GameManager : MonoBehaviour
         score_text.text = Points.ToString();
         Debug.Log("Starting story mode...");
         levelManager.RequestLevelSwitch(0);
+    }
+
+    public void StartStory2()
+    {
+        Points = 0;
+        // Update the points display
+        score_text.text = Points.ToString();
+        Debug.Log("Starting story2 mode...");
+        levelManager.RequestLevelSwitch(2);
     }
 
     public void HandleLog(string logString, string stacktrace, LogType type)

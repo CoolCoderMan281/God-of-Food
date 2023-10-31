@@ -22,6 +22,7 @@ public class CameraController : MonoBehaviour
         {
             TargetPosition = OriginalPosition;
         }
+        transform.position = TargetPosition;
         StartCoroutine(ReachTarget());
     }
 
@@ -31,9 +32,11 @@ public class CameraController : MonoBehaviour
         Debug.Log("Zooming out");
         for (float i = 0; i <= 1; i -= Time.deltaTime)
         {
+            Zooming = true;
             transform.position = Vector3.Lerp(startingPosition, ZoomedOutPosition, System.Math.Abs(i));
             yield return null;
         }
+        Zooming = false;
         Debug.Log("Done zooming out");
         //transform.position = ZoomedOutPosition;
     }
@@ -44,9 +47,11 @@ public class CameraController : MonoBehaviour
         Debug.Log("Zooming in");
         for (float i = 0; i <= 1; i -= Time.deltaTime)
         {
+            Zooming = true;
             transform.position = Vector3.Lerp(startingPosition, OriginalPosition, System.Math.Abs(i));
             yield return null;
         }
+        Zooming = false;
         Debug.Log("Done zooming in");
         //transform.position = OriginalPosition;
     }
@@ -62,9 +67,11 @@ public class CameraController : MonoBehaviour
                 Debug.Log(startingPosition + " | " + TargetPosition);
                 for (float i = 0; i >= -1; i -= Time.deltaTime)
                 {
+                    Zooming = true;
                     transform.position = Vector3.Lerp(startingPosition, TargetPosition, System.Math.Abs(i));
                     yield return null;
                 }
+                Zooming = false;
                 if (transform.position != TargetPosition)
                 {
                     Debug.LogWarning("Did not actually reach target! Harsh correction");

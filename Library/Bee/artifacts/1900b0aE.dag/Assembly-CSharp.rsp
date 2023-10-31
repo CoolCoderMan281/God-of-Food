@@ -366,6 +366,7 @@
 "Assets/Scripts/CameraController.cs"
 "Assets/Scripts/FallingObject.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/GodHandler.cs"
 "Assets/Scripts/LevelManager.cs"
 "Assets/Scripts/MenuHandler.cs"
 "Assets/Scripts/SplashHandler.cs"

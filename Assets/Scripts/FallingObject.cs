@@ -12,7 +12,7 @@ public class FallingObject : MonoBehaviour
 
     public enum FoodCategory
     {
-        Veggies, Fruit, Moldy_Veggies, Moldy_Fruit
+        Veggies, Fruit, Moldy_Veggies, Moldy_Fruit, UNSET
     }
 
     public bool isExample = false;
@@ -27,6 +27,7 @@ public class FallingObject : MonoBehaviour
     public GameManager manager;
     private Rigidbody rb;
     public FoodType foodtype = FoodType.NORMAL;
+    public FoodCategory category = FoodCategory.UNSET;
 
     public AudioHandler audioHandler;
     // Start is called before the first frame update

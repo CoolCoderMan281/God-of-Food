@@ -90,7 +90,11 @@ public class MenuHandler : MonoBehaviour
         }
         else if (Name == "Level2")
         {
-            Debug.LogWarning("No Level2 yet hehe!");
+            manager.LevelSelectMenu.SetActive(false);
+            manager.StartStory2();
+            manager.MainMenu = false;
+            manager.paused = false;
+            audioHandler.PlayAudio(audioHandler.beatsNJams);
         }
         else if (Name == "Level3")
         {
