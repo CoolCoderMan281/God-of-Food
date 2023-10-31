@@ -1,328 +1,326 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1698721062905371, "dur":8782, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698721062914159, "dur":182, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698721062914384, "dur":862, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698721062915420, "dur":52, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":0, "ts":1698721062915267, "dur":2223, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698721062917492, "dur":2243282, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698721065160775, "dur":587, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698721065161362, "dur":85, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698721065161668, "dur":3227, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1698721062915545, "dur":1998, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698721062917546, "dur":983, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698721062918530, "dur":3287, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1698721062921823, "dur":202, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":1, "ts":1698721062948915, "dur":1548, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":1, "ts":1698721062950534, "dur":13548, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698721062964159, "dur":12357, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1698721062976566, "dur":4099, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":1, "ts":1698721062980705, "dur":2180116, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698721062915552, "dur":1997, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698721062917552, "dur":915, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698721062918467, "dur":3347, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1698721062921870, "dur":169, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1698721062921817, "dur":223, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1698721062950487, "dur":1915, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1698721062952491, "dur":13606, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698721062966167, "dur":13119, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1698721062979325, "dur":2181477, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1698721062915521, "dur":2003, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1698721062917530, "dur":1087, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1698721062918617, "dur":3223, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1698721062923000, "dur":1884, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":3, "ts":1698721062924912, "dur":1875, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":3, "ts":1698721062926840, "dur":2007, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":3, "ts":1698721062928895, "dur":4248, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":3, "ts":1698721062933208, "dur":11202, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll" }}
-,{ "pid":12345, "tid":3, "ts":1698721062944458, "dur":7890, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1698721062952411, "dur":13564, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1698721062966007, "dur":12376, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1698721062978409, "dur":2182380, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698721062915386, "dur":2111, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698721062917500, "dur":4273, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1698721062931269, "dur":1013, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
-,{ "pid":12345, "tid":4, "ts":1698721062932286, "dur":193, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\boot.config" }}
-,{ "pid":12345, "tid":4, "ts":1698721062932483, "dur":212, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":4, "ts":1698721062932696, "dur":168, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":4, "ts":1698721062932995, "dur":223, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\Player04c379b7-inputdata.json" }}
-,{ "pid":12345, "tid":4, "ts":1698721062932284, "dur":1051, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
-,{ "pid":12345, "tid":4, "ts":1698721062934362, "dur":428808, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
-,{ "pid":12345, "tid":4, "ts":1698721063366485, "dur":219, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\boot.config" }}
-,{ "pid":12345, "tid":4, "ts":1698721063366484, "dur":221, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/boot.config" }}
-,{ "pid":12345, "tid":4, "ts":1698721063366718, "dur":1349, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/boot.config" }}
-,{ "pid":12345, "tid":4, "ts":1698721063368069, "dur":1792702, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1698721062915661, "dur":1932, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1698721062917594, "dur":4180, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1698721062921785, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1698721062925087, "dur":1559, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/app.info" }}
-,{ "pid":12345, "tid":5, "ts":1698721062926658, "dur":2085, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698721062928778, "dur":3645, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698721062932467, "dur":6557, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698721062939069, "dur":7771, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698721062946896, "dur":9268, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698721062956200, "dur":13189, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698721062969439, "dur":11872, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1698721062981368, "dur":2179476, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698721062915639, "dur":1942, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698721062917582, "dur":4197, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1698721062921801, "dur":178, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\mconfig\\config.xml" }}
-,{ "pid":12345, "tid":6, "ts":1698721062921781, "dur":199, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":6, "ts":1698721062935963, "dur":1412, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":6, "ts":1698721062937420, "dur":9399, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/Unity.Burst.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698721062946868, "dur":9440, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698721062956387, "dur":13486, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698721062969899, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityPlayer.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698721062969898, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698721062969965, "dur":16845, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":6, "ts":1698721062986848, "dur":2173983, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1698721062915408, "dur":2094, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1698721062917506, "dur":1147, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1698721062918654, "dur":3130, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1698721062921798, "dur":196, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\web.config" }}
-,{ "pid":12345, "tid":7, "ts":1698721062921789, "dur":206, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1698721062943036, "dur":2029, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1698721062945125, "dur":8560, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1698721062953727, "dur":13675, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.PropertiesModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1698721062967437, "dur":13376, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1698721062980849, "dur":2179966, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1698721062915448, "dur":2061, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1698721062917512, "dur":976, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1698721062918488, "dur":3349, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1698721062927316, "dur":2224, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":8, "ts":1698721062929575, "dur":4241, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":8, "ts":1698721062933866, "dur":8204, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/Unity.Mathematics.dll" }}
-,{ "pid":12345, "tid":8, "ts":1698721062942109, "dur":7329, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":8, "ts":1698721062949511, "dur":13145, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1698721062962711, "dur":10743, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1698721062973527, "dur":1783, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":8, "ts":1698721062975398, "dur":3847, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/level0.resS" }}
-,{ "pid":12345, "tid":8, "ts":1698721062979298, "dur":2181502, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1698721062915482, "dur":2033, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1698721062917518, "dur":989, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1698721062918507, "dur":3319, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1698721062921834, "dur":179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":9, "ts":1698721062947251, "dur":2613, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":9, "ts":1698721062949912, "dur":13798, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1698721062963767, "dur":11968, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1698721062975788, "dur":3823, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/level0" }}
-,{ "pid":12345, "tid":9, "ts":1698721062979633, "dur":2181175, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1698721062915523, "dur":2013, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1698721062917541, "dur":971, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1698721062918512, "dur":3318, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1698721062921831, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":10, "ts":1698721062930357, "dur":12113, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":10, "ts":1698721062942534, "dur":7393, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1698721062949980, "dur":13301, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1698721062963339, "dur":11090, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1698721062974485, "dur":2900, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":10, "ts":1698721062977431, "dur":2183352, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1698721062915597, "dur":1972, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1698721062917569, "dur":4208, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1698721062921787, "dur":95, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":11, "ts":1698721062921780, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":11, "ts":1698721062928893, "dur":3004, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":11, "ts":1698721062931939, "dur":333619, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/System.Runtime.dll" }}
-,{ "pid":12345, "tid":11, "ts":1698721063265592, "dur":1895244, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1698721062915574, "dur":1985, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1698721062917564, "dur":986, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1698721062918550, "dur":3265, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1698721062921816, "dur":169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":12, "ts":1698721062937456, "dur":1645, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":12, "ts":1698721062939195, "dur":8645, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":12, "ts":1698721062947889, "dur":10453, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1698721062958379, "dur":13927, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1698721062972355, "dur":4224, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":12, "ts":1698721062976624, "dur":2184142, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1698721062915610, "dur":1964, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1698721062917574, "dur":4202, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1698721062921911, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.PropertiesModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1698721062922054, "dur":218, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":13, "ts":1698721062922273, "dur":160, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
-,{ "pid":12345, "tid":13, "ts":1698721062922434, "dur":394, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Core.Runtime.dll" }}
-,{ "pid":12345, "tid":13, "ts":1698721062922829, "dur":481, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Universal.Runtime.dll" }}
-,{ "pid":12345, "tid":13, "ts":1698721062923311, "dur":286, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Burst.dll" }}
-,{ "pid":12345, "tid":13, "ts":1698721062923598, "dur":453, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":13, "ts":1698721062924052, "dur":276, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":13, "ts":1698721062924329, "dur":387, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":13, "ts":1698721062924716, "dur":239, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
-,{ "pid":12345, "tid":13, "ts":1698721062924956, "dur":340, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":13, "ts":1698721062925297, "dur":183, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
-,{ "pid":12345, "tid":13, "ts":1698721062925481, "dur":533, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Mathematics.dll" }}
-,{ "pid":12345, "tid":13, "ts":1698721062926015, "dur":415, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":13, "ts":1698721062926431, "dur":197, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Universal.Shaders.dll" }}
-,{ "pid":12345, "tid":13, "ts":1698721062926628, "dur":202, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":13, "ts":1698721062921781, "dur":5165, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
-,{ "pid":12345, "tid":13, "ts":1698721062931152, "dur":2225759, "ph":"X", "name": "GenerateNativePluginsForAssemblies",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
-,{ "pid":12345, "tid":13, "ts":1698721065159517, "dur":1171, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Plugins/x86_64/lib_burst_generated.dll" }}
-,{ "pid":12345, "tid":14, "ts":1698721062915696, "dur":1912, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1698721062917609, "dur":4174, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1698721062921784, "dur":192, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":14, "ts":1698721062934771, "dur":2009, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":14, "ts":1698721062936860, "dur":8237, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":14, "ts":1698721062945137, "dur":8920, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":14, "ts":1698721062954100, "dur":13409, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":14, "ts":1698721062967546, "dur":13634, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":14, "ts":1698721062981235, "dur":2179595, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1698721062915675, "dur":1927, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1698721062917602, "dur":4179, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1698721062921782, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":15, "ts":1698721062926497, "dur":1442, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":15, "ts":1698721062927976, "dur":2728, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":15, "ts":1698721062930748, "dur":6140, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":15, "ts":1698721062936994, "dur":8610, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":15, "ts":1698721062945642, "dur":9099, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1698721062954777, "dur":13575, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1698721062968391, "dur":12605, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1698721062981037, "dur":2179804, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1698721062915723, "dur":1891, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1698721062917614, "dur":4209, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1698721062921843, "dur":690, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Temp\\StagingArea\\WindowsPlayer.exe" }}
-,{ "pid":12345, "tid":16, "ts":1698721062921824, "dur":709, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food.exe" }}
-,{ "pid":12345, "tid":16, "ts":1698721062951398, "dur":358004, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food.exe" }}
-,{ "pid":12345, "tid":16, "ts":1698721063309426, "dur":1851421, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":17, "ts":1698721062915762, "dur":1858, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":17, "ts":1698721062917620, "dur":4200, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":17, "ts":1698721062921841, "dur":165, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":17, "ts":1698721062921825, "dur":182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":17, "ts":1698721062946196, "dur":4444, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":17, "ts":1698721062950700, "dur":13677, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":17, "ts":1698721062964431, "dur":12374, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":17, "ts":1698721062976846, "dur":2183919, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":18, "ts":1698721062915791, "dur":1833, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":18, "ts":1698721062917625, "dur":4203, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":18, "ts":1698721062921829, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":18, "ts":1698721062929649, "dur":5403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":18, "ts":1698721062935102, "dur":8734, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
-,{ "pid":12345, "tid":18, "ts":1698721062943885, "dur":7778, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":18, "ts":1698721062951712, "dur":13960, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":18, "ts":1698721062965727, "dur":13198, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":18, "ts":1698721062978961, "dur":2181853, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":19, "ts":1698721062915813, "dur":1817, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":19, "ts":1698721062917630, "dur":4174, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":19, "ts":1698721062921824, "dur":173, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":19, "ts":1698721062944297, "dur":1775, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":19, "ts":1698721062946132, "dur":9115, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":19, "ts":1698721062955284, "dur":13619, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":19, "ts":1698721062968943, "dur":12511, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":19, "ts":1698721062981484, "dur":2179328, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":20, "ts":1698721062915837, "dur":1799, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":20, "ts":1698721062917637, "dur":4149, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":20, "ts":1698721062921786, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":20, "ts":1698721062924695, "dur":1460, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":20, "ts":1698721062926210, "dur":1916, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":20, "ts":1698721062928171, "dur":3456, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":20, "ts":1698721062931679, "dur":388408, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":20, "ts":1698721063320120, "dur":1840731, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":21, "ts":1698721062915864, "dur":1777, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":21, "ts":1698721062917641, "dur":4166, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":21, "ts":1698721062921809, "dur":209, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":21, "ts":1698721062948138, "dur":1715, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":21, "ts":1698721062949898, "dur":13657, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":21, "ts":1698721062963615, "dur":11381, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":21, "ts":1698721062975053, "dur":3655, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/resources.assets" }}
-,{ "pid":12345, "tid":21, "ts":1698721062978749, "dur":2182061, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":22, "ts":1698721062915887, "dur":1756, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":22, "ts":1698721062917644, "dur":4146, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":22, "ts":1698721062921809, "dur":181, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\machine.config" }}
-,{ "pid":12345, "tid":22, "ts":1698721062921791, "dur":200, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":22, "ts":1698721062939294, "dur":5242, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":22, "ts":1698721062944587, "dur":8797, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":22, "ts":1698721062953428, "dur":13850, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":22, "ts":1698721062967317, "dur":13127, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":22, "ts":1698721062980477, "dur":2180352, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":23, "ts":1698721062915909, "dur":1743, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":23, "ts":1698721062917652, "dur":4142, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":23, "ts":1698721062921796, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":23, "ts":1698721062926013, "dur":1382, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":23, "ts":1698721062927445, "dur":2380, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":23, "ts":1698721062929881, "dur":5060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":23, "ts":1698721062934992, "dur":9207, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":23, "ts":1698721062944239, "dur":8468, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":23, "ts":1698721062952751, "dur":13406, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":23, "ts":1698721062966205, "dur":13315, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":23, "ts":1698721062979553, "dur":2181250, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":24, "ts":1698721062915941, "dur":1720, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":24, "ts":1698721062917662, "dur":4139, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":24, "ts":1698721062921812, "dur":172, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\machine.config" }}
-,{ "pid":12345, "tid":24, "ts":1698721062921802, "dur":183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":24, "ts":1698721062938254, "dur":4168, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":24, "ts":1698721062942484, "dur":7255, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":24, "ts":1698721062949802, "dur":13262, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":24, "ts":1698721062963111, "dur":11134, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":24, "ts":1698721062974436, "dur":2720, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":24, "ts":1698721062977187, "dur":2183582, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":25, "ts":1698721062915974, "dur":1694, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":25, "ts":1698721062917668, "dur":4127, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":25, "ts":1698721062921795, "dur":179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":25, "ts":1698721062932268, "dur":1345, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":25, "ts":1698721062933645, "dur":9332, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":25, "ts":1698721062943042, "dur":7489, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":25, "ts":1698721062950582, "dur":13599, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":25, "ts":1698721062964239, "dur":11736, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":25, "ts":1698721062976031, "dur":6871, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/globalgamemanagers.assets.resS" }}
-,{ "pid":12345, "tid":25, "ts":1698721062982926, "dur":2177931, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":26, "ts":1698721062915995, "dur":1685, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":26, "ts":1698721062917681, "dur":4116, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":26, "ts":1698721062921809, "dur":164, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\web.config" }}
-,{ "pid":12345, "tid":26, "ts":1698721062921798, "dur":176, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":26, "ts":1698721062933675, "dur":1475, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":26, "ts":1698721062935191, "dur":8916, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":26, "ts":1698721062944143, "dur":7930, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":26, "ts":1698721062952135, "dur":13613, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":26, "ts":1698721062965794, "dur":12853, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
-,{ "pid":12345, "tid":26, "ts":1698721062978680, "dur":2182119, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":27, "ts":1698721062916027, "dur":1661, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":27, "ts":1698721062917688, "dur":4123, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":27, "ts":1698721062921818, "dur":163, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\web.config" }}
-,{ "pid":12345, "tid":27, "ts":1698721062921812, "dur":169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":27, "ts":1698721062936840, "dur":1432, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":27, "ts":1698721062938331, "dur":8341, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll" }}
-,{ "pid":12345, "tid":27, "ts":1698721062946729, "dur":9130, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":27, "ts":1698721062955895, "dur":13281, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":27, "ts":1698721062969217, "dur":12333, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":27, "ts":1698721062981576, "dur":2179242, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":28, "ts":1698721062916054, "dur":1645, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":28, "ts":1698721062917700, "dur":4098, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":28, "ts":1698721062921800, "dur":175, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":28, "ts":1698721062933067, "dur":1555, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":28, "ts":1698721062934668, "dur":8982, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
-,{ "pid":12345, "tid":28, "ts":1698721062943692, "dur":7905, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":28, "ts":1698721062951646, "dur":13825, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":28, "ts":1698721062965522, "dur":12277, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":28, "ts":1698721062977842, "dur":2182952, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":29, "ts":1698721062916083, "dur":1625, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":29, "ts":1698721062917708, "dur":4123, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":29, "ts":1698721062923596, "dur":2408, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":29, "ts":1698721062926044, "dur":2158, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":29, "ts":1698721062928257, "dur":4210, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":29, "ts":1698721062932504, "dur":409097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":29, "ts":1698721063341625, "dur":1819156, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":30, "ts":1698721062916106, "dur":1612, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":30, "ts":1698721062917719, "dur":4100, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":30, "ts":1698721062921832, "dur":165, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":30, "ts":1698721062921823, "dur":175, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":30, "ts":1698721062945305, "dur":1824, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":30, "ts":1698721062947200, "dur":9878, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":30, "ts":1698721062957117, "dur":13702, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":30, "ts":1698721062970861, "dur":12098, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":30, "ts":1698721062982979, "dur":2177847, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":31, "ts":1698721062916133, "dur":1594, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":31, "ts":1698721062917728, "dur":4084, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":31, "ts":1698721062921813, "dur":217, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":31, "ts":1698721062949668, "dur":1669, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":31, "ts":1698721062951387, "dur":13649, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":31, "ts":1698721062965114, "dur":12305, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":31, "ts":1698721062977466, "dur":2183321, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":32, "ts":1698721062916168, "dur":1566, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":32, "ts":1698721062917734, "dur":4117, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":32, "ts":1698721062928133, "dur":3936, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":32, "ts":1698721062932113, "dur":6485, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/Unity.Burst.Unsafe.dll" }}
-,{ "pid":12345, "tid":32, "ts":1698721062938645, "dur":8431, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
-,{ "pid":12345, "tid":32, "ts":1698721062947128, "dur":9828, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":32, "ts":1698721062957003, "dur":13612, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":32, "ts":1698721062970661, "dur":3124, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/sharedassets0.resource" }}
-,{ "pid":12345, "tid":32, "ts":1698721062973834, "dur":2527, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":32, "ts":1698721062976421, "dur":4299, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.3/God of Food_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":32, "ts":1698721062980765, "dur":2180063, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1698721065167554, "dur":870, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid":12345, "tid":0, "ts":1698723107609871, "dur":8031, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698723107617907, "dur":138, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698723107618081, "dur":729, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698723107618829, "dur":1781, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698723107620611, "dur":5691733, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698723113312345, "dur":519, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698723113312865, "dur":119, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698723113313170, "dur":3167, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1698723107618737, "dur":1879, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698723107620617, "dur":3313, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1698723107643879, "dur":1212, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
+,{ "pid":12345, "tid":1, "ts":1698723107645094, "dur":473, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1698723107645572, "dur":216, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1698723107645789, "dur":189, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1698723107646119, "dur":221, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\Playerffafaffa-inputdata.json" }}
+,{ "pid":12345, "tid":1, "ts":1698723107645093, "dur":1354, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1698723107647349, "dur":3871070, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1698723111521499, "dur":269, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1698723111521498, "dur":272, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1698723111521784, "dur":1409, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1698723111523195, "dur":1789194, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1698723107618809, "dur":1819, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1698723107620630, "dur":680, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1698723107621310, "dur":2668, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1698723107623995, "dur":597, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Temp\\StagingArea\\WindowsPlayer.exe" }}
+,{ "pid":12345, "tid":2, "ts":1698723107623984, "dur":609, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food.exe" }}
+,{ "pid":12345, "tid":2, "ts":1698723107649108, "dur":505561, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food.exe" }}
+,{ "pid":12345, "tid":2, "ts":1698723108154704, "dur":2705254, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1698723110860014, "dur":569174, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":2, "ts":1698723111429235, "dur":1883115, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698723107618835, "dur":1803, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698723107620641, "dur":685, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698723107621327, "dur":2644, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1698723107623984, "dur":202, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":3, "ts":1698723107623972, "dur":215, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":3, "ts":1698723107639747, "dur":4156, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":3, "ts":1698723107643967, "dur":1013403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1698723108657454, "dur":2764223, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1698723111421701, "dur":1890653, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698723107618915, "dur":1744, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698723107620664, "dur":795, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698723107621459, "dur":2543, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1698723107627070, "dur":2242, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":4, "ts":1698723107629354, "dur":2927, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":4, "ts":1698723107632327, "dur":4768, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1698723107637150, "dur":8862, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1698723107646073, "dur":1798479, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1698723109444586, "dur":579980, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1698723110024602, "dur":1278335, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1698723111302963, "dur":125833, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":4, "ts":1698723111428851, "dur":1883498, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698723107619437, "dur":1430, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698723107620868, "dur":3076, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1698723107623950, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1698723107635978, "dur":1924, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1698723107637955, "dur":8952, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698723107646941, "dur":1749030, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698723109396013, "dur":2026661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1698723111422720, "dur":1889671, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698723107618786, "dur":1837, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698723107620626, "dur":657, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698723107621283, "dur":2709, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1698723107632452, "dur":5007, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698723107637503, "dur":8621, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698723107646165, "dur":1792656, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698723109438870, "dur":1984329, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1698723111423231, "dur":1889175, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1698723107618821, "dur":1812, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1698723107620635, "dur":731, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1698723107621366, "dur":2603, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1698723107623987, "dur":216, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":7, "ts":1698723107623969, "dur":235, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":7, "ts":1698723107642242, "dur":2044, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":7, "ts":1698723107644336, "dur":1104254, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1698723108748634, "dur":2977369, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1698723111726030, "dur":1586348, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1698723107618865, "dur":1778, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1698723107620645, "dur":831, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1698723107621477, "dur":2490, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1698723107623987, "dur":194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1698723107647792, "dur":1352, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1698723107649191, "dur":2530468, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1698723110179686, "dur":55, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityPlayer.dll" }}
+,{ "pid":12345, "tid":8, "ts":1698723110179685, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":8, "ts":1698723110179752, "dur":1260288, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":8, "ts":1698723111440067, "dur":1872309, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1698723107618895, "dur":1754, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1698723107620651, "dur":760, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1698723107621411, "dur":2576, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1698723107625159, "dur":2568, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":9, "ts":1698723107627755, "dur":3975, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":9, "ts":1698723107631778, "dur":3535, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":9, "ts":1698723107635346, "dur":7778, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":9, "ts":1698723107643182, "dur":879608, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1698723108522834, "dur":916712, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1698723109439579, "dur":583987, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1698723110023616, "dur":1279260, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1698723111302920, "dur":130399, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1698723111433349, "dur":1879014, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1698723107618934, "dur":1750, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1698723107620685, "dur":3252, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1698723107623938, "dur":179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":10, "ts":1698723107635145, "dur":1502, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":10, "ts":1698723107636698, "dur":8151, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":10, "ts":1698723107644911, "dur":1311950, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1698723108956900, "dur":2465169, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1698723111422093, "dur":1890246, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1698723107618961, "dur":1750, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1698723107620712, "dur":3223, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1698723107623950, "dur":160, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\mconfig\\config.xml" }}
+,{ "pid":12345, "tid":11, "ts":1698723107623938, "dur":174, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":11, "ts":1698723107633943, "dur":1501, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":11, "ts":1698723107635490, "dur":8000, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":11, "ts":1698723107643526, "dur":886948, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1698723108530513, "dur":2771703, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1698723111302266, "dur":127357, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/level0" }}
+,{ "pid":12345, "tid":11, "ts":1698723111429649, "dur":1882697, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1698723107618997, "dur":1726, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1698723107620724, "dur":3209, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1698723107624053, "dur":53, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1698723107624190, "dur":156, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":12, "ts":1698723107624346, "dur":171, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":12, "ts":1698723107624518, "dur":332, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":12, "ts":1698723107624850, "dur":407, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Universal.Runtime.dll" }}
+,{ "pid":12345, "tid":12, "ts":1698723107625257, "dur":250, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Burst.dll" }}
+,{ "pid":12345, "tid":12, "ts":1698723107625508, "dur":364, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":12, "ts":1698723107625873, "dur":243, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":12, "ts":1698723107626117, "dur":386, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":12, "ts":1698723107626504, "dur":247, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":12, "ts":1698723107626752, "dur":282, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":12, "ts":1698723107627035, "dur":228, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":12, "ts":1698723107627264, "dur":439, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":12, "ts":1698723107627704, "dur":295, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":12, "ts":1698723107627999, "dur":176, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Universal.Shaders.dll" }}
+,{ "pid":12345, "tid":12, "ts":1698723107628176, "dur":299, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":12, "ts":1698723107628587, "dur":142, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\AweSnap\\Desktop\\God of Food\\Library\\PackageCache\\com.unity.burst@1.8.7\\.Runtime\\bcl.exe" }}
+,{ "pid":12345, "tid":12, "ts":1698723107623937, "dur":4793, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
+,{ "pid":12345, "tid":12, "ts":1698723107633027, "dur":5675801, "ph":"X", "name": "GenerateNativePluginsForAssemblies",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
+,{ "pid":12345, "tid":12, "ts":1698723113311113, "dur":1154, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":13, "ts":1698723107619027, "dur":1709, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1698723107620736, "dur":3198, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1698723107623948, "dur":190, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":13, "ts":1698723107623940, "dur":200, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":13, "ts":1698723107638674, "dur":3308, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":13, "ts":1698723107642021, "dur":404489, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1698723108046565, "dur":2364698, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1698723110411303, "dur":1021909, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":13, "ts":1698723111433268, "dur":1879097, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1698723107619046, "dur":1701, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1698723107620747, "dur":3193, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1698723107623953, "dur":191, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\web.config" }}
+,{ "pid":12345, "tid":14, "ts":1698723107623945, "dur":200, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":14, "ts":1698723107640373, "dur":1303, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":14, "ts":1698723107641717, "dur":472906, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1698723108114661, "dur":2738221, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1698723110852919, "dur":575991, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":14, "ts":1698723111428986, "dur":1883413, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1698723107619071, "dur":1687, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1698723107620758, "dur":3174, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1698723107623942, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1698723107626376, "dur":1389, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/app.info" }}
+,{ "pid":12345, "tid":15, "ts":1698723107627775, "dur":2486, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":15, "ts":1698723107630315, "dur":2513, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":15, "ts":1698723107632861, "dur":5520, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":15, "ts":1698723107638426, "dur":9118, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":15, "ts":1698723107647585, "dur":853835, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1698723108501454, "dur":895179, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1698723109396667, "dur":560929, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1698723109957629, "dur":927634, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1698723110885292, "dur":542864, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/resources.assets" }}
+,{ "pid":12345, "tid":15, "ts":1698723111428190, "dur":1884171, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1698723107619101, "dur":1666, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1698723107620768, "dur":3170, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1698723107623939, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":16, "ts":1698723107629818, "dur":2215, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":16, "ts":1698723107632089, "dur":4220, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":16, "ts":1698723107636346, "dur":8087, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":16, "ts":1698723107644494, "dur":1218649, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1698723108863184, "dur":2812544, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1698723111675771, "dur":1636586, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":17, "ts":1698723107619133, "dur":1644, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":17, "ts":1698723107620778, "dur":3169, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":17, "ts":1698723107623967, "dur":164, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\machine.config" }}
+,{ "pid":12345, "tid":17, "ts":1698723107623949, "dur":183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":17, "ts":1698723107636771, "dur":1703, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":17, "ts":1698723107638516, "dur":9281, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":17, "ts":1698723107647849, "dur":2205045, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":17, "ts":1698723109852960, "dur":1572896, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":17, "ts":1698723111425911, "dur":1886459, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":18, "ts":1698723107619156, "dur":1630, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":18, "ts":1698723107620787, "dur":3164, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":18, "ts":1698723107623973, "dur":208, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\web.config" }}
+,{ "pid":12345, "tid":18, "ts":1698723107623954, "dur":228, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":18, "ts":1698723107645973, "dur":1491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":18, "ts":1698723107647514, "dur":2123790, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":18, "ts":1698723109771347, "dur":1653282, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":18, "ts":1698723111424660, "dur":1887719, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":19, "ts":1698723107619184, "dur":1613, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":19, "ts":1698723107620797, "dur":3157, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":19, "ts":1698723107623957, "dur":149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":19, "ts":1698723107631001, "dur":1674, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":19, "ts":1698723107632728, "dur":5214, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":19, "ts":1698723107638017, "dur":9101, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":19, "ts":1698723107647151, "dur":1964333, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":19, "ts":1698723109611526, "dur":1812657, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
+,{ "pid":12345, "tid":19, "ts":1698723111424204, "dur":1888156, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":20, "ts":1698723107619212, "dur":1592, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":20, "ts":1698723107620805, "dur":3155, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":20, "ts":1698723107623971, "dur":187, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\web.config" }}
+,{ "pid":12345, "tid":20, "ts":1698723107623962, "dur":197, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":20, "ts":1698723107646722, "dur":1547, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":20, "ts":1698723107648323, "dur":2156401, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":20, "ts":1698723109804763, "dur":1619644, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":20, "ts":1698723111424432, "dur":1887915, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":21, "ts":1698723107619243, "dur":1564, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":21, "ts":1698723107620807, "dur":3150, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":21, "ts":1698723107623969, "dur":214, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":21, "ts":1698723107641543, "dur":1544, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":21, "ts":1698723107643138, "dur":857681, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":21, "ts":1698723108500858, "dur":2478933, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":21, "ts":1698723110979844, "dur":449747, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/level0.resS" }}
+,{ "pid":12345, "tid":21, "ts":1698723111429641, "dur":1882718, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":22, "ts":1698723107619277, "dur":1553, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":22, "ts":1698723107620831, "dur":3118, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":22, "ts":1698723107623950, "dur":161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":22, "ts":1698723107633245, "dur":1291, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":22, "ts":1698723107634569, "dur":7040, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":22, "ts":1698723107641651, "dur":413561, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":22, "ts":1698723108055249, "dur":2632519, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":22, "ts":1698723110687823, "dur":744016, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":22, "ts":1698723111431873, "dur":1880498, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":23, "ts":1698723107619307, "dur":1535, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":23, "ts":1698723107620843, "dur":3112, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":23, "ts":1698723107623963, "dur":89, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\machine.config" }}
+,{ "pid":12345, "tid":23, "ts":1698723107623955, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":23, "ts":1698723107637930, "dur":1365, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":23, "ts":1698723107639343, "dur":8883, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":23, "ts":1698723107648275, "dur":2308405, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":23, "ts":1698723109956723, "dur":1469435, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":23, "ts":1698723111426215, "dur":1886140, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":24, "ts":1698723107619337, "dur":1512, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":24, "ts":1698723107620849, "dur":3101, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":24, "ts":1698723107623951, "dur":149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":24, "ts":1698723107629734, "dur":1960, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":24, "ts":1698723107631767, "dur":3515, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":24, "ts":1698723107635324, "dur":7299, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll" }}
+,{ "pid":12345, "tid":24, "ts":1698723107642660, "dur":896340, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":24, "ts":1698723108539040, "dur":2825933, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":24, "ts":1698723111365012, "dur":63389, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":24, "ts":1698723111428449, "dur":1883919, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":25, "ts":1698723107619377, "dur":1477, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":25, "ts":1698723107620854, "dur":3109, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":25, "ts":1698723107623985, "dur":179, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.6f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\machine.config" }}
+,{ "pid":12345, "tid":25, "ts":1698723107623964, "dur":201, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":25, "ts":1698723107644777, "dur":1885, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":25, "ts":1698723107646779, "dur":1722104, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":25, "ts":1698723109368925, "dur":2053017, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":25, "ts":1698723111421966, "dur":1890415, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":26, "ts":1698723107619402, "dur":1454, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":26, "ts":1698723107620857, "dur":3124, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":26, "ts":1698723107624954, "dur":3141, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":26, "ts":1698723107628134, "dur":3260, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":26, "ts":1698723107631439, "dur":2456, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":26, "ts":1698723107633930, "dur":6895, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":26, "ts":1698723107640895, "dur":682034, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":26, "ts":1698723108322969, "dur":1046566, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":26, "ts":1698723109369569, "dur":483847, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":26, "ts":1698723109853446, "dur":834920, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":26, "ts":1698723110688395, "dur":738548, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":26, "ts":1698723111426975, "dur":1885418, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":27, "ts":1698723107618759, "dur":1859, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":27, "ts":1698723107620621, "dur":814, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":27, "ts":1698723107621436, "dur":2553, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":27, "ts":1698723107625634, "dur":1419, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":27, "ts":1698723107627095, "dur":1974, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":27, "ts":1698723107629098, "dur":2978, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":27, "ts":1698723107632116, "dur":4625, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":27, "ts":1698723107636790, "dur":8980, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":27, "ts":1698723107645806, "dur":8488, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":27, "ts":1698723107654328, "dur":1209390, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":27, "ts":1698723108863752, "dur":956353, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":27, "ts":1698723109820153, "dur":717517, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":27, "ts":1698723110537704, "dur":902213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":27, "ts":1698723111439947, "dur":1872405, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":28, "ts":1698723107619460, "dur":1467, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":28, "ts":1698723107620928, "dur":3037, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":28, "ts":1698723107623969, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":28, "ts":1698723107631910, "dur":1389, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":28, "ts":1698723107633332, "dur":6394, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":28, "ts":1698723107639782, "dur":433100, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":28, "ts":1698723108072919, "dur":2811683, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":28, "ts":1698723110884655, "dur":544786, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":28, "ts":1698723111429484, "dur":1882938, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":29, "ts":1698723107619488, "dur":1445, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":29, "ts":1698723107620934, "dur":3021, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":29, "ts":1698723107623956, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":29, "ts":1698723107634557, "dur":1706, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":29, "ts":1698723107636321, "dur":8234, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":29, "ts":1698723107644602, "dur":1271056, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":29, "ts":1698723108915697, "dur":2900826, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":29, "ts":1698723111816554, "dur":1495812, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":30, "ts":1698723107619516, "dur":1423, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":30, "ts":1698723107620939, "dur":3046, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":30, "ts":1698723107627864, "dur":3991, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":30, "ts":1698723107631900, "dur":5028, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":30, "ts":1698723107636980, "dur":8281, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":30, "ts":1698723107645292, "dur":1474690, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":30, "ts":1698723109120027, "dur":2302192, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":30, "ts":1698723111422253, "dur":1890148, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":31, "ts":1698723107619547, "dur":1400, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":31, "ts":1698723107620948, "dur":3014, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":31, "ts":1698723107623963, "dur":207, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":31, "ts":1698723107642983, "dur":1574, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":31, "ts":1698723107644601, "dur":1249496, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":31, "ts":1698723108894138, "dur":2827779, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":31, "ts":1698723111721944, "dur":1590458, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":32, "ts":1698723107619573, "dur":1387, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":32, "ts":1698723107620961, "dur":3019, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":32, "ts":1698723107623981, "dur":182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":32, "ts":1698723107648547, "dur":1847, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":32, "ts":1698723107650434, "dur":2372364, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":32, "ts":1698723110022853, "dur":1403770, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/AweSnap/Desktop/Builds/10.30.4/God of Food_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":32, "ts":1698723111426669, "dur":1885673, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1698723113319227, "dur":807, "ph":"X", "name": "ProfilerWriteOutput" }
 ,
