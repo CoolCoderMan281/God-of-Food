@@ -9,6 +9,10 @@ public class MenuHandler : MonoBehaviour
     public GameManager manager;
     public AudioHandler audioHandler;
     public BasketController basketController;
+    public GameObject ExitText_Img;
+    public GameObject ExitText_Btn;
+    public GameObject ExitComic_Img;
+    public GameObject ExitComic_Btn;
     public string LastSelectedLevel = "BRUH";
     public void Start()
     {
@@ -43,7 +47,8 @@ public class MenuHandler : MonoBehaviour
         }
         else if (Name == "Credits")
         {
-            Debug.Log("Not implemented!");
+            manager.CreditsMenu.SetActive(true);
+            manager.paused = true;
         }
         else if (Name == "Settings")
         {
@@ -54,6 +59,7 @@ public class MenuHandler : MonoBehaviour
         {
             manager.SettingsMenu.SetActive(false);
             manager.LevelSelectMenu.SetActive(false);
+            manager.CreditsMenu.SetActive(false);
             manager.paused = false;
         }
         else if (Name == "Quit")
@@ -137,6 +143,14 @@ public class MenuHandler : MonoBehaviour
             {
                 Debug.Log("Nothing to restart ?? :/");
             }
+        } else if (Name == "ExitText")
+        {
+            ExitText_Img.SetActive(false);
+            ExitText_Btn.SetActive(false);
+        } else if (Name == "ExitComic")
+        {
+            ExitComic_Img.SetActive(false);
+            ExitComic_Btn.SetActive(false);
         }
         else
         {

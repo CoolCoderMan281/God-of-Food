@@ -38,13 +38,13 @@ public class LevelManager : MonoBehaviour
         Level MainMenu = new Level("MainMenu", "Its the main menu", -1, GameManager.SectionStyle.IDLE, GameManager.SpawningBehavior.STANDARD,0f,background:NoBackground,setPoints:0);
         // Campaign 1
         Level SurvivalMode = new Level("SurvivalMode", "Survival mode style", 1, GameManager.SectionStyle.SURVIVE,
-                                        GameManager.SpawningBehavior.HARSH_STANDARD,requiredPoints: 20, duration: 15,spawnbuffer:0.1f,background:Background2,zoom:true, levelrelation: 1);
+                                        GameManager.SpawningBehavior.HARSH_STANDARD,requiredPoints: 20, duration: 30, spawnbuffer:0.1f,background:Background2,zoom:true, levelrelation: 1);
         Level NormalMode = new Level("NormalMode", "Normal style example", 0, GameManager.SectionStyle.NORMAL,
                                         GameManager.SpawningBehavior.STANDARD,requiredPoints: 20, spawnbuffer:0.3f,
                                         background:Background2,zoom:false,levelrelation:1,intro:Level1_Intro);
         // Campaign 2
         Level SurvivalMode2 = new Level("SurvivalMode2", "Survival mode style2", 3, GameManager.SectionStyle.SURVIVE,
-                                        GameManager.SpawningBehavior.HARSH_STANDARD, requiredPoints: 20, duration: 15, spawnbuffer: 0.1f, background: Background1, zoom: true, levelrelation: 2);
+                                        GameManager.SpawningBehavior.HARSH_STANDARD, requiredPoints: 20, duration: 30, spawnbuffer: 0.1f, background: Background1, zoom: true, levelrelation: 2);
         Level NormalMode2 = new Level("NormalMode2", "Normal style example2", 2, GameManager.SectionStyle.NORMAL,
                                         GameManager.SpawningBehavior.STANDARD, requiredPoints: 20, spawnbuffer: 0.3f,
                                         background: Background1, zoom: false, levelrelation: 2, intro: Level2_Intro);
@@ -53,7 +53,7 @@ public class LevelManager : MonoBehaviour
                                         GameManager.SpawningBehavior.STANDARD, requiredPoints: 20, spawnbuffer: 0.3f,
                                         background: Background1, zoom: false, intro: Tutorial_Intro);
         Level TutorialSurvive = new Level("TutorialSurvive", "Survival mode style3", 5, GameManager.SectionStyle.SURVIVE,
-                                        GameManager.SpawningBehavior.HARSH_STANDARD, requiredPoints: 20, duration: 15, spawnbuffer: 0.1f, background: Background1, zoom: true);
+                                        GameManager.SpawningBehavior.HARSH_STANDARD, requiredPoints: 20, duration: 30, spawnbuffer: 0.1f, background: Background1, zoom: true);
         // [VICTORY LIMBO]
         Level Victory = new Level("Victory", "Victory level, limbo kind of", 102, GameManager.SectionStyle.IDLE, GameManager.SpawningBehavior.BINGUS_DESTROYER_OF_FUN, 0.1f,
                                     background: NoBackground, intro:VictoryBackground);

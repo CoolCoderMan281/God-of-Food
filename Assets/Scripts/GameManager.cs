@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour
     public Coroutine IndicatorFadeOut;
     public GameObject PauseMenu;
     public GameObject SettingsMenu;
+    public GameObject CreditsMenu;
     public GameObject LevelSelectMenu;
     public AudioHandler audioHandler;
     public GameObject player_idle;
@@ -77,6 +78,7 @@ public class GameManager : MonoBehaviour
         MainMenu_canvas = GameObject.Find("MainMenu_Content");
         SettingsMenu.SetActive(false);
         LevelSelectMenu.SetActive(false);
+        CreditsMenu.SetActive(false);
         levelManager = gameObject.GetComponent<LevelManager>();
         phase_text.text = "";
         timer_text.text = "";
@@ -505,7 +507,7 @@ public class GameManager : MonoBehaviour
                     if (SBehavior == SpawningBehavior.HARSH_STANDARD)
                     {
                         CanSpawn = false;
-                        if (SpawningIncrement == 12)
+                        if (SpawningIncrement == 8)
                         {
                             SpawningIncrement = 0;
                             CancelInvoke(nameof(AllowSpawning));
@@ -513,7 +515,7 @@ public class GameManager : MonoBehaviour
                         }
                         if (Level.LevelRelation == 1)
                         {
-                            int rand = UnityEngine.Random.Range(0, 90);
+                            int rand = UnityEngine.Random.Range(0, 100);
                             int randomObj = UnityEngine.Random.Range(0, falling_options.Count());
                             GameObject newObj;
                             if (Level.LevelRelation == 1 && Level.Style == SectionStyle.SURVIVE)
@@ -549,13 +551,13 @@ public class GameManager : MonoBehaviour
                             newObj.transform.position = targetPos;
                             newObj.GetComponent<FallingObject>().isExample = false;
                             newObj.GetComponent<FallingObject>().SpawnBuffer = Level.SpawnBuffer;
-                            Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(0.1f, 0.3f));
+                            Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(0.25f, 0.50f));
                             SpawningIncrement++;
                         }
                         else if (Level.LevelRelation == 2)
                         {
                             Debug.Log("LVL2 HARSH!");
-                            int rand = UnityEngine.Random.Range(0, 90);
+                            int rand = UnityEngine.Random.Range(0, 100);
                             int randomObj = UnityEngine.Random.Range(0, falling_options.Count());
                             GameObject newObj;
                             if (Level.LevelRelation == 2 && Level.Style == SectionStyle.SURVIVE)
@@ -595,7 +597,7 @@ public class GameManager : MonoBehaviour
                             newObj.transform.position = targetPos;
                             newObj.GetComponent<FallingObject>().isExample = false;
                             newObj.GetComponent<FallingObject>().SpawnBuffer = Level.SpawnBuffer;
-                            Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(0.1f, 0.3f));
+                            Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(0.25f, 0.50f));
                             SpawningIncrement++;
                         }
                         else
@@ -703,7 +705,7 @@ public class GameManager : MonoBehaviour
                             newObj.transform.position = targetPos;
                             newObj.GetComponent<FallingObject>().isExample = false;
                             newObj.GetComponent<FallingObject>().SpawnBuffer = Level.SpawnBuffer;
-                            Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(0.1f, 0.3f));
+                            Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(0.25f, 0.5f));
                             SpawningIncrement++;
                         } else
                         {
@@ -716,7 +718,7 @@ public class GameManager : MonoBehaviour
                             newObj.transform.position = targetPos;
                             newObj.GetComponent<FallingObject>().isExample = false;
                             newObj.GetComponent<FallingObject>().SpawnBuffer = Level.SpawnBuffer;
-                            Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(0.1f, 0.3f));
+                            Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(0.25f, 0.5f));
                             SpawningIncrement++;
                         }
                     }
