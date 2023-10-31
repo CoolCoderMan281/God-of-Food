@@ -511,14 +511,52 @@ public class GameManager : MonoBehaviour
                         }
                         if (Level.LevelRelation == 1)
                         {
-                        Debug.LogError("my bad i screwed it up");
-                        }
-                        else if (Level.LevelRelation == 2)
-                        {
                             int rand = UnityEngine.Random.Range(0, 90);
                             int randomObj = UnityEngine.Random.Range(0, falling_options.Count());
                             GameObject newObj;
                             if (Level.LevelRelation == 1 && Level.Style == SectionStyle.SURVIVE)
+                            {
+                                if (rand <= 10)
+                                {
+                                    randomObj = UnityEngine.Random.Range(0, veggies.Count());
+                                    newObj = Instantiate(veggies[UnityEngine.Random.Range(0, veggies.Count())]);
+                                }
+                                else if (rand <= 45)
+                                {
+                                    randomObj = UnityEngine.Random.Range(0, fruit.Count());
+                                    newObj = Instantiate(fruit[UnityEngine.Random.Range(0, fruit.Count())]);
+                                }
+                                else if (rand <= 75)
+                                {
+                                    randomObj = UnityEngine.Random.Range(0, moldy_veggies.Count());
+                                    newObj = Instantiate(moldy_veggies[UnityEngine.Random.Range(0, moldy_veggies.Count())]);
+                                }
+                                else
+                                {
+                                    randomObj = UnityEngine.Random.Range(0, moldy_fruit.Count());
+                                    newObj = Instantiate(moldy_fruit[UnityEngine.Random.Range(0, moldy_fruit.Count())]);
+                                }
+                            }
+                            else
+                            {
+                                randomObj = UnityEngine.Random.Range(0, veggies.Count());
+                                newObj = Instantiate(veggies[UnityEngine.Random.Range(0, veggies.Count())]);
+                            }
+                            spawned.Add(newObj);
+                            Vector3 targetPos = new Vector3(UnityEngine.Random.Range(-spawnXRange, spawnXRange), spawnHight, 0);
+                            newObj.transform.position = targetPos;
+                            newObj.GetComponent<FallingObject>().isExample = false;
+                            newObj.GetComponent<FallingObject>().SpawnBuffer = Level.SpawnBuffer;
+                            Invoke(nameof(AllowSpawning), UnityEngine.Random.Range(0.1f, 0.3f));
+                            SpawningIncrement++;
+                        }
+                        else if (Level.LevelRelation == 2)
+                        {
+                            Debug.Log("LVL2 HARSH!");
+                            int rand = UnityEngine.Random.Range(0, 90);
+                            int randomObj = UnityEngine.Random.Range(0, falling_options.Count());
+                            GameObject newObj;
+                            if (Level.LevelRelation == 2 && Level.Style == SectionStyle.SURVIVE)
                             {
                                 if (rand <= 25)
                                 {
@@ -612,10 +650,11 @@ public class GameManager : MonoBehaviour
                         }
                         else if (Level.LevelRelation == 2)
                         {
+                            Debug.Log("LVL2 NORMAL");
                             int rand = UnityEngine.Random.Range(0, 100);
                             int randomObj = UnityEngine.Random.Range(0, falling_options.Count());
                             GameObject newObj;
-                            if (Level.LevelRelation == 1 && Level.Style == SectionStyle.SURVIVE)
+                            if (Level.LevelRelation == 2 && Level.Style == SectionStyle.NORMAL)
                             {
                                 if (rand <= 35)
                                 {
@@ -625,6 +664,7 @@ public class GameManager : MonoBehaviour
                                 }
                                 else if (rand <= 50)
                                 {
+                                    Debug.Log("DAIRY!!!!!");
                                     // Diary
                                     randomObj = UnityEngine.Random.Range(0, dairy.Count());
                                     newObj = Instantiate(dairy[UnityEngine.Random.Range(0, dairy.Count())]);
@@ -635,6 +675,7 @@ public class GameManager : MonoBehaviour
                                     randomObj = UnityEngine.Random.Range(0, moldy_veggies.Count());
                                     newObj = Instantiate(moldy_veggies[UnityEngine.Random.Range(0, moldy_veggies.Count())]);
                                 }
+                                Debug.Log(rand);
                             }
                             else
                             {

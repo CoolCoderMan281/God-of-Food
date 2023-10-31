@@ -12,7 +12,7 @@ public class FallingObject : MonoBehaviour
 
     public enum FoodCategory
     {
-        Veggies, Fruit, Moldy_Veggies, Moldy_Fruit, UNSET
+        Veggies, Fruit, Moldy_Veggies, Moldy_Fruit, Dairy, Moldy_Dairy, Protein, UNSET
     }
 
     public bool isExample = false;
